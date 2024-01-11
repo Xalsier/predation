@@ -15,7 +15,7 @@ $(document).ready(function() {
             if (zIndex === -10) { // Apply blur only if z-index is -10
                 filters += ` blur(${blurIntensity}px)`;
             }
-            let leaf = $(`<img src="../leafs/l${leafNumber}.png" class="falling-leaf">`);
+            let leaf = $(`<img src="https://raw.githubusercontent.com/Xalsier/predation/main/leafs/l${leafNumber}.png" class="falling-leaf">`);
             leaf.css({
                 'position': 'fixed',
                 'top': '-100px',
