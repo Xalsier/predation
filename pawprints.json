@@ -36,6 +36,7 @@
     "Unnamed": {"relatedprint": ["名称未設定"], "created": "01-01-2024","langlib": ["名称未設定"],"class": ["Characters"]},
     "Primal Samsara": {"relatedprint": ["ライマルサムサラ"], "created": "01-07-2024","langlib": ["ライマルサムサラ"],"class": ["Manga"]},
     "Episode 1": {"relatedprint": ["第1話"], "created": "01-07-2024","langlib": ["第1話"],"class": ["Manga"], "set": [9,10,11]},
+    "Episode 2": {"relatedprint": ["第2話"], "created": "01-12-2024","langlib": ["第2話"],"class": ["Manga"], "set": [18]},
     "Ryoko": {"relatedprint": ["涼子"], "created": "01-01-2024","langlib": ["涼子"],"class": ["Characters"]},
     "Avani": {"relatedprint": ["アヴァニ"], "created": "01-01-2024","langlib": ["アヴァニ"],"class": ["Characters"]},
     "Shiro": {"relatedprint": ["シロ"], "created": "01-01-2024","langlib": ["シロ"],"class": ["Characters"]},
