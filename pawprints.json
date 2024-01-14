@@ -50,8 +50,10 @@
     "Oldest": {"relatedprint": ["最古"], "created": "01-01-2024","langlib": ["最古"],"class": ["Time"]},
     "Hot Sort": {"relatedprint": ["ホットソート"], "created": "01-01-2024","langlib": ["ホットソート"],"class": ["Likes"]},
     "Cold Sort": {"relatedprint": ["コールドソート"], "created": "01-01-2024","langlib": ["コールドソート"],"class": ["Likes"]},
-    "Kit": {"relatedprint": [], "created": "01-10-2024","langlib": ["Kit"],"class": ["Maturity"]},
+    "Kit": {"relatedprint": [], "created": "01-10-2024","langlib": ["子供"],"class": ["Maturity"]},
     "Young Adult": {"relatedprint": [], "created": "01-10-2024","langlib": ["Young Adult"],"class": ["Maturity"]},
-    "Mekazoan": {"relatedprint": [], "created": "01-10-2024","langlib": ["Young Adult"],"class": ["Maturity"]},
-    "Nirvana": {"relatedprint": [], "created": "01-10-2024","langlib": ["Young Adult"],"class": ["Maturity"]}
+    "Mekazoan": {"relatedprint": [], "created": "01-10-2024","langlib": ["Mekazoan"],"class": ["Maturity"]},
+    "Nirvana": {"relatedprint": [], "created": "01-10-2024","langlib": ["涅槃"],"class": ["Maturity"]},
+    "EN": {"relatedprint": ["English"], "created": "01-13-2024","langlib": ["EN"],"class": ["LangVersion"]},
+    "JA": {"relatedprint": ["Japanese"], "created": "01-13-2024","langlib": ["JA"],"class": ["LangVersion"]}
 }
