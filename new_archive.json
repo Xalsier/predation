@@ -1,0 +1,425 @@
+{
+    "1": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "POV Shiro Is About To Step On You",
+        "urls": ["../Gallery/recolorshirofoot.png", 
+                "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/576b864f-7924-4fa2-2266-670c4c559200/public"],
+        "time": "12-30-2023",
+        "pawprints": [
+            "Shiro",
+            "Xalsier",
+            "Cell-Shaded Art",
+            "Spotted Cat",
+            "Female",
+            "White Fur",
+            "Pink Eyes",
+            "EN"
+        ]
+    },
+    "2": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "Prologue Coverart (Ryoko!)",
+        "urls": ["../Gallery/ryoko2.png", 
+                "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/02d06f65-3b8a-4436-4bdd-67d1074b4c00/public"],
+        "time": "12-29-2023",
+        "pawprints": [
+            "Ryoko",
+            "Xalsier",
+            "Cell-Shaded Art",
+            "Sketch Art",
+            "Fox",
+            "Female",
+            "Brown Fur",
+            "Dark-Gray Fur",
+            "Yellow Eyes",
+            "EN"
+        ]
+    },
+    "3": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "Ryou (Fuwa's Past Life)",
+        "urls": ["../Gallery/ryou.jpeg"],
+        "time": null,
+        "pawprints": [
+            "Fuwa",
+            "Ryou",
+            "Xalsier",
+            "Sketch Art",
+            "Cat",
+            "Male",
+            "White Fur",
+            "EN"
+        ]
+    },
+    "4": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "Avani Concept Art #1 (Old name was Zsasz)",
+        "urls": ["../Gallery/myaruka.png"],
+        "time": null,
+        "pawprints": [
+            "Avani",
+            "Zsasz",
+            "ShadowxxFox",
+            "Concept Art",
+            "Spotted Hyena",
+            "Male",
+            "Brown Fur",
+            "Metal",
+            "Magenta Eyes",
+            "EN"
+        ]
+    },
+    "5": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "I had a dream once where Volume 1's cover was Naori in a prison cell (Thank you for bringing that image to life!)",
+        "urls": ["../Gallery/prisonerdream2.jpeg", 
+                "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/d4ad03b4-94fc-4219-0e1a-0659d5624300/public"],
+        "time": "12-26-2023",
+        "pawprints": [
+            "Navari",
+            "ChosenComics",
+            "Rendered Art",
+            "Mofu Naori Grass",
+            "Fox",
+            "Female",
+            "Brown Fur",
+            "White Fur",
+            "Yellow Eyes",
+            "EN"
+        ]
+    },
+    "6": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "Album Cover For 'Back Home Again'. Really Early Concept Art",
+        "urls": ["../Gallery/unnamed4.jpeg", 
+                "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/0a0fa6b0-ffbe-48ec-43cb-199ee30ecd00/public", 
+                "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/9f9785c0-9b0f-474b-2234-55f56e29ab00/public", 
+                "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/cddfef22-e526-4f73-791e-f7e0aad1cb00/public"],
+        "time": "10-24-2022",
+        "pawprints": [
+            "Unnamed",
+            "Dimidostoevsky",
+            "Concept Art",
+            "Red Spider Lily",
+            "Fox",
+            "Female",
+            "Orange Fur",
+            "Green Eyes",
+            "EN"
+        ]
+    },
+    "7": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "This is where I decided on White Paws for Naori",
+        "urls": ["../Gallery/boxingnaori.jpeg"],
+        "time": "11-07-2023",
+        "pawprints": [
+            "Naori",
+            "Xalsier",
+            "Concept Art",
+            "Cell-Shaded Art",
+            "Fox",
+            "Female",
+            "Orange Fur",
+            "Green Eyes",
+            "EN"
+        ]
+    },
+    "8": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "I've had a really hard time drawing yeens, this is the first one that turned out alright!",
+        "urls": ["../Gallery/zhenzhen.jpeg", 
+                "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/26d1b274-4102-4428-7653-f4d940b97900/public"],
+        "time": "11-29-2023",
+        "pawprints": [
+            "Zhenyu",
+            "Xalsier",
+            "Concept Art",
+            "Sketch Art",
+            "Cell-Shaded Art",
+            "Spotted Hyena",
+            "Male",
+            "Brown Fur",
+            "Hazel Eyes",
+            "EN"
+        ]
+    },
+    "9": {
+        "type": "manga",
+        "langtype": "en",
+        "title": "Primal Samsara Prologue Page 0",
+        "urls": ["../Pages/EN001.png"],
+        "time": "01-01-2024",
+        "pawprints": [
+            "Primal Samsara",
+            "Episode 1",
+            "Ryoko",
+            "Xalsier",
+            "Sketch Art",
+            "Fox",
+            "Female",
+            "Brown Fur",
+            "Yellow Eyes",
+            "EN"
+        ]
+    },
+    "10": {
+        "type": "manga",
+        "langtype": "en",
+        "title": "Primal Samsara Prologue Page 1",
+        "urls": ["../Pages/EN002.png"],
+        "time": "12-29-2023",
+        "pawprints": [
+            "Primal Samsara",
+            "Episode 1",
+            "Ryoko",
+            "Naori",
+            "Shiro",
+            "Xalsier",
+            "Sketch Art",
+            "Fox",
+            "Spotted Cat",
+            "White Fur",
+            "Female",
+            "Brown Fur",
+            "Yellow Eyes",
+            "Pink Eyes",
+            "EN"
+        ]
+    },
+    "11": {
+        "type": "manga",
+        "langtype": "en",
+        "title": "Primal Samsara Prologue Page 2",
+        "urls": ["../Pages/EN003.png"],
+        "time": "01-01-2024",
+        "pawprints": [
+            "Primal Samsara",
+            "Episode 1",
+            "Shiro",
+            "Xalsier",
+            "Sketch Art",
+            "Cell-Shaded Art",
+            "Spotted Cat",
+            "White Fur",
+            "Female",
+            "Pink Eyes",
+            "EN"
+        ]
+    },
+    "12": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "Early Concept Art (Sera) Tied to Fuwa's design",
+        "urls": ["../Gallery/sera.jpeg"],
+        "time": "01-01-2024",
+        "pawprints": [
+            "Sera",
+            "Fuwa",
+            "Unagiroll",
+            "Concept Art",
+            "Rendered Art",
+            "Cat",
+            "White Fur",
+            "Female",
+            "Green Eyes",
+            "EN"
+        ]
+    },
+    "13": {
+        "type": "lore",
+        "langtype": "en",
+        "urls": [],
+        "time": "01-08-2024",
+        "recipemarkdown": "../markdown/en/honey.md",
+        "pawprints": [
+            "Shiro",
+            "EN"
+        ]
+    },
+    "14": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "New Sera design // Deer",
+        "urls": ["../Gallery/shika.jpeg"],
+        "time": "01-09-2024",
+        "pawprints": [
+            "Sera",
+            "Xalsier",
+            "Sketch Art",
+            "Cell-Shaded Art",
+            "Deer",
+            "Female",
+            "Brown Eyes",
+            "EN"
+        ]
+    },
+    "15": {
+        "type": "lore",
+        "langtype": "en",
+        "urls": [""],
+        "time": "01-09-2024",
+        "recipemarkdown": "../markdown/en/maturity.md",
+        "pawprints": [
+            "Kit",
+            "Young Adult",
+            "Mekazoan",
+            "Nirvana",
+            "EN"
+        ]
+    },
+    "16": {
+        "type": "lore",
+        "langtype": "en",
+        "urls": [""],
+        "time": "01-10-2024",
+        "recipemarkdown": "../markdown/en/sera.md",
+        "pawprints": [
+            "Sera",
+            "EN"
+        ]
+    },
+    "17": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "Primal Samsara Logo ^-^",
+        "urls": ["../assets/primal.jpeg"],
+        "time": "01-11-2024",
+        "pawprints": [
+            "Yuuika",
+            "EN"
+        ]
+    },
+    "18": {
+        "type": "manga",
+        "langtype": "en",
+        "title": "Ep 2. Can't Read",
+        "urls": ["../Pages/EP2/EN005.png"],
+        "time": "01-12-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Sera",
+            "Naori",
+            "Fox",
+            "Deer",
+            "EN"
+        ]
+    },
+    "19": {
+        "type": "lore",
+        "langtype": "en",
+        "urls": [""],
+        "time": "01-12-2024",
+        "recipemarkdown": "../markdown/en/naori.md",
+        "pawprints": [
+            "Naori",
+            "EN"
+        ]
+    },
+    "20": {
+        "type": "lore",
+        "langtype": "en",
+        "urls": [""],
+        "time": "01-12-2024",
+        "recipemarkdown": "../markdown/en/ryoko.md",
+        "pawprints": [
+            "Ryoko",
+            "EN"
+        ]
+    },
+    "21": {
+        "type": "manga",
+        "langtype": "ja",
+        "title": "Primal Samsara Prologue Page 0",
+        "urls": ["../Pages/JA001.png"],
+        "time": "01-01-2024",
+        "pawprints": [
+            "Primal Samsara",
+            "Episode 1",
+            "Ryoko",
+            "Xalsier",
+            "Sketch Art",
+            "Fox",
+            "Female",
+            "Brown Fur",
+            "Yellow Eyes",
+            "JA"
+        ]
+    },
+    "22": {
+        "type": "manga",
+        "langtype": "ja",
+        "title": "Primal Samsara Prologue Page 1",
+        "urls": ["../Pages/JA002.png"],
+        "time": "12-29-2023",
+        "pawprints": [
+            "Primal Samsara",
+            "Episode 1",
+            "Ryoko",
+            "Naori",
+            "Shiro",
+            "Xalsier",
+            "Sketch Art",
+            "Fox",
+            "Spotted Cat",
+            "White Fur",
+            "Female",
+            "Brown Fur",
+            "Yellow Eyes",
+            "Pink Eyes",
+            "JA"
+        ]
+    },
+    "23": {
+        "type": "manga",
+        "langtype": "ja",
+        "title": "Primal Samsara Prologue Page 2",
+        "urls": ["../Pages/JA003.png"],
+        "time": "01-01-2024",
+        "pawprints": [
+            "Primal Samsara",
+            "Episode 1",
+            "Shiro",
+            "Xalsier",
+            "Sketch Art",
+            "Cell-Shaded Art",
+            "Spotted Cat",
+            "White Fur",
+            "Female",
+            "Pink Eyes",
+            "JA"
+        ]
+    },
+    "24": {
+        "type": "lore",
+        "langtype": "ja",
+        "urls": [""],
+        "time": "01-13-2024",
+        "recipemarkdown": "../markdown/ja/ja_honey.md",
+        "pawprints": [
+            "Sera",
+            "JA"
+        ]
+    },
+    "25": {
+        "type": "lore",
+        "langtype": "ja",
+        "urls": [""],
+        "time": "01-13-2024",
+        "recipemarkdown": "../markdown/ja/ja_naori.md",
+        "pawprints": [
+            "Naori",
+            "JA"
+        ]
+    }
+}
