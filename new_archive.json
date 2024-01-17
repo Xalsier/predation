@@ -421,5 +421,17 @@
             "Naori",
             "JA"
         ]
+    },
+        "26": {
+        "type": "gazo",
+        "langtype": "en",
+        "title": "Primal Samsara Logo Concept Animation",
+        "urls": ["../Gallery/lowres.mp4"],
+        "time": "01-16-2024",
+        "pawprints": [
+            "Primal Samsara",
+            "EN",
+            "Xalsier"
+        ]
     }
 }
