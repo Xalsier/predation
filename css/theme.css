@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #0D1017; /* Fallback color */
+}
+
+#background {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Behind everything else */
+    overflow: hidden; /* Hide any overflow */
+}
+
+#background img {
+    position: absolute; /* Absolute positioning inside the div */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the div */
+    height: 100%; /* Full height of the div */
+    object-fit: cover; /* Cover the entire viewport */
+    object-position: center; /* Center the image */
+}
+
+
+p {color: white;}
+
+
+h1 {
+    color: #e7820f;
+    font-size: 3rem;
+}
+
+h1 {
+    margin-bottom: 0px;
+} 
+
+h2 {
+    color: #e7820f;
+    margin-top: 0px;
+}
+
+h3 { color: #e7820f;}
+
+strong {
+    color: white;
+}
+
+header {
+    margin-top: 0px;
+}
+
+.title-container {
+    width: 500px;
+    top: 0;
+    height: 360px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-image {
+    width: 500px;
+    height: 360px;
+    object-fit: cover;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .title-container, .logo-image {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+.menu-icon {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.menu-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+
+.menu-icon:active {
+    transform: scale(0.9);
+}
+
+a {
+    color: inherit; /* This makes the link use the color of its parent element */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+a:hover, a:focus {
+    color: inherit; /* Optional: ensures the color doesn't change on hover/focus */
+    text-decoration: underline; /* Optional: adds underline on hover/focus for better UX */
+}
+
+
+.menu-icon:active .menu-image {
+    transform: rotate(360deg);
+}
+
+.folder-section {
+    display: flex;
+    flex-direction: row; /* Stacks children horizontally */
+    position: relative;
+    left: 60px;
+    top: 0;
+    margin-top: 25px;
+    z-index: 10;
+    margin-right: 60px;
+    overflow-x: auto; /* Ensures horizontal scrollbar appears when needed */
+}
+
+.folder-section::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+}
+
+.folder-section::-webkit-scrollbar-thumb {
+    background-color: #FF4D4D;
+    border-radius: 5px;
+}
+
+.folder-section::-webkit-scrollbar-thumb:hover {
+    background: #733434;
+}
+
+.folder-section::-webkit-scrollbar-thumb:active {
+    background: #733434;
+}
+
+.folder-section::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.folder-tab {
+    background-color: #FF4D4D;
+    color: white;
+    padding: 10px;
+    text-decoration: none; /* removing the dashed underline */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10; 
+    position: relative;
+    cursor: pointer;
+}
+
+.folder-tab:hover {
+    background-color: #6c3e3e;
+}
+
+
+.folder-tab.behind {
+    z-index: 0;
+    filter: brightness(0.9);
+    opacity: 0.5;
+    border-radius: 0px;
+}
+
+.folder-tab.tab1 {
+    z-index: 0;
+    opacity: 0.5;
+    margin-left: -5px;
+    filter: brightness(0.8) grayscale(0.1);
+}
+
+.folder-tab.tab2 {
+    z-index: 0;
+    opacity: 0.4;
+    filter: brightness(0.7) grayscale(0.2);
+}
+
+.folder-tab.tab3 {
+    z-index: 0;
+    opacity: 0.3;
+    filter: brightness(0.6) grayscale(0.3);
+}
+
+.folder-tab.tab4 {
+    opacity: 0.2;
+    filter: brightness(0.5) grayscale(0.4);
+    z-index: 0;
+}
+
+.folder-tab.tab5 {
+    opacity: 0.1;
+    filter: brightness(0.5) grayscale(0.5);
+    z-index: 0;
+}
+
+.nav2 {
+    filter: grayscale(0.1);
+}
+
+.nav3 {
+    filter: brightness(0.8) grayscale(0.2);
+}
+
+.nav4 {
+    filter: brightness(0.7) grayscale(0.3);
+}
+
+.nav5 {
+    filter: brightness(0.6) grayscale(0.4);
+}
+
+.nav6 {
+    filter: brightness(0.5) grayscale(0.5);
+}
+
+.folder-tab.very-small {
+    width: 50px; 
+}
+
+.folder-tab.small {
+    width: 80px;
+}
+
+.folder-tab.medium {
+    width: 100px; 
+}
+
+#nav-map {
+    white-space: nowrap;
+    overflow: visible;
+    width: auto; /* Make sure the active tab has an automatic width */
+}
+
+.folder-section {
+    overflow: hidden;
+}
+.folder-tab.active {
+    white-space: nowrap;
+    overflow: visible;
+    z-index: 10;
+    opacity: 1;
+  }
+  .folder-tab {
+    flex-grow: 1; /* Allow tabs to flex */
+    transition: flex-basis 0.2s; /* Animate the flex basis change */
+  }
+  
+  .folder-tab.active {
+    flex-grow: 0; /* Prevent the active tab from flexing */
+  }
+
+  .folder-section {
+    display: flex; /* Define as flex container */
+    flex-wrap: nowrap; /* Prevent tabs from wrapping */
+  }
+  
+  .folder-tab {
+    flex-shrink: 0;
+  }
+
+  .folder-tab.active {
+    flex: none;
+  }
+
+  @keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pop-out {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+#comment-section {
+    width: 100%;
+    margin: auto;
+}
+
+#input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+#comments {
+    color: white;
+}
+
+.fields button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff8800; /* Pastel Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#input-section #animal,
+#input-section #prey,
+#input-section #post-comment,
+#input-section #toggle-comments,
+#input-section #toggle-refresh {
+    width: 100%;
+    margin: 5px 0;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#toggle-refresh {
+    font-size: 1.7em;
+}
+
+#input-section #animal {
+    background-color: #1F2738;
+    border: transparent;
+    color: white;
+}
+
+#input-section #comment {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#input-section #post-comment {
+    background-color: #ff8800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment {
+    background-color: #1F2738;
+    padding: 10px;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    text-align: left;
+}
+
+.comment strong {
+    color:rgb(255, 119, 0);
+}
+
+#comment {
+    background-color: #1F2738;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    text-align: left;
+}
+
+.comment.right-align {
+    text-align: right;
+}
+
+#pagination {
+    justify-content: center;
+}
+
+#pagination button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#pagination button:hover {
+    color: rgb(255, 119, 0);
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start; /* Align to the top */
+    margin-bottom: 10px;
+}
+
+.comment-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+    flex-shrink: 0; /* Prevents stretching */
+}
+
+.comment-text {
+    flex-grow: 1;
+}

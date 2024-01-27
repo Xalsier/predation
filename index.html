@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+    <title>プライマルサムサラ Primal Samsara</title>
+    <meta name='description' content='プライマルサムサラの世界を探検し、新しいコンテンツを探してください。ウェブコミックは不定期に更新されますが、サイトは頻繁に更新されます。
+                                    Explore the World of Primal Samsara and hunt for new content. Webcomic updated irregularly but site is updated frequently.'>
+    <meta property="og:image" content="../primal600.webp">
+    <meta property="og:title" content="プライマルサムサラ">
+    <meta property="og:description" content="プライマルサムサラの世界を探検し、新しいコンテンツを探してください。ウェブコミックは不定期に更新されますが、サイトは頻繁に更新されます。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico?v=2">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="default_image.jpg">
+    <meta name="twitter:title" content="Default Title">
+    <meta name="theme-color" content="#ecd4b9">
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/pawprints.css">
+    <link rel="stylesheet" type="text/css" href="../css/reader.css">
+    <link rel="stylesheet" type="text/css" href="../css/searchbar.css">
+    <script src="../Javascript/lib/jquery.js"></script>
+    <script src="../Javascript/lib/markdown.js" defer></script>    
+</head>
+<body>
+    <div id="background">
+        <img src="../sera1000.webp" srcset="../sera1500.webp 1500w, ../sera2000.webp 2000w, ../sera2500.webp 2500w, ../sera3000.webp 3000w" sizes="100vw" alt="Background">
+    </div>
+    <div id="dynamic-page">
+        <div class="search-area">       
+            <div class="aperture">
+                <header>
+                    <h1 class="title-container">
+                        <img class="logo-image" src="../primal300.webp" srcset="../primal600.webp 600w, ../primal900.webp 900w, ../primal1200.webp 1200w" sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 1200px" alt="Primal Samsara">
+                    </h1>
+                </header>
+                <nav>
+                    <div class="search-container">
+                        <input type="text" class="search-bar" />
+                        <button class="hunt">狩り</button>
+                    </div>
+                    <div class="metahash-container"></div>    
+                </nav>
+            </div>
+            <footer class="homefooter">
+                <select id="language-select">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                </select>
+                <span class="copy1">Primal Samsara ©</span><a class="copy2" href="https://twitter.com/Xalsier">Xalsier</a><span class="copy3"> All Rights Reserved</span>
+                <a href="https://github.com/Xalsier/predation">GitHub</a>
+                <a href="https://discord.gg/e7RESW5E75">Discord</a>
+                <span class="backgroundcredit">Background art by</span><a class="copy4" href="https://twitter.com/dimidostoevsky">Dimi</a>
+                <span class="notehelper">You can find the latest episode of the webcomic by clicking the Primal Samsara logo!</span>
+            </footer>
+        </div>
+    </div>
+    <div class="gallery-container" style="display:none;">
+        <button id="return-button">戻る</button> <!-- Return button outside the dynamic content area -->
+        <div class="gallery-feed"></div>
+        <div class="gallery-nav"></div>
+        <div id="reader" class="reader-modal" style="display: none;">
+            <div class="reader-header">
+                <div id="reader-settings" class="reader-settings">
+                </div>
+            </div>
+            <div id="readerContent" class="reader-content"></div>
+        </div>
+    </div>
+    <script src="../Javascript/fallback.js"></script>
+    <script type="module" src="../Javascript/title.js"></script>
+    <script type="module" src="../Javascript/search.js"></script>
+    <script type="module" src="../Javascript/reader.js"></script>
+    <script type="module" src="../Javascript/seed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Xalsier/predation/leaf.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Home -->
+    <url>
+        <loc>https://predation.jp</loc>
+        <priority>1.0</priority>
+    </url>
+    <!-- Generic Hunted Links -->
+    <url>
+        <loc>https://predation.jp/kari/1</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/2</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/3</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/4</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/5</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/6</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/7</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/8</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/9</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/10</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/11</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/21"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/12</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/22"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/13</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/23"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/14</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/15</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/16</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/24"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/17</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/18</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/27"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/19</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/25"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/20</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/21</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/11"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/22</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/12"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/23</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/13"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/24</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/16"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/25</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/19"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/26</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/27</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/18"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/28</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/29"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/29</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/28"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/30</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/31"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/31</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/30"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/32</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/33"/>
+    </url>
+        <url>
+        <loc>https://predation.jp/kari/33</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/32"/>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/34</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://predation.jp/kari/35</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://predation.jp/kari/36"/>
+    </url>
+        <url>
+        <loc>https://predation.jp/kari/36</loc>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://predation.jp/kari/35"/>
+    </url>
+        <url>
+        <loc>https://predation.jp/kari/37</loc>
+        <priority>0.5</priority>
+    </url>
+</urlset>

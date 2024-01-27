@@ -13,6 +13,8 @@
     "Official Art": {"relatedprint": ["オフィシャルアート"], "created": "01-01-2024","langlib": ["オフィシャルアート"],"class": ["ArtType"]},
     "Mofu Naori Grass": {"relatedprint": ["モフナオリグラス"], "created": "01-01-2024","langlib": ["モフナオリグラス"],"class": ["Flora"]},
     "Red Spider Lily": {"relatedprint": ["彼岸花"], "created": "01-01-2024","langlib": ["彼岸花"],"class": ["Flora"]},
+    "EOC Era Flora": {"relatedprint": [""], "created": "01-22-2024","langlib": [""],"class": ["Flora"]},
+    "AOD Explosive Thorns": {"relatedprint": ["Bird Control Spikes"], "created": "01-22-2024","langlib": [""],"class": ["Flora"]},
     "Fox": {"relatedprint": ["キツネ"], "created": "01-01-2024","langlib": ["キツネ"],"class": ["Animals"]},
     "Cat": {"relatedprint": ["ネコ"], "created": "01-01-2024","langlib": ["ネコ"],"class": ["Animals"]},
     "Spotted Hyena": {"relatedprint": ["ハイエナ"], "created": "01-01-2024","langlib": ["ハイエナ"],"class": ["Animals"]},
@@ -35,8 +37,8 @@
     "Pink Eyes": {"relatedprint": ["ピンクの目"], "created": "01-01-2024","langlib": ["ピンクの目"],"class": ["EyeColor"]},
     "Unnamed": {"relatedprint": ["名称未設定"], "created": "01-01-2024","langlib": ["名称未設定"],"class": ["Characters"]},
     "Primal Samsara": {"relatedprint": ["ライマルサムサラ"], "created": "01-07-2024","langlib": ["ライマルサムサラ"],"class": ["Manga"]},
-    "Episode 1": {"relatedprint": ["第1話"], "created": "01-07-2024","langlib": ["第1話"],"class": ["Manga"], "set": [9,10,11]},
-    "Episode 2": {"relatedprint": ["第2話"], "created": "01-12-2024","langlib": ["第2話"],"class": ["Manga"], "set": [18]},
+    "Episode 1": {"relatedprint": ["第1話"], "created": "01-07-2024","langlib": ["第1話"],"class": ["Manga"], "set": [[9, 10, 11], [21, 22, 23]]},
+    "Episode 2": {"relatedprint": ["第2話"], "created": "01-12-2024","langlib": ["第2話"],"class": ["Manga"], "set": [[37, 18, 30, 33], [37, 27, 31, 32]]},
     "Ryoko": {"relatedprint": ["涼子"], "created": "01-01-2024","langlib": ["涼子"],"class": ["Characters"]},
     "Avani": {"relatedprint": ["アヴァニ"], "created": "01-01-2024","langlib": ["アヴァニ"],"class": ["Characters"]},
     "Shiro": {"relatedprint": ["シロ"], "created": "01-01-2024","langlib": ["シロ"],"class": ["Characters"]},
@@ -55,5 +57,8 @@
     "Mekazoan": {"relatedprint": [], "created": "01-10-2024","langlib": ["Mekazoan"],"class": ["Maturity"]},
     "Nirvana": {"relatedprint": [], "created": "01-10-2024","langlib": ["涅槃"],"class": ["Maturity"]},
     "EN": {"relatedprint": ["English"], "created": "01-13-2024","langlib": ["EN"],"class": ["LangVersion"]},
-    "JA": {"relatedprint": ["Japanese"], "created": "01-13-2024","langlib": ["JA"],"class": ["LangVersion"]}
+    "JA": {"relatedprint": ["Japanese"], "created": "01-13-2024","langlib": ["JA"],"class": ["LangVersion"]},
+    "Japanese Translation by Xalsier": {"relatedprint": [""], "created": "01-19-2024","langlib": [""],"class": ["TransVersion"]},
+    "Japanese Translation by DeepL": {"relatedprint": [""], "created": "01-19-2024","langlib": [""],"class": ["TransVersion"]},
+    "Japanese Translation by ChatGPT": {"relatedprint": [""], "created": "01-19-2024","langlib": [""],"class": ["TransVersion"]}
 }

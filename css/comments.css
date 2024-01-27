@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1017;
+}
+
+#comment-section {
+    width: 60%;
+    margin: auto;
+}
+
+#input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+#comments {
+    color: white;
+}
+
+.fields button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff8800; /* Pastel Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#input-section #animal,
+#input-section #post-comment,
+#input-section #toggle-comments,
+#input-section #toggle-refresh {
+    width: 100%;
+    margin: 5px 0;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#toggle-refresh {
+    font-size: 1.7em;
+}
+
+#input-section #animal {
+    background-color: #1F2738;
+    border: transparent;
+    color: white;
+}
+
+#input-section #comment {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#input-section #post-comment {
+    background-color: #ff8800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment {
+    background-color: #1F2738;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    text-align: left;
+}
+
+.comment strong {
+    color:rgb(255, 119, 0);
+}
+
+#comment {
+    background-color: #1F2738;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    text-align: left;
+}
+
+.comment.right-align {
+    text-align: right;
+}
+
+#pagination {
+    justify-content: center;
+}
+
+#pagination button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#pagination button:hover {
+    color: rgb(255, 119, 0);
+}

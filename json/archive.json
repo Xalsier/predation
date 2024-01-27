@@ -1,8 +1,8 @@
 {
     "1": {
         "type": "gazo",
-        "langtype": "en",
-        "title": "POV Shiro Is About To Step On You",
+        "langtype": "ja",
+        "title": "シロ",
         "urls": ["../Gallery/recolorshirofoot.png", 
                 "https://imagedelivery.net/Xdq2Grp67bIauBTFAwfNJg/576b864f-7924-4fa2-2266-670c4c559200/public"],
         "time": "12-30-2023",
@@ -14,7 +14,8 @@
             "Female",
             "White Fur",
             "Pink Eyes",
-            "EN"
+            "JA",
+            "Japanese Translation by Xalsier"
         ]
     },
     "2": {
@@ -301,8 +302,8 @@
     "18": {
         "type": "manga",
         "langtype": "en",
-        "title": "Ep 2. Can't Read",
-        "urls": ["../Pages/EP2/EN005.png"],
+        "title": "Ep 2. Page 3",
+        "urls": ["../Pages/EP2/EN005.PNG"],
         "time": "01-12-2024",
         "pawprints": [
             "Xalsier",
@@ -353,7 +354,8 @@
             "Female",
             "Brown Fur",
             "Yellow Eyes",
-            "JA"
+            "JA",
+            "Japanese Translation by ChatGPT"
         ]
     },
     "22": {
@@ -377,7 +379,8 @@
             "Brown Fur",
             "Yellow Eyes",
             "Pink Eyes",
-            "JA"
+            "JA",
+            "Japanese Translation by ChatGPT"
         ]
     },
     "23": {
@@ -397,7 +400,8 @@
             "White Fur",
             "Female",
             "Pink Eyes",
-            "JA"
+            "JA",
+            "Japanese Translation by ChatGPT"
         ]
     },
     "24": {
@@ -408,7 +412,8 @@
         "recipemarkdown": "../markdown/ja/ja_honey.md",
         "pawprints": [
             "Sera",
-            "JA"
+            "JA",
+            "Japanese Translation by DeepL"
         ]
     },
     "25": {
@@ -419,7 +424,8 @@
         "recipemarkdown": "../markdown/ja/ja_naori.md",
         "pawprints": [
             "Naori",
-            "JA"
+            "JA",
+            "Japanese Translation by DeepL"
         ]
     },
         "26": {
@@ -432,6 +438,175 @@
             "Primal Samsara",
             "EN",
             "Xalsier"
+        ]
+    },
+    "27": {
+        "type": "manga",
+        "langtype": "ja",
+        "title": "エピソード2 Pg 3",
+        "urls": ["../Pages/EP2/JA005.PNG"],
+        "time": "01-19-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Sera",
+            "Naori",
+            "Fox",
+            "Deer",
+            "JA",
+            "Japanese Translation by ChatGPT"
+        ]
+    },
+    "28": {
+        "type": "manga",
+        "langtype": "ja",
+        "title": "エピソード2",
+        "urls": ["../Pages/EP2/JA004.PNG"],
+        "time": "01-19-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Sera",
+            "Deer",
+            "JA",
+            "Japanese Translation by ChatGPT"
+        ]
+    },
+    "29": {
+        "type": "manga",
+        "langtype": "en",
+        "title": "Episode 2 title card (Sera)",
+        "urls": ["../Pages/EP2/EN004.PNG"],
+        "time": "01-19-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Sera",
+            "Deer",
+            "EN"
+        ]
+    },
+    "30": {
+        "type": "manga",
+        "langtype": "en",
+        "title": "Episode 2 Pg 4",
+        "urls": ["../Pages/EP2/EN006.PNG"],
+        "time": "01-19-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Naori",
+            "Fox",
+            "Sera",
+            "Deer",
+            "EN"
+        ]
+    },
+    "31": {
+        "type": "manga",
+        "langtype": "ja",
+        "title": "エピソード2 Pg 4",
+        "urls": ["../Pages/EP2/JA006.PNG"],
+        "time": "01-19-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Naori",
+            "Fox",
+            "Sera",
+            "Deer",
+            "JA",
+            "Japanese Translation by ChatGPT"
+        ]
+    },
+    "32": {
+        "type": "manga",
+        "langtype": "ja",
+        "title": "エピソード2 Pg 5",
+        "urls": ["../Pages/EP2/JA007.png"],
+        "time": "01-22-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Naori",
+            "Fox",
+            "Sera",
+            "Deer",
+            "JA",
+            "Japanese Translation by ChatGPT"
+        ]
+    },
+    "33": {
+        "type": "manga",
+        "langtype": "en",
+        "title": "Episode 2 Pg 5",
+        "urls": ["../Pages/EP2/EN007.png"],
+        "time": "01-22-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Naori",
+            "Fox",
+            "Sera",
+            "Deer",
+            "EN"
+        ]
+    },
+    "34": {
+        "type": "lore",
+        "langtype": "en",
+        "urls": [""],
+        "time": "01-22-2024",
+        "recipemarkdown": "../markdown/en/pinch.md",
+        "pawprints": [
+            "EN",
+            "EOC Era Flora",
+            "AOD Explosive Thorns"
+        ]
+    },
+    "35": {
+        "type": "lore",
+        "langtype": "en",
+        "urls": [""],
+        "time": "01-23-2024",
+        "recipemarkdown": "../markdown/en/illusion.md",
+        "pawprints": [
+            "EN"
+        ]
+    },
+    "36": {
+        "type": "lore",
+        "langtype": "jp",
+        "urls": [""],
+        "time": "01-25-2024",
+        "recipemarkdown": "../markdown/ja/ja_illusion.md",
+        "pawprints": [
+            "JA",
+            "Japanese Translation by DeepL"
+        ]
+    },
+    "37": {
+        "type": "manga",
+        "langtype": "en-jp",
+        "title": "Episode 2 Redraw",
+        "urls": ["../Pages/EP2/sera37.png"],
+        "time": "01-25-2024",
+        "pawprints": [
+            "Xalsier",
+            "Primal Samsara",
+            "Episode 2",
+            "Sera",
+            "Deer",
+            "EN",
+            "JA",
+            "Japanese Translation by Xalsier"
         ]
     }
 }
