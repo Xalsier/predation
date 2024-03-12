@@ -1,7 +1,7 @@
 $(document).ready(function() {
     const returnSelector = '.return';
     const logoImage = document.getElementById("LogoBTN");
-
+    console.log("Running");
 
     $('footer').hide();
     $('nav').hide();
@@ -16,10 +16,12 @@ $(document).ready(function() {
         window.refreshChapter();
         window.updateCommentCount();
         window.fetchComments();
-        window.renderChapter(window.currentChapter); // Call renderChapter only if chapters are available
+        window.renderChapter(window.currentChapter);
         window.setRandomAnimal(); 
         window.updateLastUpdated();
-        logoImage.src = "../Assets/nosquidy.png";
+        // Latest issues start from here.
+        console.log("https://predation.jp/Assets/nosquidy.png")
+        logoImage.src = "https://predation.jp/Assets/nosquidy.png";
 
     });
 

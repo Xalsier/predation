@@ -49,14 +49,17 @@ $(document).ready(function() {
         const languageKey = currentLanguageIndex; 
     
         const chapter = chapters.find(chap => chap.chapter === chapterNumber); 
-    
+        console.log(chapter); 
+
         if (chapter) { 
             // Author Note
             const originalAuthorNotePath = chapter.authorNotePath[languageKey][0]; 
+            console.log("Fetching author note:", originalAuthorNotePath);
             fetchAndRender(originalAuthorNotePath, authorNoteSelector);
     
             // Chapter Content
             const originalChapterContentPath = chapter.chapterContentPath[languageKey][0]; 
+            console.log("Fetching chapter content:", originalChapterContentPath);
             fetchAndRender(originalChapterContentPath, chapterContentSelector);
     
             // Image Handling 
@@ -65,7 +68,7 @@ $(document).ready(function() {
                 const artPath = chapterArt[0][0]; // Extract the first element of the first array element
                 const alternatePath = `https://predation.jp/${artPath.replace('../', '')}`;
 
-                $(chapterArtSelector).attr('src', alternatePath).attr('alt', art[1]);
+                $(chapterArtSelector).attr('src', alternatePath).attr('alt', chapterArt[1]);
                 $('.actual_credit').text(chapterArt[0][2]); 
             }
         } else {
@@ -80,7 +83,7 @@ $(document).ready(function() {
     async function fetchAndRender(path, selector) {
         try {
             const response = await fetch(path);
-            if (!response.ok) {
+            if (response.ok) {
                 const alternatePath = `https://predation.jp/${path.replace('../', '')}`;
                 const alternateResponse = await fetch(alternatePath);
                 if (!alternateResponse.ok) { 
