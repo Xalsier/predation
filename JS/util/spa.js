@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    const returnSelector = '.return';
     const logoImage = document.getElementById("LogoBTN");
     console.log("Running");
 
@@ -19,20 +18,12 @@ $(document).ready(function() {
         window.renderChapter(window.currentChapter);
         window.setRandomAnimal(); 
         window.updateLastUpdated();
-        // Latest issues start from here.
-        console.log("https://predation.jp/Assets/nosquidy.png")
         logoImage.src = "https://predation.jp/Assets/nosquidy.png";
 
     });
 
     $('.show-comments').click(function() {
         $('.comment-section').show();
-    });
-
-    $(document).on("click", returnSelector, function() {
-        $('main').animate({
-            scrollTop: 0
-        }, "slow");
     });
 
     $('#LogoBTN').click(function() {
@@ -93,4 +84,9 @@ $(document).ready(function() {
 
     $('#WebnovelBTN').click(showWebnovel);
     $('#CalendarBTN').click(showCalendar);
+});
+$('#return-btn').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 'slow');
 });

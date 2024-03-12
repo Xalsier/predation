@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja"> 
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://en.predation.jp/Assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プリマル・サムサーラ： プレデーションの危険</title> 
+    <meta name="description" content="捕食の黄金時代、ナオリは最初の狩りに乗り出します。"> 
+    <meta property="og:title" content="プリマル・サムサーラ： プレデーションの危険"> 
+    <meta property="og:image" content="https://en.predation.jp/Assets/nosquidy.png" />
+    <meta property="og:description" content="捕食の黄金時代、ナオリは最初の狩りに乗り出します。"> 
+    <link rel="stylesheet" href="https://en.predation.jp/CSS/style.css"> 
+</head>
+
+<body>
+    <div id="modal-overlay" style="display: none;">
+        <div id="modal" tabindex="-1">
+            <!-- Content sections for each language, initially hidden except for the selected language -->
+            <div id="content-ja" class="content">
+                <p id="preface1">序文</p>
+                <p id="preface2">ご注意ください、このサイトはバグがある可能性があります。モバイルフレンドリーにするために（再び）一からコードを書き直しましたが、もし物事が期待通りに動作しない場合は、<a href="https://twitter.com/zarushia" target="_blank">Twitter / X</a> で教えてください。</p>
+                <p id="preface3">現時点では、一部の機能は動作しません。ギャラリー、翻訳、さらには統計もです。これらは修正されることを約束します。</p>
+                <p id="preface4">第1章の初稿を読みたい場合は、読むことができます。また、コメントすることも可能にしました。^-^</p>
+                <p id="preface5">-- ザルシア</p> 
+            </div>                                
+            <div class="button-container">
+                <button id="continue-btn">続ける</button>
+                <button id="leave-btn">去る</button>
+            </div>
+        </div>
+    </div>
+    <main id="main-content">
+        <header>
+            <img loading="lazy" id="LogoBTN" class="headerlogo" alt="Primal Samsara プライマルサムサラ" width="400px" height="242">
+            <nav>
+                <button id="WebnovelBTN">Webnovel</button>
+                <button id="CalendarBTN">Calendar</button>
+                <button id="IssueRoadmapBTN">Issue Roadmap</button>
+            </nav>
+        </header>
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button id="prevMonth">◀ 前</button>
+                <div class="current-date">
+                    <strong id="monthAndYear"></strong> 
+                </div>            
+                <button id="nextMonth">次 ▶</button> 
+            </div>
+    
+            <div class="calendar-body">
+                <div class="calendar-weekdays">
+                    <div>日</div> <div>月</div> <div>火</div> <div>水</div> <div>木</div> <div>金</div> <div>土</div> </div>
+                
+                <div class="calendar-days"></div>
+            </div>
+            <div class="status-updates">
+                <span class="update-item">
+                  <span class="circle chapter"></span> Chapter Updates
+                </span>
+            
+              
+                <span class="update-item">
+                  <span class="circle site-update"></span> Site Update
+                </span>
+              </div>
+              
+          </div>
+
+          <div class="summary_card">
+                <label style="opacity: 0.5;" id="2select-lang"for="language-select">Select Language:</label> 
+                <select name="languages" id="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ja" selected>日本語</option>
+                    <option value="ko">한국어</option>
+                </select>
+                <!-- English content -->
+                <div id="summary-content-ja" class="summary-content" style="display: none;"> 
+                    <h2 id="summary-title">プライマル・サムサーラ: プレデーションのリスク</h2> 
+                    <p id="summary-blurb">捕食の黄金時代に、ナオリはシロとセラの保護なしに彼らの最初の狩りを始めます。リョウとハイエナの野心が大きくなると、セラの祖先が石に包まれた古い守られた修道院を再訪する機会が残されます。</p> 
+                    <p> 
+                        <strong id="summary-stat1">著者:</strong> Xalsier | 
+                        <strong id="summary-stat2">最終更新日:</strong> <span id="last-updated">?</span> |  
+                        <strong id="summary-stat3">コメント:</strong> <span id="comment-count">?</span> |  
+                        <strong id="summary-stat4">編集:</strong> <span id="edit-count">?</span> |  
+                        <strong id="summary-stat5">言葉:</strong> 6629 |  
+                        <strong id="summary-stat6">章:</strong> <span id="chapter-count">?</span>/? |  
+                        <strong id="summary-stat7">アップロードしました:</strong> 02-27-2024 
+                    </p> 
+                    <div class="tag-container"> 
+                        <span id="content-tag1">評価なし</span> 
+                        <span id="content-tag2">ファーリーソウルズライク</span> 
+                        <span id="content-tag3">グラフィックバイオレンス</span> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="comments_nav_1" class="novel_nav">
+            <button id="prev-chapter"class="prev-chapter">Prev Chapter</button>
+            <button id="next-chapter"class="next-chapter">Next Chapter</button>
+        </div>
+        <div class="art-and-note-container">  
+            <div class="author_note"></div>
+            <div class="art_container">
+            <img loading="lazy" id="chapter_art" class="chapter_art" src="" alt="Image">
+            <div class="content-wrapper">
+                <div class="credit-container">
+                    <strong id="artwork-by">Artwork by: </strong>
+                    <p class="actual_credit"></p>
+                </div>
+            </div>
+        </div>
+    
+ </div>
+
+        
+        <div class="chapter_content"></div>
+        <div id="comments_nav_2" class="novel_nav">
+            <button id="show-com" class="show-comments available">Show Comments</button>
+            <button id="return-btn" class="return">Return</button>
+        </div>
+        <div class="comment-section" style="display: none;">
+            <div id="comment-section">
+                <div id="input-section">
+                    <div class="fields">
+                        <input type="text" id="animal" required>
+                        <button id="post-comment">Post</button>
+                    </div>
+                    <textarea id="comment" required></textarea>
+                </div>
+                <div id="pagination"></div>
+                <div id="comments"></div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">プリマル・サムサーラ © ザルシアキツネ。 全著作権所有。 背景画：ディミ。 ロゴ画：ユウキ。</p>        
+            <ul class="contact-links" style="text-align: left;">
+                <li style="color: white;">Twitter / X: <a href="https://twitter.com/zarushia">ザルシア</a></li>
+                <li style="color: white;">サイトのGithub: <a href="https://github.com/Xalsier/predation">predation</a></li>
+                <li style="color: white;">問い合わせ先 (Eメール): <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <script src="https://en.predation.jp/JS/lib/jquery.js"></script>
+    <script src="https://en.predation.jp/JS/util/script.js"></script>
+    <script src="https://en.predation.jp/JS/util/color.js"></script>
+    <script src="https://en.predation.jp/JS/dat/events.js"></script>
+    <script src="https://en.predation.jp/JS/util/spa.js"></script>
+    <script type="module" src="https://en.predation.jp/JS/mod/uptrans.js" ></script>
+    <script type="module" src="https://en.predation.jp/JS/mod/chapter.js" ></script>
+    <script type="module" src="https://en.predation.jp/JS/mod/index.js"></script>
+</body>
+</html>

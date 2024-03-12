@@ -21,7 +21,16 @@ export function getTranslations(languageCode) {
                 'preface5' : '-- Xalsier',
                 'content-tag1' : 'Not Rated',
                 'content-tag2' : 'Furry Soulslike',
-                'content-tag3' : 'Graphic Violence'  
+                'content-tag3' : 'Graphic Violence',
+                'summary-stat1': 'Author:',  
+                'summary-stat2': 'Last Updated:', 
+                'summary-stat3': 'Comments:', 
+                'summary-stat4': 'Edits:', 
+                'summary-stat5': 'Words:', 
+                'summary-stat6': 'Chapters:', 
+                'summary-stat7': 'Uploaded:', 
+                'summary-blurb': "During the Golden Age of Predation, Naori embarks on their first hunt- without the protection of Shiro and Sera. With the ambitions of Ryo and the Hyena's set high, an opportunity is left open at revisiting the old guarded monastery where Chief Avali found Sera's ancestor, encased in stone.", 
+                'summary-title': 'Primal Samsara: Risk of Predation', 
             };
             case 'es': // Gemini Translations
                 return {
@@ -44,8 +53,17 @@ export function getTranslations(languageCode) {
                     'preface5' : '-- Xalsier',
                     'content-tag1' : 'Sin calificación', 
                     'content-tag2' : 'Furry Soulslike', 
-                    'content-tag3' : 'Violencia gráfica'  
-                };
+                    'content-tag3' : 'Violencia gráfica',
+                    'summary-stat1': 'Autor:', // Author
+                    'summary-stat2': 'Última actualización:', // Last Updated
+                    'summary-stat3': 'Comentarios:', // Comments
+                    'summary-stat4': 'Ediciones:', // Edits 
+                    'summary-stat5': 'Palabras:', // Words
+                    'summary-stat6': 'Capítulos:', // Chapters
+                    'summary-stat7': 'Subido:', // Uploaded
+                    'summary-blurb': 'Durante la Edad de Oro de la Depredación, Naori se embarca en su primera cacería, sin la protección de Shiro y Sera. Con las ambiciones de Ryo y las hienas en alto, se deja una oportunidad abierta para volver a visitar el antiguo monasterio vigilado donde el Jefe Avali encontró al antepasado de Sera, encerrado en piedra.',  // Summary Blurb - Needs Spanish
+                    'summary-title': 'Samsara Primordial: Riesgo de Depredación', // Summary Title - Needs Spanish
+                }; 
     
         case 'ja':
             return { // Translations added by Gemini AI
@@ -68,7 +86,16 @@ export function getTranslations(languageCode) {
                 'preface5' : '-- ザルシア',
                 'content-tag1' : '評価なし',
                 'content-tag2' : 'ファーリーソウルズライク',
-                'content-tag3' : 'グラフィックバイオレンス'                    
+                'content-tag3' : 'グラフィックバイオレンス',
+                'summary-stat1': '著者: ', // Author
+                'summary-stat2': '最終更新日: ', // Last Updated
+                'summary-stat3': 'コメント: ', // Comments
+                'summary-stat4': '編集: ', // Edits
+                'summary-stat5': '言葉: ', // Words
+                'summary-stat6': '章: ', // Chapters
+                'summary-stat7': 'アップロードしました: ', // Uploaded 
+                'summary-blurb': '捕食の黄金時代に、ナオリはシロとセラの保護なしに彼らの最初の狩りを始めます。リョウとハイエナの野心が大きくなると、セラの祖先が石に包まれた古い守られた修道院を再訪する機会が残されます。', // Summary Blurb - Needs Japanese
+                'summary-title': 'プライマル・サムサーラ: プレデーションのリスク',  // Summary Title - 
             };
         case 'ko':
             return { // Translations added by Gemini AI
@@ -91,7 +118,16 @@ export function getTranslations(languageCode) {
                 'preface5' : '-- Xalsier',
                 'content-tag1' : '평가 없음',
                 'content-tag2' : '리 소울즈라이크',
-                'content-tag3' : '그래픽 폭력'              
+                'content-tag3' : '그래픽 폭력',
+                'summary-stat1': '저자:', // Author
+                'summary-stat2': '마지막 업데이트 날짜:', // Last Updated
+                'summary-stat3': '댓글:', // Comments
+                'summary-stat4': '수정:', // Edits 
+                'summary-stat5': '단어:', // Words
+                'summary-stat6': '장:', // Chapters
+                'summary-stat7': '업로드됨:', // Uploaded
+                'summary-blurb': '포식의 황금時代に 나오리는 시로와 세라의 보호 없이 첫 번째 사냥을 시작합니다. 료와 하이에나의 야망이 높아지면서 세라의 조상이 돌에 싸인 채로 발견된 오래된 수도원을 다시 방문할 수 있는 기회가 열려 있습니다.', // Summary Blurb - Needs Korean
+                'summary-title': '원시 삼사라: 약탈의 위험',   
             };
         default:
             return {}; 
