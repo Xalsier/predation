@@ -1,4 +1,4 @@
-import { getTranslations } from '../dat/site-ts.js';
+import { getTranslations } from '../dat/site-ts.js?12345';
 function updateTranslations(languageCode) {
     const translations = getTranslations(languageCode);
     // Update elements based on their IDs and translation keys
