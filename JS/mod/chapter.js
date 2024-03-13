@@ -228,7 +228,7 @@ function updateLastUpdated() {
 
     document.querySelector('#last-updated').textContent = message;
 }
-window.updateLastUpdated = updateLastUpdated;
+// window.updateLastUpdated = updateLastUpdated;
 function updateNavButtons() {
     const currentIndex = chapters.findIndex(chap => chap.chapter === window.currentChapter);
     const hasNextChapter = currentIndex < chapters.length - 1;
