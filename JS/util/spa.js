@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#continue-btn').click(function() {
-        $('#modal-overlay').hide();
         $('#modal-overlay').empty();
+        $('#modal-overlay').hide();
         $('#main-content').show();
         $('footer').show();
         $('#LogoBTN').trigger('click'); 
