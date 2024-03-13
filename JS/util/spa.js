@@ -1,76 +1,78 @@
 console.log("Running");
-$('#continue-btn').click(function() {
-    $('#modal-overlay').empty();
-    $('#modal-overlay').hide();
-    $('#main-content').show();
-    $('footer').show();
-    $('#LogoBTN').trigger('click'); 
-    // window.refreshChapter();
-    window.updateCommentCount();
-    window.updateLastUpdated();
+document.getElementById('continue-btn').addEventListener('click', async function() {
+    // Execute scripts by appending script tags to the document
+    const scriptsToLoad = ['../JS/lib/jquery.js','../JS/mod/uptrans.js', '../JS/mod/chapter.js', '../JS/mod/index.js'];
+    scriptsToLoad.forEach(scriptPath => {
+        const script = document.createElement('script');
+        script.src = scriptPath;
+        script.type = 'module'; // Mark script as module to support import/export
+        document.body.appendChild(script);
+    });
+    
+    // Wait for a brief moment before executing functions dependent on these scripts
+    await new Promise(resolve => setTimeout(resolve, 100)); // Adjust delay as needed
+
+    if (typeof window.updateCommentCount === 'function') {
+        window.updateCommentCount();
+    }
+
+    if (typeof window.updateLastUpdated === 'function') {
+        window.updateLastUpdated();
+    }
+
+    document.getElementById('modal-overlay').innerHTML = '';
+    document.getElementById('modal-overlay').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    document.querySelector('footer').style.display = 'block';
+    document.getElementById('LogoBTN').click(); 
 });
 
-$('.show-comments').click(function() {
-    window.setRandomAnimal(); 
-    window.fetchComments();
-    $('.comment-section').show();
+
+document.querySelectorAll('.show-comments').forEach(item => {
+    item.addEventListener('click', function() {
+        window.setRandomAnimal(); 
+        window.fetchComments();
+        document.querySelector('.comment-section').style.display = 'block';
+    });
 });
 
-$('#LogoBTN').click(function() {
-    $('nav').show();
-    $('#modal-overlay').show();
+document.getElementById('LogoBTN').addEventListener('click', function() {
+    document.querySelector('nav').style.display = 'flex';
+    document.getElementById('modal-overlay').style.display = 'block';
 
     // Move header inside #modal-overlay
-    const header = $('header').detach(); // Detach to preserve data/events
-    $('#modal-overlay').append(header);
-    const footer = $('footer').detach(); // Detach to preserve data/events
-    $('#modal-overlay').append(footer);
-    // Setup
-    $('#main-content').hide();
-    // Webnovel
-    $('.summary_card').hide();
-    $('.novel_nav').hide();
-    $('.art-and-note-container').hide();
-    $('.content-wrapper').hide();
-    $('.chapter_content').hide();
-    $('.comment_section').hide();
-    // Calendar
-    $('.calendar-container').hide();
-    // Footer
-    $('footer').show();
+    const header = document.querySelector('header'); 
+    document.getElementById('modal-overlay').appendChild(header);
+    const footer = document.querySelector('footer'); 
+    document.getElementById('modal-overlay').appendChild(footer);
+    document.querySelector('.footer-content').style.display = 'block';
+    document.getElementById('main-content').style.display = 'none';
+    document.querySelectorAll('.summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
+    document.querySelector('.calendar-container').style.display = 'none';
+    document.querySelector('footer').style.display = 'flex';
 });
 
 function showWebnovel() {
-    $('nav').hide();
-    // Move header back to #main-content
-    const header = $('header').detach();
-    $('#main-content').prepend(header);
-    $('#modal-overlay').hide();
-    $('#main-content').show();
-
-    $('.summary_card').show();
-    $('.novel_nav').show();
-    $('.art-and-note-container').show();
-    $('.content-wrapper').show();
-    $('.chapter_content').show();
-    $('.comment_section').show();
-
-    $('.calendar-container').hide();
-    $('.twitter-tweet').hide();
-    $('footer').hide();
+    document.querySelector('nav').style.display = 'none';
+    const header = document.querySelector('header');
+    document.getElementById('main-content').prepend(header);
+    document.getElementById('modal-overlay').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    document.querySelectorAll('.summary_card, .novel_nav, .chapter_content, .comment_section').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.art-and-note-container').forEach(el => el.style.display = 'flex');
+    document.querySelector('.calendar-container').style.display = 'none';
+    document.querySelector('footer').style.display = 'none';
 }
 
 function showCalendar() {
-    $('nav').hide();
-    // Move header back to #main-content
-    const header = $('header').detach();
-    $('#main-content').prepend(header);
-    $('#modal-overlay').hide();
-    $('#main-content').show();
-    $('.twitter-tweet').show();
-    $('.calendar-container').show();
-    $('footer').hide();
+    document.querySelector('nav').style.display = 'none';
+    const header = document.querySelector('header');
+    document.getElementById('main-content').prepend(header);
+    document.getElementById('modal-overlay').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    document.querySelector('.calendar-container').style.display = 'block';
+    document.querySelector('footer').style.display = 'none';
 }
 
-$('#WebnovelBTN').click(showWebnovel);
-$('#CalendarBTN').click(showCalendar);
+document.getElementById('WebnovelBTN').addEventListener('click', showWebnovel);
+document.getElementById('CalendarBTN').addEventListener('click', showCalendar);

@@ -29,26 +29,15 @@
 }
 
 .art_container {
-    width: 25%; /* Allow some space for the author note */
-}
-
-/* Media query for mobile (adjust as needed) */
-@media (max-width: 768px) { 
-    .art-and-note-container {
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    .art_container, .author_note {
-        width: 100%; /* Make both elements take full width */
-        margin-bottom: 20px; 
-    }
+    flex: 1 0 25%;  /* Allow flex to grow, but no shrink, start at 25% width */
+    margin-bottom: 20px; /* Add margin */
 }
 
 .chapter_art {
     cursor: pointer;
     border-radius: 5px;
     display: block; /* Makes sure the image is block level for margin auto to work */
-    width: 100%; /* Sets the image width to 50% of its containing element */
+    width: 80%; /* Sets the image width to 50% of its containing element */
     margin: 0 auto; /* Centers the image horizontally */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
     transition: transform 0.3s ease; /* Smooth transition for scaling effect */
@@ -59,21 +48,12 @@
   }
 
   .author_note {
+    flex: 1 0 65%;  /* Allow flex to grow, but no shrink, start at 65% width */
     background-color: #16171ad0;
     color: white;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; 
-    font-style: italic;
-    width: 65%; /* Make it similar in width to the art */
-}
-
-.author_note {
-    background-color: #16171ad0;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin */
     font-style: italic;
 }
