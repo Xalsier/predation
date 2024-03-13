@@ -8,7 +8,9 @@ $(document).ready(function() {
     const commentsSelector = '.comment-section';
     const showCommentsSelector = '.show-comments';
     const chapterArtSelector = '#chapter_art';
-    window.currentLanguageIndex = 'en'; // Default to English ('en' = English, 'ja' = Japanese, 'ko' = Korean)
+    const currentLanguage = $("#language-select").val(); 
+    console.log(currentLanguage)
+    window.currentLanguageIndex = currentLanguage;
     window.currentChapter = 1; // This is correctly set to a chapter number directly.
     chapters = webnovel.chapters; 
     window.renderChapter = renderChapter;
