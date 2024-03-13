@@ -1,0 +1,149 @@
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px;
+    padding: 0 20px;
+}
+
+footer p, footer label {
+    margin: 0 0 10px 0;
+    color: #9b9b9b;
+}
+
+footer a {
+    color: #FF4D4D;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+select {
+    margin-top: 10px;
+}
+
+.available {
+    background-color: #FF4D4D;
+}
+
+.prev-chapter:hover, 
+.next-chapter:hover, 
+.show-comments:hover,
+.return:hover,
+.continue_novel:hover {
+    background-color: #555555;
+}
+
+
+
+
+
+
+
+
+
+.continue_novel {
+    margin-top: 20px;
+    order: 2;      
+    margin-bottom: 20px;                /* Display the button before the text */
+}
+
+.novel_nav {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;          /* Wraps to next line on smaller screens */
+}
+
+.prev-chapter, 
+.next-chapter, 
+.show-comments,
+.return,
+.continue_novel {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Styles for the scrollbar track */
+body::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+    border-radius: 5px; /* Roundness of the scrollbar */
+}
+
+/* Styles for the scrollbar thumb (the draggable part) */
+body::-webkit-scrollbar-thumb {
+    background-color: #FF4D4D; /* Red color for the scrollbar */
+    border-radius: 5px; /* Consistent roundness with the scrollbar track */
+}
+
+/* Optional: Styles for the scrollbar thumb when it's active or being hovered over */
+body::-webkit-scrollbar-thumb:hover {
+    background: #733434; /* Darker red when hovering */
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: #733434; /* Even darker red when clicking */
+}
+
+/* Optional: if you want to style the scrollbar track */
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 1); /* Transparent track, you can change it as needed */
+    border-radius: 5px;
+}
+
+#main-content {
+    color: #fff; /* White text */
+    padding: 40px;
+    min-height: 100vh;
+    display: none;
+
+}
+
+@media screen and (max-width: 600px) {
+    #main-content {
+        padding: 0;
+    }
+}
+
+body {
+    background-color: #000000;
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    margin: 0; /* Reset browser defaults */
+    background-image: 
+    radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 99%), 
+    url('../bg.webp'); /* Your background image URL */
+background-repeat: no-repeat;
+background-size: cover; /* Cover the entire background */
+background-attachment: fixed;
+background-position: center; /* Adjust if needed */
+z-index: 1;
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 500px) { 
+    body {
+        font-size: 15px; 
+    }
+}

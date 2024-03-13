@@ -1,0 +1,72 @@
+.tag-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 5px; 
+}
+
+.tag-container span {
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-weight: bold; 
+    background-color: #FF4D4D;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    white-space: nowrap; 
+    transition: background-color 0.3s ease;
+}
+
+p span {
+    background-color: transparent;
+    padding: 0px 0px;
+    color: white;
+    font-weight: normal; 
+    cursor: auto;
+}
+
+p span:hover {
+    background-color: transparent;
+    color: white;
+}
+
+span:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+@media (max-width: 500px) { 
+    span { 
+        font-size: 0.9em; 
+    }
+} 
+
+.tags {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;                /* Space between tags */
+    flex-wrap: wrap;          /* Wraps to next line on smaller screens */
+}
+
+.tags span {
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-weight: bold; /* Make text bold */
+    background-color: #FF4D4D;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.tags span:hover {
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.summary_card {
+    background-color: #16171ad0;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
