@@ -2,14 +2,21 @@
 <html lang="ja"> 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://en.predation.jp/Assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プリマル・サムサーラ： プレデーションの危険</title> 
     <meta name="description" content="捕食の黄金時代、ナオリは最初の狩りに乗り出します。"> 
     <meta property="og:title" content="プリマル・サムサーラ： プレデーションの危険"> 
-    <meta property="og:image" content="https://en.predation.jp/Assets/nosquidy.png" />
+    <meta property="og:image" content="log.webp" />
     <meta property="og:description" content="捕食の黄金時代、ナオリは最初の狩りに乗り出します。"> 
-    <link rel="stylesheet" href="https://en.predation.jp/CSS/style.css"> 
+    <link rel="stylesheet" href="../CSS/theme.css">
+    <link rel="stylesheet" href="../CSS/disclaimer.css">
+    <link rel="stylesheet" href="../CSS/navmodal.css">
+    <link rel="stylesheet" href="../CSS/comments.css" defer>
+    <link rel="stylesheet" href="../CSS/creditsnotes.css" defer>
+    <link rel="stylesheet" href="../CSS/summary.css" defer>
+    <link rel="stylesheet" href="../CSS/webnovel.css" defer>
+    <link rel="stylesheet" href="../CSS/calendar.css" defer>
     <script type="application/ld+json">
     {
     "@context": "http://schema.org",
@@ -45,7 +52,7 @@
     </div>
     <main id="main-content">
         <header>
-            <img loading="lazy" id="LogoBTN" class="headerlogo" alt="Primal Samsara プライマルサムサラ" width="400px" height="242">
+            <img src="log.webp" loading="lazy" id="LogoBTN" class="headerlogo" alt="Primal Samsara プライマルサムサラ" width="400px" height="242">
             <nav>
                 <button id="WebnovelBTN">Webnovel</button>
                 <button id="CalendarBTN">Calendar</button>
@@ -69,13 +76,13 @@
             </div>
             <div class="status-updates">
                 <span class="update-item">
-                  <span class="circle chapter"></span> Chapter Updates
-                </span>
-            
+                    <span class="circle chapter"></span> 最新話情報 
+              </span>
               
-                <span class="update-item">
-                  <span class="circle site-update"></span> Site Update
-                </span>
+              <span class="update-item">
+                    <span class="circle site-update"></span> サイト更新
+              </span>
+              
               </div>
               
           </div>
@@ -111,8 +118,8 @@
             </div>
         </div>
         <div id="comments_nav_1" class="novel_nav">
-            <button id="prev-chapter"class="prev-chapter">Prev Chapter</button>
-            <button id="next-chapter"class="next-chapter">Next Chapter</button>
+            <button id="prev-chapter"class="prev-chapter">前章</button>
+            <button id="next-chapter"class="next-chapter">次章</button>
         </div>
         <div class="art-and-note-container">  
             <div class="author_note"></div>
@@ -131,8 +138,8 @@
         
         <div class="chapter_content"></div>
         <div id="comments_nav_2" class="novel_nav">
-            <button id="show-com" class="show-comments available">Show Comments</button>
-            <button id="return-btn" class="return">Return</button>
+            <button id="show-com" class="show-comments available">コメントを見る</button>
+            <a style="text-decoration: none;" href="#" id="return-btn"  class="return">戻る</a>
         </div>
         <div class="comment-section" style="display: none;">
             <div id="comment-section">
@@ -165,7 +172,7 @@
     <script src="https://en.predation.jp/JS/util/script.js"></script>
     <script src="https://en.predation.jp/JS/util/color.js"></script>
     <script src="https://en.predation.jp/JS/dat/events.js"></script>
-    <script src="https://en.predation.jp/JS/util/spa.js"></script>
+    <script src="https://en.predation.jp/JS/util/spa.js" defer></script>
     <script type="module" src="https://en.predation.jp/JS/mod/uptrans.js" ></script>
     <script type="module" src="https://en.predation.jp/JS/mod/chapter.js" ></script>
     <script type="module" src="https://en.predation.jp/JS/mod/index.js"></script>

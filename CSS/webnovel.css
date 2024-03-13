@@ -1,0 +1,39 @@
+#modal p {
+    color: white;
+}
+
+strong {
+    color: #FF4D4D;
+}
+
+h2 {
+    color: #FF4D4D;
+}
+
+#modal a {
+    color: #FF4D4D;
+    text-decoration: none; /* Removes the underline */
+}
+
+.chapter_content {
+    background-color: #16171ad0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.chapter_content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.chapter_content p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.chapter_content strong {
+    color: #FF4D4D;
+}

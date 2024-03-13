@@ -23,17 +23,7 @@ $(document).ready(function() {
         }
     });
 
-    function fetchAndRender(path, selector) {
-        if ($(selector).length > 0) {
-            fetch(path)
-                .then(response => response.text())
-                .then(text => {
-                    const renderedHtml = simpleMarkdownParse(text);
-                    $(selector).html(renderedHtml);
-                })
-                .catch(error => console.error(`Error loading content from: ${path}`, error));
-        }
-    }
+
     
     function simpleMarkdownParse(text) {
         let html = text;
@@ -65,11 +55,17 @@ $(document).ready(function() {
             // Image Handling 
             const chapterArt = chapter.chapter_art;
             if (chapterArt && chapterArt.length > 0) {
-                const artPath = chapterArt[0][0]; // Extract the first element of the first array element
-                const alternatePath = `https://predation.jp/${artPath.replace('../', '')}`;
-
-                $(chapterArtSelector).attr('src', alternatePath).attr('alt', chapterArt[1]);
-                $('.actual_credit').text(chapterArt[0][2]); 
+                try {
+                    const artPath = chapterArt[0][0];
+                    $(chapterArtSelector).attr('src', artPath).attr('alt', chapterArt[1]);
+                    $('.actual_credit').text(chapterArt[0][2]); 
+                } catch {
+                    const artPath = chapterArt[0][0]; // Extract the first element of the first array element
+                    const alternatePath = `https://predation.jp/${artPath.replace('../', '')}`;
+    
+                    $(chapterArtSelector).attr('src', alternatePath).attr('alt', chapterArt[1]);
+                    $('.actual_credit').text(chapterArt[0][2]); 
+                }
             }
         } else {
             console.error('Chapter not found:', chapterNumber); 
@@ -82,6 +78,16 @@ $(document).ready(function() {
     
     async function fetchAndRender(path, selector) {
         try {
+            if ($(selector).length > 0) {
+                fetch(path)
+                    .then(response => response.text())
+                    .then(text => {
+                        const renderedHtml = simpleMarkdownParse(text);
+                        $(selector).html(renderedHtml);
+                    })
+                    .catch(error => console.error(`Error loading content from: ${path}`, error));
+            }
+        } catch (error) {
             const response = await fetch(path);
             if (response.ok) {
                 const alternatePath = `https://predation.jp/${path.replace('../', '')}`;
@@ -95,10 +101,6 @@ $(document).ready(function() {
                 const renderedHtml = simpleMarkdownParse(text);
                 $(selector).html(renderedHtml); 
             }
-        } catch (error) {
-            // Handle the error 
-            console.error(`Error loading content from both locations: ${path}`, error); 
-            // Consider setting a default image or showing an error message
         }
     }
     
