@@ -2,9 +2,6 @@ $(document).ready(function() {
     const logoImage = document.getElementById("LogoBTN");
     console.log("Running");
 
-    $('footer').hide();
-    $('nav').hide();
-    $('#modal-overlay').show();
 
     $('#continue-btn').click(function() {
         $('#modal-overlay').empty();

@@ -15,7 +15,7 @@ const webnovel = {
                                     "ko" : ["../Korean/risk_ko.md"] // Not Translated, Placeholder
                                 },
             "chapter_art": [
-                                ["../WebArt/fuwa.jpeg", "Fuwa looking over his shoulder.", "Xalsier"] // Replace with Max's when commission is finished
+                                ["../WebArt/38.webp", "Fuwa looking over his shoulder.", "Xalsier"] // Replace with Max's when commission is finished
                             ]
         
         },
