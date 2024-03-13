@@ -1,0 +1,742 @@
+.tag-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 5px; 
+}
+
+.tag-container span {
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-weight: bold; 
+    background-color: #FF4D4D;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    white-space: nowrap; 
+    transition: background-color 0.3s ease;
+}
+
+p span {
+    background-color: transparent;
+    padding: 0px 0px;
+    color: white;
+    font-weight: normal; 
+    cursor: auto;
+}
+
+p span:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.headerlogo {
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit-container {
+    display: inline-flex; /* Now behaves like an inline element with flex properties */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #16171a;
+}
+
+.content-wrapper {
+    text-align: center; /* Centers inline and inline-flex elements inside it */
+}
+/* Style for the new container */
+.art-and-note-container {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #16171ad0;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Distribute space around the elements */
+}
+
+.art_container {
+    width: 25%; /* Allow some space for the author note */
+}
+
+.author_note {
+    background-color: #16171ad0;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    font-style: italic;
+    width: 65%; /* Make it similar in width to the art */
+}
+
+/* Media query for mobile (adjust as needed) */
+@media (max-width: 768px) { 
+    .art-and-note-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .art_container, .author_note {
+        width: 100%; /* Make both elements take full width */
+        margin-bottom: 20px; 
+    }
+}
+
+
+.chapter_art {
+    cursor: pointer;
+    border-radius: 5px;
+    display: block; /* Makes sure the image is block level for margin auto to work */
+    width: 100%; /* Sets the image width to 50% of its containing element */
+    margin: 0 auto; /* Centers the image horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+  }
+  
+  .chapter_art:hover {
+    transform: scale(1.05); /* Scales the image up slightly when hovered */
+  }
+  
+span:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+@media (max-width: 500px) { 
+    span { 
+        font-size: 0.9em; 
+    }
+} 
+
+body {
+    background-color: #1F2738;
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    margin: 0; /* Reset browser defaults */
+}
+
+
+@media (max-width: 500px) { 
+    body {
+        font-size: 15px; 
+    }
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback semi-transparent background */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+
+    /* Background Image Properties */
+}
+
+
+
+#modal {
+    background-color: #1F2738;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 2; /* Above the overlay */
+}
+
+#modal p {
+    color: white;
+}
+
+strong {
+    color: #FF4D4D;
+}
+
+h2 {
+    color: #FF4D4D;
+}
+
+#modal a {
+    color: #FF4D4D;
+    text-decoration: none; /* Removes the underline */
+}
+
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #f1f1f1;
+}
+
+#continue-btn, #leave-btn  {
+    background-color: #FF4D4D;
+    color: #000000;
+}
+
+#continue-btn:hover, #leave-btn:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+
+#main-content {
+    color: #fff; /* White text */
+    padding: 40px;
+    min-height: 100vh;
+    display: none;
+    background-image: url('../Assets/sera.webp'); /* Adjust the path as needed */
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    background-size: cover;        /* Scale the image to cover the entire overlay */
+    background-attachment: fixed;  /* Keep the image fixed in place */
+
+}
+
+@media screen and (max-width: 600px) {
+    #main-content {
+        padding: 0;
+    }
+}
+
+
+.navigation-buttons button {
+    background-color: #FF4D4D; /* Red background */
+    color: #fff; /* White text */
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    background-color: #FF6A6A; /* Lighter red on hover */
+}
+
+.chapter-navigation button {  
+    background-color: #4DFF4D; /* Green background */
+    color: #000; /* Black text */
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.chapter-navigation button:hover {
+    background-color: #6AFF6A; /* Lighter green on hover */
+}
+
+
+
+
+
+
+
+/* Styles for the scrollbar track */
+body::-webkit-scrollbar {
+    width: 15px; /* Width of the scrollbar */
+    border-radius: 5px; /* Roundness of the scrollbar */
+}
+
+/* Styles for the scrollbar thumb (the draggable part) */
+body::-webkit-scrollbar-thumb {
+    background-color: #FF4D4D; /* Red color for the scrollbar */
+    border-radius: 5px; /* Consistent roundness with the scrollbar track */
+}
+
+/* Optional: Styles for the scrollbar thumb when it's active or being hovered over */
+body::-webkit-scrollbar-thumb:hover {
+    background: #733434; /* Darker red when hovering */
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: #733434; /* Even darker red when clicking */
+}
+
+/* Optional: if you want to style the scrollbar track */
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 1); /* Transparent track, you can change it as needed */
+    border-radius: 5px;
+}
+
+
+
+.summary_card {
+    background-color: #16171ad0;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tags {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;                /* Space between tags */
+    flex-wrap: wrap;          /* Wraps to next line on smaller screens */
+}
+
+.tags span {
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-weight: bold; /* Make text bold */
+    background-color: #FF4D4D;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.tags span:hover {
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+
+.novel_nav {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;          /* Wraps to next line on smaller screens */
+}
+
+.prev-chapter, 
+.next-chapter, 
+.show-comments,
+.return,
+.continue_novel {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.search-chapter-form input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: 20px;
+    border: 1px solid #ccc;
+}
+
+#webnovel-section {
+    overflow-x: hidden;  /* Hide overflow content, thus removing the scrollbar */
+}
+
+
+
+.prev-chapter:hover, 
+.next-chapter:hover, 
+.show-comments:hover,
+.return:hover,
+.continue_novel:hover {
+    background-color: #555555;
+}
+
+.author_note {
+    background-color: #16171ad0;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.chapter_content {
+    background-color: #16171ad0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.chapter_content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.chapter_content p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.chapter_content strong {
+    color: #FF4D4D;
+}
+
+.comment-section {
+    background-color: #16171ad0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    gap: 10px; /* space between messages */
+    max-height: 400px; /* adjust as necessary */
+    overflow-y: auto; /* allows scrolling */
+    margin-bottom: 50px;
+}
+
+.comment {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: flex-start; /* aligns the comment blocks to the end side */
+    margin-bottom: 4px;
+}
+
+.comment.user {
+    align-items: flex-start; /* aligns user comments to the left */
+}
+
+.comment.editor {
+    align-items: flex-end; /* aligns editor/author comments to the right */
+}
+
+.comment-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 4px; /* gives space between header and body */
+}
+
+.comment.user .comment-header {
+    align-items: flex-start; /* aligns the user's header to the left */
+}
+
+.comment.editor .comment-header {
+    align-items: flex-end; /* aligns the editor's header to the right */
+}
+
+.comment-header .name,
+.comment-header .title {
+    margin: 0; /* removes margin */
+    display: block; /* allows for individual line breaks */
+}
+
+.comment.user .comment-header .name {
+    margin-left: 10px;
+}
+
+.comment.editor .comment-header .name {
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+    color: #FFF; /* Adjust as needed */
+}
+
+.title {
+    font-style: italic;
+    color: #FF4D4D;
+}
+
+.comment-body {
+    border-radius: 15px;
+    word-wrap: break-word;
+    display: flex;
+    overflow: hidden; /* ensures the background doesn't leak outside the border-radius */
+    margin-top: 4px; /* gives space between header and body */
+}
+
+.comment-text {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px; /* spacing between image and text for user */
+    margin-left: 0; /* for editor, image is on the right */
+}
+
+.comment.user .comment-body {
+    background-color: #f0f0f0;
+    color: #333;
+    align-self: flex-start;
+}
+
+.comment.editor .comment-body {
+    background-color: #FF4D4D; /* Editor's comment bubble color */
+    color: white;
+    align-self: flex-end;
+}
+
+.comment.editor .comment-text {
+    flex-direction: row-reverse; /* for placing image on the right */
+}
+
+.comment.editor .profile-image {
+    margin-left: 10px; /* spacing between image and text for editor */
+    margin-right: 0;
+}
+
+
+
+.continue_novel {
+    margin-top: 20px;
+    order: 2;      
+    margin-bottom: 20px;                /* Display the button before the text */
+}
+
+.available {
+    background-color: #FF4D4D;
+}
+
+
+
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px;
+    padding: 0 20px;
+}
+
+footer p, footer label {
+    margin: 0 0 10px 0;
+    color: #9b9b9b;
+}
+
+footer a {
+    color: #FF4D4D;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+select {
+    margin-top: 10px;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav button {
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #FF4D4D;
+    color: #16171a;
+}
+
+nav button:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.circle {
+    background-color: #FF4D4D;
+    border-radius: 25px;
+}
+
+#comment-section{width:90%;margin:auto;}
+#input-section{display:flex;flex-direction:column;align-items:flex-start;}
+.fields{display:flex;justify-content:space-between;margin-bottom:20px;gap:20px;}
+#comments{color:white;}
+.fields button{width:100%;padding:10px;background-color:#ff8800;border:none;border-radius:5px;cursor:pointer;}
+#input-section #animal,#input-section #post-comment,#input-section #toggle-comments,#input-section #toggle-refresh{width:100%;margin:5px 0;font-weight:bold;padding:10px;border-radius:5px;}
+#toggle-refresh{font-size:1.7em;}
+#input-section #animal{background-color:#1F2738;border:transparent;color:white;}
+#input-section #comment{width:100%;min-height:100px;resize:vertical;margin:5px 0;padding:10px;border-radius:5px;}
+#input-section #post-comment{background-color:#ff8800;border:none;border-radius:5px;cursor:pointer;}
+.comment{background-color:#1F2738;padding:10px;margin-top:10px;border-radius:5px;border:transparent;color:white;text-align:left;}
+.comment strong{color:rgb(255,119,0);}
+#comment{background-color:#1F2738;padding:10px;margin-top:10px;border-radius:5px;border:transparent;color:white;text-align:left;}
+.comment.right-align{text-align:right;}
+#pagination{justify-content:center;}
+#pagination button{background-color:transparent;border:none;color:white;font-weight:bold;cursor:pointer;font-size:1.5em;margin-bottom:10px;}
+#pagination button:hover{color:rgb(255,119,0);}
+
+
+.calendar-container {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    background-color: #16171ad0;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.4em;
+}
+
+.calendar-header button {
+    background-color: #FF4D4D;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextMonth:active, #prevMonth:active {
+    background-color: #2c2c2c;
+    color: white;
+    translate: 0px 2px;
+}
+
+.current-date {
+    text-align: center;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.calendar-weekdays {
+    display: grid;         /* Ensure grid layout */
+    grid-template-columns: repeat(7, 1fr); /* 7 columns, equal width */
+    grid-gap: 5px;   
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.calendar-weekdays div {
+    text-align: center;    /* Center the text within each day */
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+
+.calendar-days div { 
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #FF4D4D;
+    color: white;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;    /* Existing, keep this  */
+    font-size: 0.9em;
+    line-height: 1.8rem;   /* Equal to height, for vertical centering */
+    width: 1.8rem;
+    height: 1.8rem;
+    
+}
+
+.calendar-days div:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.calendar-days div.today { /* Increased specificity */
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+}
+
+.calendar-days div.past {
+    background-color: #782525; /* An example color for past days */
+  }
+  
+  .calendar-days div.empty {
+    background-color: #78252563; /* An example color for past days */
+  }
+
+  .novel {
+    color: #ff4dca;
+  }
+
+  .status-updates {
+    display: flex; /* Arrange items in a row */
+    padding-bottom: 10px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+}
+
+.update-item {
+    display: flex;     
+    color: white;
+    align-items: center; /* Align circle and text vertically */
+    gap: 8px;  /* Space between circle and text */
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Make it a circle */
+    display: inline-block; /* Allows setting width and height */
+}
+
+.chapter {
+    background-color: #71ff4d;
+}
+
+.localization {
+    background-color: #e1ff4d;
+}
+
+.site-update {
+    background-color: #c14dff;
+}
+
+  

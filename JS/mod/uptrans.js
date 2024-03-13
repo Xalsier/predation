@@ -9,6 +9,12 @@ function updateTranslations(languageCode) {
         }
     }
 }
+
+const currentLanguage = $("#language-select").val(); 
+console.log(currentLanguage);
+updateTranslations(currentLanguage); 
+
+
 $('#language-select').change(function() {
     const selectedLanguage = $(this).val();
     updateTranslations(selectedLanguage);

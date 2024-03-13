@@ -66,6 +66,8 @@ daysContainer.addEventListener('click', function(event) {
         const year = event.target.getAttribute('data-year');
         const month = event.target.getAttribute('data-month');
         const day = event.target.getAttribute('data-day');
+
+        // Handle day click here
         console.log(`Clicked on ${year}-${month}-${day}`); 
     }
 });

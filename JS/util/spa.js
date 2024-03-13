@@ -1,4 +1,11 @@
 $(document).ready(function() {
+    const logoImage = document.getElementById("LogoBTN");
+    console.log("Running");
+
+    $('footer').hide();
+    $('nav').hide();
+    $('#modal-overlay').show();
+
     $('#continue-btn').click(function() {
         $('#modal-overlay').empty();
         $('#modal-overlay').hide();
@@ -11,7 +18,10 @@ $(document).ready(function() {
         window.renderChapter(window.currentChapter);
         window.setRandomAnimal(); 
         window.updateLastUpdated();
+        logoImage.src = "https://predation.jp/Assets/nosquidy.png";
+
     });
+
     $('.show-comments').click(function() {
         $('.comment-section').show();
     });
@@ -74,4 +84,9 @@ $(document).ready(function() {
 
     $('#WebnovelBTN').click(showWebnovel);
     $('#CalendarBTN').click(showCalendar);
+});
+$('#return-btn').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 'slow');
 });
