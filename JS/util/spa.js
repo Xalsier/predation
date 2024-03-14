@@ -18,7 +18,7 @@ document.getElementById('continue-btn').addEventListener('click', async function
     if (typeof window.updateLastUpdated === 'function') {
         window.updateLastUpdated();
     }
-
+    document.getElementById('modal').remove(); // STOP APPEARING 
     document.getElementById('modal-overlay').innerHTML = '';
     document.getElementById('modal-overlay').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
