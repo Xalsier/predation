@@ -124,7 +124,7 @@ body::-webkit-scrollbar-track {
 }
 
 body {
-    background-color: #000000;
+    background-color: #0f131b;
     font-size: 16px; 
     font-family: 'Arial', sans-serif;
     line-height: 1.5;
@@ -154,4 +154,8 @@ html {
         background-position: center; /* Adjust if needed */
         z-index: 1;
     }
+}
+
+main {
+    margin-bottom: 100px;
 }

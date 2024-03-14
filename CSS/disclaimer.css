@@ -16,6 +16,23 @@
     /* Background Image Properties */
 }
 
+@media (max-width: 500px) { 
+    #modal #content-en p {
+        font-size: 1.0em; 
+        text-align: center;
+    }
+
+    #modal #content-en  {
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    #modal {
+        width: 100vw;
+        height: 75vh;
+        margin-top: 0px;
+    }
+}
 
 
 #modal {
@@ -26,6 +43,15 @@
     width: 100%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 2; /* Above the overlay */
+}
+
+.button-container {
+    align-content: center;
+    text-align: center;
+    max-width: 960px;
+    padding: 0 20px;
+    margin: 0 auto; /* Center the content */
+
 }
 
 .button-container button {
