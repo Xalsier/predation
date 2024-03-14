@@ -15,8 +15,13 @@ const webnovel = {
                                     "ko" : ["../Korean/risk_ko.md"] // Not Translated, Placeholder
                                 },
             "chapter_art": [
-                                ["../WebArt/38.webp", "Fuwa looking over his shoulder.", "Maxtorcito"] // Replace with Max's when commission is finished
-                            ]
+                                ["../WebArt/38.webp", 
+                                "Fuwa looking over his shoulder.", 
+                                "Maxtorcito",
+                                "https://fiverr.com/s/8XRKVz"] 
+                            ],
+            "firstUploaded": "02-27-2024",
+            "lastEdited": "2024-03-11"
         
         },
         {
@@ -34,13 +39,15 @@ const webnovel = {
                                 "ko" : ["../English/ep1.md"]  // Not Translated, Placeholder
                                 },
             "chapter_art": [
-                                ["../WebArt/naori.JPG", "Naori resting while talking, Xalsier, ザルシア", "Xalsier"]
-                            ]
+                                ["../WebArt/naori.JPG", 
+                                "Naori resting while talking", 
+                                "Xalsier",
+                                "https://twitter.com/Zarushia"]
+                            ],
+            "firstUploaded": "2024-03-11",
+            "lastEdited": "2024-03-11"
     
     }
   ]
 };
 export { webnovel };
-
-// TODO:
-// Links for Artists

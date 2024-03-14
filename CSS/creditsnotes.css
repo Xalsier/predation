@@ -57,3 +57,26 @@
     margin-bottom: 20px; /* Add margin */
     font-style: italic;
 }
+
+.actual_credit {
+    text-decoration: none;
+    color: #FF4D4D;
+}
+
+.actual_credit:visited {
+    text-decoration: none;
+    color: #FF4D4D;
+}
+
+.actual_credit:hover {
+    text-decoration: underline;
+}
+
+a:visited {  /* Add this */
+    color: #FF4D4D;    /* Keep the same color */
+    text-decoration: none;
+}
+
+#artwork-by {
+    color: white;
+}

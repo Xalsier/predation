@@ -74,38 +74,24 @@
                 <div class="calendar-days"></div>
             </div>
             <div class="status-updates">
-                <span class="update-item">
                   <span class="circle chapter"></span> Chapter Updates
-                </span>
-            
-              
-                <span class="update-item">
                   <span class="circle site-update"></span> Site Update
-                </span>
-              </div>
+            </div>
               
           </div>
 
           <div class="summary_card">
-                <label style="opacity: 0.5;" id="2select-lang"for="language-select">Select Language:</label> 
-                <select name="languages" id="language-select">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
-                </select>
-                <!-- English content -->
                 <div id="summary-content-en" class="summary-content" style="display: block;">
-                    <h2>Primal Samsara: Risk of Predation</h2>
-                    <p>During the Golden Age of Predation, Naori embarks on their first hunt- without the protection of Shiro and Sera. With the ambitions of Ryo and the Hyena's set high, an opportunity is left open at revisiting the old guarded monastery where Chief Avali found Sera's ancestor, encased in stone.</p>
+                    <h2 id="summary-title">Primal Samsara: Risk of Predation</h2>
+                    <p id="summary-blurb">During the Golden Age of Predation, Naori embarks on their first hunt- without the protection of Shiro and Sera. With the ambitions of Ryo and the Hyena's set high, an opportunity is left open at revisiting the old guarded monastery where Chief Avali found Sera's ancestor, encased in stone.</p>
                     <p>
-                        <strong>Author:</strong> Xalsier |
-                        <strong>Last Updated:</strong> <span id="last-updated">?</span> | 
-                        <strong>Comments:</strong> <span id="comment-count">?</span> | 
-                        <strong>Edits:</strong> <span id="edit-count">?</span> | 
-                        <strong>Words:</strong> 6629 | 
-                        <strong>Chapters:</strong> <span id="chapter-count">?</span>/? | 
-                        <strong>Uploaded:</strong> 02-27-2024
+                        <strong id="summary-stat1">Author:</strong> Xalsier |
+                        <strong id="summary-stat2">Last Updated:</strong> <span id="last-updated">?</span> | 
+                        <strong id="summary-stat3">Comments:</strong> <span id="comment-count">?</span> | 
+                        <strong id="summary-stat4">Edits:</strong> <span id="edit-count">?</span> | 
+                        <strong id="summary-stat5">Words:</strong> 6629 | 
+                        <strong id="summary-stat6">Chapters:</strong> <span id="chapter-count">?</span>/? | 
+                        <strong id="summary-stat7">Uploaded:</strong> 02-27-2024
                     </p>
                     <div class="tag-container">
                         <span id="content-tag1">Not Rated</span>
@@ -126,7 +112,7 @@
                 <div class="content-wrapper">
                     <div class="credit-container">
                         <strong id="artwork-by">Artwork by:</strong>
-                        <p class="actual_credit">Maxtorcito</p>
+                        <a href="https://fiverr.com/s/8XRKVz" class="actual_credit">Maxtorcito</a>
                     </div>
                 </div>
         </div>
@@ -155,15 +141,26 @@
         </div>
     </main>
     <footer>
-        <div class="footer-content" style="display: none;">
-            <p class="copyright">Primal Samsara © Xalsier Kitsune. All rights reserved. Background art by Dimi. Logo art by Yuuki.</p>        
-            <ul class="contact-links" style="text-align: left;">
-                <li style="color: white;">Twitter / X: <a href="https://twitter.com/zarushia">ザルシア</a></li>
-                <li style="color: white;">Site Github: <a href="https://github.com/Xalsier/predation">predation</a></li>
-                <li style="color: white;">Email inquiries: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a></li>
-            </ul>
-        </div>
-    </footer>
+        <div class="footer-content">
+            <p class="copyright">
+                Primal Samsara © <a href="https://twitter.com/zarushia">Xalsier Kitsune</a>. All rights reserved. Background art by 
+                <a href="https://twitter.com/dimidostoevsky">Dimi</a>. Logo art by 
+                <a href="https://www.fiverr.com/s/lB5bye">Yuuika Hirasaki</a>. 
+            </p>        
+            <p class="contact-links">
+                Twitter / X: <a href="https://twitter.com/zarushia">ザルシア</a> | 
+                Site Github: <a href="https://github.com/Xalsier/predation">predation</a> | 
+                Email inquiries: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a> | 
+                <label id="select-lang" for="language-select">Select Language:</label> 
+                <select name="languages" id="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </p>
+        </div>      
+    </footer>    
     <script src="../JS/util/script.js"></script>
     <script src="../JS/util/color.js"></script>
     <script src="../JS/dat/events.js"></script>

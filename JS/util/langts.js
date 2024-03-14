@@ -1,4 +1,4 @@
-export function getTranslations(languageCode) {
+function getTranslations(languageCode) {
     switch (languageCode) {
         case 'en':
             return { // Translations done by Xalsier
@@ -133,3 +133,13 @@ export function getTranslations(languageCode) {
             return {}; 
     }
 }
+function updateTranslations(languageCode) {
+    const translations = getTranslations(languageCode);
+    for (const [id, translationKey] of Object.entries(translations)) {
+        const element = $('#' + id);
+        if (element.length) { // Check if the element exists
+            element.text(translationKey);
+        }
+    }
+}
+window.updateTranslations = updateTranslations;

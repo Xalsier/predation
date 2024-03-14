@@ -1,9 +1,4 @@
-.update-item {
-    display: flex;     
-    color: white;
-    align-items: center; /* Align circle and text vertically */
-    gap: 8px;  /* Space between circle and text */
-}
+
 
 .circle {
     width: 12px;
@@ -132,9 +127,12 @@
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     gap: 10px; /* Space between items */
     justify-content: center; /* Center items horizontally */
+    color: white;
+    align-items: center; /* Align circle and text vertically */
 }
 
 .circle {
     background-color: #FF4D4D;
     border-radius: 25px;
 }
+

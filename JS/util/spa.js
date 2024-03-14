@@ -1,7 +1,7 @@
 console.log("Running");
 document.getElementById('continue-btn').addEventListener('click', async function() {
     // Execute scripts by appending script tags to the document
-    const scriptsToLoad = ['../JS/lib/jquery.js','../JS/mod/uptrans.js', '../JS/mod/chapter.js', '../JS/mod/index.js'];
+    const scriptsToLoad = ['../JS/util/langts.js', '../JS/mod/chapter.js', '../JS/mod/index.js'];
     scriptsToLoad.forEach(scriptPath => {
         const script = document.createElement('script');
         script.src = scriptPath;
