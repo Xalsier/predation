@@ -1,5 +1,4 @@
 import { webnovel } from '../dat/novDat.js';
-let chapters = [];
 let commentsVisible = false;
 const authorNoteSelector = '.author_note';
 const chapterContentSelector = '.chapter_content';
@@ -10,7 +9,7 @@ const nextChapterButton = document.getElementById('next-chapter');
 const prevChapterButton = document.getElementById('prev-chapter');
 window.currentLanguageIndex = 'en';
 window.currentChapter = 1;
-chapters = webnovel.chapters;
+let chapters = webnovel.chapters;
 window.renderChapter = renderChapter;
 document.getElementById('language-select').addEventListener('change', function() {
     const langMap = {en: 'en', ja: 'ja', ko: 'ko', es: 'es'};
@@ -128,33 +127,22 @@ function handleChapterNavigation(direction) {
 }
 
 function updateLastUpdated() {
-    function findMostRecentLastUpdated() {
-        let mostRecentDate = null;
-    
-        for (const chapter of chapters) {
-            const chapterDate = new Date(chapter.lastEdited);
-            if (!mostRecentDate || chapterDate > mostRecentDate) {
-                mostRecentDate = chapterDate;
-            }
-        }
-    
-        return mostRecentDate;
+    const mostRecentDate = chapters.reduce((acc, chapter) => {
+      const date = new Date(chapter.lastEdited);
+      return !acc || date > acc ? date : acc;
+    }, null);
+    const diffInHours = Math.abs(new Date() - mostRecentDate) / 36e5;
+    let message = `${Math.round(diffInHours)} hr ago`;
+    if (diffInHours >= 24) {
+      const days = Math.round(diffInHours / 24);
+      message = `${days} night${days > 1 ? 's' : ''} ago`;
+      if (diffInHours >= 720) {
+        const moons = Math.round(diffInHours / 720);
+        message = `${moons} moon${moons > 1 ? 's' : ''} ago`;
+      }
     }
-        const mostRecentDate = findMostRecentLastUpdated();
-        const now = new Date();
-        const diffInHours = Math.abs(now - mostRecentDate ) / 36e5;
-        let message;
-        if (diffInHours < 24) {
-            message = `${Math.round(diffInHours)} hr ago`;
-        } else if (diffInHours < 24 * 30) {
-            const days = Math.round(diffInHours / 24);
-            message = `${days} night${days > 1 ? 's' : ''} ago`;
-        } else {
-            const moons = Math.round(diffInHours / (24 * 30));
-            message = `${moons} moon${moons > 1 ? 's' : ''} ago`;
-        }
-        document.getElementById('last-updated').textContent = message;
-    }
+    document.getElementById('last-updated').textContent = message;
+}  
 window.updateLastUpdated = updateLastUpdated;
 function updateNavButtons() {
     const currentIndex = chapters.findIndex(chap => chap.chapter === window.currentChapter);
