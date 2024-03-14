@@ -50,34 +50,18 @@ function renderChapter(chapterNumber) {
 }
 
 async function fetchAndRender(path, selector) {
-    try {
-        // Check for element upfront
-        const targetElement = document.querySelector(selector);
-        if (!targetElement) return; // Element not found, exit
-
-        // Fetch attempt
-        const response = await fetch(path);
-        if (!response.ok) {
-            throw new Error(`Failed to load content from: ${path}`);
-        }
-
-        const text = await response.text();
-        const renderedHtml = simpleMarkdownParse(text); // Assuming you have this function
-        targetElement.innerHTML = renderedHtml;
-
-    } catch (error) {
-        // Attempt an alternate path
-        const alternatePath = `https://predation.jp/${path.replace('../', '')}`;
-        const alternateResponse = await fetch(alternatePath);
-
-        if (!alternateResponse.ok) {
-            throw new Error(`Failed to load content from both locations: ${path} and ${alternatePath}`);
-        }
-
-        const alternateText = await alternateResponse.text();
-        const renderedHtml = simpleMarkdownParse(alternateText);
-        targetElement.innerHTML = renderedHtml;
+    const targetElement = document.querySelector(selector);
+    console.log(targetElement);
+    const alternatePath = `https://predation.jp/${path.replace('../', '')}`;
+    console.log(alternatePath);
+    console.log(path);
+    const alternateResponse = await fetch(alternatePath);
+    if (!alternateResponse.ok) {
+        throw new Error(`Failed to load content from both locations: ${path} and ${alternatePath}`);
     }
+    const alternateText = await alternateResponse.text();
+    const renderedHtml = simpleMarkdownParse(alternateText);
+    targetElement.innerHTML = renderedHtml;
 }
 
 
