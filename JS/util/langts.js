@@ -136,9 +136,9 @@ function getTranslations(languageCode) {
 function updateTranslations(languageCode) {
     const translations = getTranslations(languageCode);
     for (const [id, translationKey] of Object.entries(translations)) {
-        const element = $('#' + id);
-        if (element.length) { // Check if the element exists
-            element.text(translationKey);
+        const element = document.getElementById(id);
+        if (element) { 
+            element.textContent = translationKey;
         }
     }
 }
