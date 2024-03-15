@@ -18,7 +18,6 @@ document.getElementById('language-select').addEventListener('change', function()
     window.updateTranslations(window.currentLanguageIndex);
     window.setRandomAnimal();
 });
-
 function simpleMarkdownParse(text) {
     let html = text;
     html = html.replace(/\n/g, '<br/>');
@@ -26,7 +25,6 @@ function simpleMarkdownParse(text) {
     html = html.replace(/\*([^\*]+)\*/g, '<em>$1</em>');
     return html;
 }
-
 function renderChapter(chapterNumber) {
     window.currentChapter = chapterNumber;
     const languageKey = currentLanguageIndex;
@@ -95,6 +93,8 @@ window.refreshChapter = refreshChapter;
 updateSrcFilesCount();
 window.updateCommentCount = updateCommentCount;
 document.addEventListener("click", function(event) {
+    window.setRandomAnimal(); 
+    window.fetchComments();
     if (event.target.matches(showCommentsSelector)) {
         const commentsSection = document.querySelector(commentsSelector);
         commentsSection.style.display = commentsVisible ? 'none' : 'flex';
@@ -114,7 +114,7 @@ function handleChapterNavigation(direction) {
             return;
         }
         window.refreshChapter();
-        window.refreshComments();
+        window.fetchComments();
     } else {
         console.error('Current chapter not found!');
     }

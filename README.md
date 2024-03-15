@@ -10,6 +10,8 @@ https://en.predation.jp
 - Bring newer updates from the English site to the Japanese production environment.
 
 #### Medium Priority
+- Bringing back the Gallery
+- Bringing back the Wiki
 
 #### Low Priority
 - Webnovel Edit History Complexity, deletions, additions, commit notes

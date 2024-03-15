@@ -41,30 +41,48 @@
 </head>
 <body>
     <div id="modal-overlay">
-        <div id="modal" tabindex="-1">
-            <!-- Content sections for each language, initially hidden except for the selected language -->
-            <div id="content-en" class="content">
-                <p id="preface1">Preface</p>
-                <p id="preface2">Fair warning, this site will be buggy. It's been coded from scratch (again) to be mobile friendly, but if you find things don't work the way they should- please let me know on</p><a href="https://twitter.com/zarushia" target="_blank">Twitter / X</a>
-                <p id="preface3">For right now, some features won't work. Like the gallery, translation, and even stats. I promise these will be fixed.</p>
-                <p id="preface4">If you'd like to read the first draft of Chapter 1, you can. I've also made it possible for you to comment. ^-^</p>
-                <p id="preface5">-- Xalsier</p>
-            </div>                      
-            <div class="button-container">
-                <button id="continue-btn">Continue</button>
-                <button id="leave-btn">Leave</button>
-            </div>
-        </div>
-    </div>
-    <main id="main-content">
         <header>
             <img src="log.webp" loading="lazy" id="LogoBTN" class="headerlogo" alt="Primal Samsara プライマルサムサラ" width="400px" height="242">
-            <nav style="display: none;">
-                <button id="WebnovelBTN">Webnovel</button>
-                <button id="CalendarBTN">Calendar</button>
-                <button id="IssueRoadmapBTN"><a style="color: black;text-decoration: none;" href="https://github.com/Xalsier/predation/issues">Site Issues</a></button>
+            <nav>
+                <div id="announcement">
+                    <strong id="preface1">Chapter 2 is out! ^ ^</strong>
+                </div>
+                <div id="nav-buttons">
+                    <button id="WebnovelBTN">Webnovel</button>
+                    <button id="CalendarBTN">Calendar</button>
+                    <button id="WikiBTN">Ecosystem</button>  
+                </div>
             </nav>
         </header>
+        <footer>
+            <div class="footer-content">
+                <p class="copyright">
+                    Primal Samsara © <a href="https://twitter.com/zarushia">Xalsier Kitsune</a>. All rights reserved. Background art by 
+                    <a href="https://twitter.com/dimidostoevsky">Dimi</a>. Logo art by 
+                    <a href="https://www.fiverr.com/s/lB5bye">Yuuika Hirasaki</a>. 
+                </p>        
+                <p class="contact-links">
+                    <a href="https://twitter.com/zarushia">Twitter</a> | 
+                    Email inquiries: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a> |
+                    <label id="select-lang" for="language-select">Select Language:</label> 
+                    <select name="languages" id="language-select">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                    </select> 
+                </p>
+                <p class="official-links">
+                    <a href="https://github.com/Xalsier/predation">Site Github</a> |
+                    FAQ | 
+                    Privacy Policy |
+                    <a href="https://github.com/Xalsier/predation/issues">Known Site Issues</a>
+                    | Press Release
+                </p>
+            </div>      
+        </footer> 
+    </div>
+    <main id="main-content">
         <div class="calendar-container">
             <div class="calendar-header">
                 <button id="prevMonth">◀ 前</button>
@@ -147,28 +165,11 @@
 
         </div>
     </main>
-    <footer style="display: none;">
-        <div class="footer-content">
-            <p class="copyright">
-                Primal Samsara © <a href="https://twitter.com/zarushia">Xalsier Kitsune</a>. All rights reserved. Background art by 
-                <a href="https://twitter.com/dimidostoevsky">Dimi</a>. Logo art by 
-                <a href="https://www.fiverr.com/s/lB5bye">Yuuika Hirasaki</a>. 
-            </p>        
-            <p class="contact-links">
-                Twitter / X: <a href="https://twitter.com/zarushia">ザルシア</a> | 
-                Site Github: <a href="https://github.com/Xalsier/predation">predation</a> | 
-                Email inquiries: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a> | 
-                <label id="select-lang" for="language-select">Select Language:</label> 
-                <select name="languages" id="language-select">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
-                </select>
-            </p>
-        </div>      
-    </footer> 
     <script type="module" src="../JS/util/stat/cha.js"></script>
+    <script type="module" src="../JS/util/langts.js"></script>
+    <script type="module" src="../JS/mod/chapter.js"></script>
+    <script type="module" src="../JS/mod/index.js"></script>
+    <script src="../JS/util/ani.js"></script>
     <script src="../JS/util/script.js"></script>
     <script src="../JS/util/color.js"></script>
     <script src="../JS/dat/events.js"></script>

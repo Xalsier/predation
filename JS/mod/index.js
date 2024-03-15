@@ -1,24 +1,9 @@
 let comments = [];
 let commentsPerPage = 5;
 let currentPage = 1;
-
-const setRandomAnimal = async () => {
-    const { animalList } = await import('../dat/animalList.js');
-    const languageArray = animalList[window.currentLanguageIndex];
-    const randomIndex = Math.floor(Math.random() * languageArray.length);
-    const randomAnimal = languageArray[randomIndex];
-    document.getElementById('animal').value = randomAnimal;
-};
-
-window.setRandomAnimal = setRandomAnimal;
-
-window.refreshComments = function() {
-    document.getElementById('comments').innerHTML = '';
-    fetchComments();
-};
-
 const userId = 1;
 const fetchComments = () => {
+    document.getElementById('comments').innerHTML = '';
     let postId = window.currentChapter;
     if (!postId) {
         console.error('Chapter number is invalid or not set');
@@ -46,7 +31,6 @@ const fetchComments = () => {
         })
         .catch(error => console.error('Error fetching comments:', error));
 };
-
 const addComment = (animal, comment, preyId) => {
     let postId = window.currentChapter;
     if (!postId) {
@@ -72,7 +56,6 @@ const addComment = (animal, comment, preyId) => {
         fetchComments();
     });
 };
-
 const displayComment = ({ animal, comment, userId }) => {
     const commentElement = document.createElement("div");
     commentElement.className = "comment";
@@ -85,7 +68,6 @@ const displayComment = ({ animal, comment, userId }) => {
     document.getElementById('comments').append(commentElement);
     setTimeout(() => commentElement.style.opacity = 1, 500);
 };
-
 const updatePagination = () => {
     const totalPages = Math.ceil(comments.length / commentsPerPage);
     const paginationElement = document.getElementById('pagination');
@@ -97,7 +79,6 @@ const updatePagination = () => {
         paginationElement.append(pageButton);
     }
 };
-
 const loadCommentsForPage = (page) => {
     currentPage = page;
     const start = (page - 1) * commentsPerPage;
@@ -107,7 +88,6 @@ const loadCommentsForPage = (page) => {
         displayComment(comment);
     });
 };
-
 document.getElementById('post-comment').addEventListener("click", function(event) {
     event.preventDefault();
     const animal = document.getElementById('animal').value;
@@ -117,5 +97,4 @@ document.getElementById('post-comment').addEventListener("click", function(event
         document.getElementById('comment').value = '';
     }
 });
-
 window.fetchComments = fetchComments;

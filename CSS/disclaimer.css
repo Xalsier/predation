@@ -5,15 +5,13 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #0d1118; /* Fallback semi-transparent background */ 
+    background-color: #0d1118dd; /* Fallback semi-transparent background */ 
     display: flex;
     background-image: 
     radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 99%); /* Your background image URL */
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Ensure it's on top of other content */
-
-    /* Background Image Properties */
 }
 
 @media (max-width: 500px) { 
