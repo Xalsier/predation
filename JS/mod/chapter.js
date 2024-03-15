@@ -64,12 +64,6 @@ async function fetchAndRender(path, selector) {
     targetElement.innerHTML = renderedHtml;
 }
 
-
-function updateChapterCount() {
-    const chapters = webnovel.chapters;
-    document.getElementById('chapter-count').textContent = chapters.length;
-}
-
 function updateSrcFilesCount() {
     const chapters = webnovel.chapters;
     let srcFilesCount = 0;
@@ -99,7 +93,6 @@ function refreshChapter() {
 }
 window.refreshChapter = refreshChapter;
 updateSrcFilesCount();
-updateChapterCount();
 window.updateCommentCount = updateCommentCount;
 document.addEventListener("click", function(event) {
     if (event.target.matches(showCommentsSelector)) {
