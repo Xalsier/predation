@@ -5,11 +5,10 @@ document.getElementById('LogoBTN').addEventListener('click', function() {
     document.getElementById('modal-overlay').appendChild(header);
     const footer = document.querySelector('footer'); 
     document.getElementById('modal-overlay').appendChild(footer);
-    document.querySelector('.footer-content').style.display = 'block';
     document.getElementById('main-content').style.display = 'none';
     document.querySelectorAll('.summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
     document.querySelector('.calendar-container').style.display = 'none';
-    document.querySelector('footer').style.display = 'flex';
+    document.querySelector('footer').style.display = 'block';
 });
 
 function showWebnovel() {

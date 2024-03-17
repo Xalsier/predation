@@ -1,17 +1,38 @@
 footer {
     padding: 20px 0;
-    text-align: center;
+    font-size: 1rem; /* Fixed font size for better readability */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #9b9b9b; /* Set default text color */
 }
 
+
 .footer-content {
-    max-width: 960px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 20px;
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    min-width: 300px; /* Minimum width for columns */
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
 }
 
 footer p {
     margin: 0 0 10px 0;
-    color: #9b9b9b;
 }
 
 footer a {
@@ -23,10 +44,26 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.select-lang {
-    margin-top: 10px; 
-    display: inline; /* Place the label and select on the same line */
+@media (max-width: 600px) { 
+    .footer-content {
+        font-size: 2.0vw;
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+    }
+
+    footer {
+        font-size: 16px; /* Increase font size on smaller screens */
+    }
 }
+
+.select-lang {
+    display: inline; /* Keep the label and select on the same line */
+}
+
 
 
 .available {
