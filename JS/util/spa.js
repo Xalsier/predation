@@ -13,8 +13,6 @@ document.getElementById('LogoBTN').addEventListener('click', function() {
 });
 
 function showWebnovel() {
-    window.updateCommentCount();
-    window.updateLastUpdated();
     document.querySelector('nav').style.display = 'none';
     const header = document.querySelector('header');
     document.getElementById('main-content').prepend(header);

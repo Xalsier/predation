@@ -1,0 +1,16 @@
+{
+    "en": ["Fox", "Cat", "Rabbit", "Deer", "Wolf", "Goat", "Hyena", "Spider", "Bird", "Squirrel"],
+    "es": ["Zorro", "Gato", "Conejo", "Venado", "Lobo", "Cabra", "Hiena", "Araña", "Pájaro", "Ardilla"],
+    "ja": ["キツネ", "ネコ", "ウサギ", "シカ", "オオカミ", "ヤギ", "ハイエナ", "クモ", "鳥", "リス"],
+    "ko": ["여우", "고양이", "토끼", "사슴", "늑대", "염소", "하이에나", "거미", "새", "다람쥐"],
+    "fr": ["Renard", "Chat", "Lapin", "Cerf", "Loup", "Chèvre", "Hyène", "Araignée", "Oiseau", "Écureuil"],
+    "de": ["Fuchs", "Katze", "Hase", "Hirsch", "Wolf", "Ziege", "Hyäne", "Spinne", "Vogel", "Eichhörnchen"],
+    "it": ["Volpe", "Gatto", "Coniglio", "Cervo", "Lupo", "Capra", "Iena", "Ragno", "Uccello", "Scoiattolo"],
+    "pt": ["Raposa", "Gato", "Coelho", "Veado", "Lobo", "Cabra", "Hiena", "Aranha", "Pássaro", "Esquilo"],
+    "ru": ["Лиса", "Кот", "Кролик", "Олень", "Волк", "Коза", "Гиена", "Паук", "Птица", "Белка"],
+    "zh": ["狐狸", "猫", "兔子", "鹿", "狼", "山羊", "鬣狗", "蜘蛛", "鸟", "松鼠"],
+    "ar": ["ثعلب", "قط", "أرنب", "غزال", "ذئب", "ماعز", "ضبع", "عنكبوت", "طائر", "سنجاب"],
+    "hi": ["लोमड़ी", "बिल्ली", "खरगोश", "हिरण", "भेड़िया", "बकरी", "लकड़बग्घा", "मकड़ी", "पक्षी", "गिलहरी"],
+    "nl": ["Vos", "Kat", "Konijn", "Hert", "Wolf", "Geit", "Hyena", "Spin", "Vogel", "Eekhoorn"],
+    "tr": ["Tilki", "Kedi", "Tavşan", "Geyik", "Kurt", "Keçi", "Sırtlan", "Örümcek", "Kuş", "Sincap"]
+}

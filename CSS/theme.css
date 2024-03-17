@@ -130,7 +130,6 @@ body {
     line-height: 1.5;
     margin: 0; /* Reset browser defaults */
     background-image: 
-    radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 99%), 
     url('../bg.webp'); /* Your background image URL */
     background-repeat: no-repeat;
     background-size: cover; /* Cover the entire background */
