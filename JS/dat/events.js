@@ -10,3 +10,9 @@ window.colorEvent("2024-03-11", "#71ff4d");
 window.colorEvent("2024-03-12", "#c14dff"); 
 window.colorEvent("2024-03-13", "#c14dff"); 
 window.colorEvent("2024-03-13", "#c14dff"); 
+window.colorEvent("2024-03-14", "#c14dff"); 
+window.colorEvent("2024-03-15", "#c14dff"); 
+
+window.colorEvent("2024-03-18", "#c14dff"); 
+// Chapter 3
+window.colorEvent("2024-03-22", "#71ff4d"); 

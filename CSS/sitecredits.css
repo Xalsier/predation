@@ -1,0 +1,47 @@
+#site_credits {
+    display: flex;
+    flex-direction: column; /* Ensure main container is column-aligned */
+    align-items: flex-start; /* Align items to the start of the column */
+    width: auto; /* Adjust width as necessary */
+    margin: 20px;
+    padding: 20px;
+    background-color: #16171ad0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.credits_column {
+    display: flex;
+    flex-direction: column; /* Make sure each column is also arranged in a column */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px; /* Add some margin at the bottom of each section */
+    width: 100%; /* Take full width of the parent container */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between profile items */
+    width: 100%; /* Take full width to avoid crushing */
+}
+
+.profile p {
+    margin: 0;
+    margin-right: 10px;
+    flex: 1; /* Allow the paragraph to take necessary space */
+}
+
+.profile img {
+    width: 50px; /* Adjust size as necessary */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile a {
+    flex: 2; /* Allow links to take more space if needed */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis to overflowed text */
+}
