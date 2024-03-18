@@ -7,10 +7,11 @@ https://en.predation.jp
 ### TODO
 
 #### High Priority
-- Bring newer updates from the English site to the Japanese production environment.
+- Bringing back the Gallery
 
 #### Medium Priority
-- Bringing back the Gallery
+- Fixing credits
+- Bring newer updates from the English site to the Japanese production environment.
 - Bringing back the Wiki
 
 #### Low Priority
@@ -24,6 +25,7 @@ https://en.predation.jp
 - Privacy Policy
 
 #### Completed
+- 03/18 Credits
 - 03/14 Reduce dependency on Jquery to reduce script loading for users using low performance browsers.
 - 03/14 Implement a 4th variable to chapter art credits for social media links, to properly credit artists.
 

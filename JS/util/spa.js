@@ -1,7 +1,7 @@
 function showLogo() {
     document.getElementById('modal-overlay').style.display = 'flex';
     document.getElementById('main-content').style.display = 'none';
-    document.querySelectorAll('.site_credits, .aperture, .calendar-container, .summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('#site_credits, .aperture, .calendar-container, .summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
 }
 function showWebnovel() {
     document.getElementById('modal-overlay').style.display = 'none';
@@ -23,5 +23,5 @@ function showEcosystem() {
 function showCredits () {
     document.getElementById('modal-overlay').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
-    document.querySelector('.site_credits').style.display = 'flex';
+    document.getElementById('site_credits').style.display = 'flex';
 }
