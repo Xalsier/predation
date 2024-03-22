@@ -61,13 +61,15 @@
         <footer>
             <div class="footer-content">
                 <div class="footer-left">
-                    <select name="languages" id="language-select">
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                        <option value="ja">日本語</option>
-                        <option value="ko">한국어</option>
-                    </select>
-                    <label id="select-lang" for="language-select">Select Language</label>
+                    <p>
+                        <label id="select-lang" for="language-select">Select Language:</label>
+                        <select name="languages" id="language-select">
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                        </select> <!-- Alignment using p tags so both sides of the footer look balanced on desktop.-->
+                    </p>
                     <p class="copyright">
                         Primal Samsara © <a href="https://twitter.com/zarushia">Xalsier Kitsune</a>. All rights reserved.
                     </p>
@@ -139,7 +141,8 @@
                     <h2 id="summary-title">Primal Samsara: Risk of Predation</h2>
                     <p id="summary-blurb">During the Golden Age of Predation, Naori embarks on their first hunt- without the protection of Shiro and Sera. With the ambitions of Ryo and the Hyena's set high, an opportunity is left open at revisiting the old guarded monastery where Chief Avali found Sera's ancestor, encased in stone.</p>
                     <p>
-                        <strong id="summary-stat1">Author:</strong> Xalsier |
+                        <strong id="summary-stat1">Author:</strong> 
+                            <img class="profimg" src="../assets/xal.jpeg" alt="Xalsier Profile"> <a href="https://twitter.com/Zarushia">Xalsier</a> |
                         <strong id="summary-stat2">Last Updated:</strong> <span id="last-updated">?</span> | 
                         <strong id="summary-stat3">Comments:</strong> <span id="comment-count">?</span> | 
                         <strong id="summary-stat4">Edits:</strong> <span id="edit-count">?</span> | 

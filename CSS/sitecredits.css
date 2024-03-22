@@ -19,29 +19,46 @@
     width: 100%; /* Take full width of the parent container */
 }
 
+.credits_column h4 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.profile strong {
+    text-align: right;
+    color: white;
+}
+
 .profile {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Space between profile items */
-    width: 100%; /* Take full width to avoid crushing */
+    margin: 0 auto;
+    gap: 5px;
 }
 
 .profile p {
     margin: 0;
+    text-align: left;
     margin-right: 10px;
     flex: 1; /* Allow the paragraph to take necessary space */
 }
 
-.profile img {
+.profile img, .profimg {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     width: 20px; /* Adjust size as necessary */
     height: 20px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
+
+
 .profile a {
-    flex: 2; /* Allow links to take more space if needed */
+    text-align: left;
+    flex: 1; /* Allow links to take more space if needed */
     white-space: nowrap; /* Prevent the text from wrapping */
-    overflow: hidden; /* Hide overflowed text */
-    text-overflow: ellipsis; /* Add ellipsis to overflowed text */
 }
