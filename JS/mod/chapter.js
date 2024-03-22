@@ -32,7 +32,7 @@ function renderChapter(chapterNumber) {
             const alternatePath = `https://predation.jp/${artPath.replace('../', '')}`;
             document.querySelector(chapterArtSelector).setAttribute('src', alternatePath);
             document.querySelector(chapterArtSelector).setAttribute('alt', chapterArt[1]);
-            document.querySelector('.actual_credit').innerHTML = '<a class="actual_credit" href="' + chapterArt[0][3] + '">' + chapterArt[0][2] + '</a>';
+            document.querySelector('.actual_credit').innerHTML = '<img class="profimg" src="'+ chapterArt[0][4] +'" alt="' + chapterArt[0][2] + '"> <a class="actual_credit" href="' + chapterArt[0][3] + '">' + chapterArt[0][2] + '</a>';
         }
     } else {
         console.error('Chapter not found:', chapterNumber);

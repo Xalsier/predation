@@ -18,7 +18,9 @@ const webnovel = {
                                 ["../WebArt/38.webp", 
                                 "Fuwa looking over his shoulder.", 
                                 "Maxtorcito",
-                                "https://fiverr.com/s/8XRKVz"] 
+                                "https://www.fiverr.com/maxtorcito",
+                                "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/fb93b3e0f174081a85806cef70f81a3b-1691187786611/6d8be301-6cd4-4905-b123-f40161b7563e.png"
+                                ] 
                             ],
             "firstUploaded": "02-27-2024",
             "lastEdited": "2024-03-11"
@@ -42,7 +44,8 @@ const webnovel = {
                                 ["../WebArt/naori.JPG", 
                                 "Naori resting while talking", 
                                 "Xalsier",
-                                "https://twitter.com/Zarushia"]
+                                "https://twitter.com/Zarushia",
+                                "../assets/fuwa.jpeg"]
                             ],
             "firstUploaded": "2024-03-11",
             "lastEdited": "2024-03-11"

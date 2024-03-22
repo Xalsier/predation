@@ -4,7 +4,7 @@ const creditsData = {
         { title: "Samsara Logo:", imageUrl: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/5a62feb18531ff03a6fa8c502ad10f76-1686763029082/710fb114-4d28-4f88-9538-779dbe15ed7d.png", link: "https://www.fiverr.com/nekkonimestore", name: "Yuuika Hirasaki" }
     ],
     "Chapter Art": [
-        { generalist: true, imageUrl: ["https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/fb93b3e0f174081a85806cef70f81a3b-1691187786611/6d8be301-6cd4-4905-b123-f40161b7563e.png", "../assets/xal.jpeg"], link: ["https://www.fiverr.com/maxtorcito", "https://twitter.com/Zarushia"], name: ["Maxorcito", "Xalsier"] }
+        { generalist: true, imageUrl: ["https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/fb93b3e0f174081a85806cef70f81a3b-1691187786611/6d8be301-6cd4-4905-b123-f40161b7563e.png", "../assets/fuwa.jpeg"], link: ["https://www.fiverr.com/maxtorcito", "https://twitter.com/Zarushia"], name: ["Maxorcito", "Xalsier"] }
     ],
     "Character Concept Art": [
         { generalist: true, imageUrl: ["https://storage.ko-fi.com/cdn/useruploads/ec3bca40-97c8-4f05-ba72-140bd7814fca.jpeg", "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/8e200b84fec56b4b6a9653c014039ac3-1636933825862/d5a7fdf9-36b7-44ad-ab5e-197ddc9851b3.jpg"], link: ["https://ko-fi.com/shadowxxfox", "https://www.fiverr.com/unagiroll"], name: ["ShadowxxFox", "NicoStarlight"] }
