@@ -8,6 +8,9 @@ const creditsData = {
     ],
     "Character Concept Art": [
         { generalist: true, imageUrl: ["https://storage.ko-fi.com/cdn/useruploads/ec3bca40-97c8-4f05-ba72-140bd7814fca.jpeg", "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/8e200b84fec56b4b6a9653c014039ac3-1636933825862/d5a7fdf9-36b7-44ad-ab5e-197ddc9851b3.jpg"], link: ["https://ko-fi.com/shadowxxfox", "https://www.fiverr.com/unagiroll"], name: ["ShadowxxFox", "NicoStarlight"] }
+    ],
+    "Github Collaborators - Front End": [
+        { generalist: true, imageUrl: ["https://avatars.githubusercontent.com/u/59917313?v=4"], link: ["https://github.com/myCodingcanvas"], name: ["Khushi Agrawal"] }
     ]
 };
 
