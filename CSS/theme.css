@@ -119,6 +119,10 @@ a:hover {
     transition: background-color 0.3s;
 }
 
+.available {
+    background-color: #FF4D4D; /* Red color for the scrollbar */  
+}
+
 /* Styles for the scrollbar track */
 body::-webkit-scrollbar {
     width: 15px; /* Width of the scrollbar */
