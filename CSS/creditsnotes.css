@@ -5,12 +5,26 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     padding: 0px 5px;
     margin-top: 20px;
     border-radius: 10px;
     gap: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #16171a;
+}
+
+.credit-container img {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.credit-container div {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
 }
 
 .content-wrapper {
@@ -59,6 +73,8 @@
 }
 
 .actual_credit {
+    justify-content: center;
+    align-content: center;
     text-decoration: none;
     color: #FF4D4D;
 }
