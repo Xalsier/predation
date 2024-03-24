@@ -15,11 +15,6 @@ function showCalendar() {
     document.getElementById('main-content').style.display = 'block';
     document.querySelector('.calendar-container').style.display = 'block';
 }
-function showEcosystem() {
-    document.getElementById('modal-overlay').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-    document.querySelector('.aperture').style.display = 'flex';
-}
 function showCredits () {
     document.getElementById('modal-overlay').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';

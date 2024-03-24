@@ -1,0 +1,34 @@
+.card {
+    background-color: #0f131b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 15px;
+}
+
+.ask, .response {
+    display: flex;
+    align-items: flex-start; /* Align to the top to handle multiline text properly */
+    margin: 10px 0;
+}
+
+.username {
+    font-weight: bold;
+    color: #FF4D4D;
+}
+
+img {
+    border-radius: 50%;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Smaller gap between username and paragraph */
+}
+
+p {
+    color: white;
+    margin: 0; /* Remove margin to bring text closer to username */
+}

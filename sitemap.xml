@@ -19,4 +19,8 @@
                hreflang="ja"
                href="https://predation.jp" />
    </url>
+      <url>
+      <loc>https://en.predation.jp/FAQ</loc>
+      <priority>0.5</priority>
+   </url>
 </urlset>
