@@ -47,19 +47,31 @@ function renderChapter(chapterNumber) {
     }
 }
 async function fetchAndRender(path, selector) {
-    const targetElement = document.querySelector(selector);
-    console.log(targetElement);
-    const alternatePath = `https://predation.jp/${path.replace('../', '')}`;
-    console.log(alternatePath);
-    console.log(path);
-    const alternateResponse = await fetch(alternatePath);
-    if (!alternateResponse.ok) {
-        throw new Error(`Failed to load content from both locations: ${path} and ${alternatePath}`);
+    try {
+        const targetElement = document.querySelector(selector);
+        const alternateResponse = await fetch(path);
+        if (!alternateResponse.ok) {
+            throw new Error(`Failed to load content from both locations: ${path} and ${alternatePath}`);
+        }  
+        const alternateText = await alternateResponse.text();
+        const { simpleMarkdownParse } = await import('../util/parse.js');
+        const renderedHtml = simpleMarkdownParse(alternateText);
+        targetElement.innerHTML = renderedHtml;
+    } catch {
+        const targetElement = document.querySelector(selector);
+        console.log(targetElement);
+        const alternatePath = `https://predation.jp/${path.replace('../', '')}`;
+        console.log(alternatePath);
+        console.log(path);
+        const alternateResponse = await fetch(alternatePath);
+        if (!alternateResponse.ok) {
+            throw new Error(`Failed to load content from both locations: ${path} and ${alternatePath}`);
+        }
+        const alternateText = await alternateResponse.text();
+        const { simpleMarkdownParse } = await import('../util/parse.js');
+        const renderedHtml = simpleMarkdownParse(alternateText);
+        targetElement.innerHTML = renderedHtml;
     }
-    const alternateText = await alternateResponse.text();
-    const { simpleMarkdownParse } = await import('../util/parse.js');
-    const renderedHtml = simpleMarkdownParse(alternateText);
-    targetElement.innerHTML = renderedHtml;
 }
 function refreshChapter() {
     const currentChapter = chapters.find(chap => chap.chapter === window.currentChapter);

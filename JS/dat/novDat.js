@@ -9,10 +9,10 @@ const webnovel = {
                                 "ko": ["../Korean/750_ko.md"] // Gemini Translation, In need of human review
                             },
             "chapterContentPath": {
-                                    "en" : ["../English/risk2.md", null, null],
-                                    "es" : ["../English/risk2.md"],  // Not Translated, Placeholder
-                                    "ja": ["../Japanese/risk_ja.md"],  // Not Translated, Placeholder
-                                    "ko" : ["../Korean/risk_ko.md"] // Not Translated, Placeholder
+                                    "en" : ["../public/1en.md", null, null, null],
+                                    "es" : ["../public/1es.md", null],  // Not Translated, Placeholder
+                                    "ja": ["../public/1ja.md", null],  // Not Translated, Placeholder
+                                    "ko" : ["../public/1ko.md", null] // Not Translated, Placeholder
                                 },
             "chapter_art": [
                                 ["../WebArt/38.webp", 

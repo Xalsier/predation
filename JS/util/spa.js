@@ -4,6 +4,7 @@ function showLogo() {
     document.querySelectorAll('#site_credits, .aperture, .calendar-container, .summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
 }
 function showWebnovel() {
+    refreshChapter();
     document.getElementById('modal-overlay').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
     document.querySelectorAll('.summary_card, .novel_nav, .chapter_content, .comment_section').forEach(el => el.style.display = 'block');

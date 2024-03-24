@@ -171,7 +171,7 @@ body {
     line-height: 1.5;
     margin: 0; /* Reset browser defaults */
     background-image: 
-    url('../bg.webp'); /* Your background image URL */
+    url('../../assets/bg.webp'); /* Your background image URL */
     background-repeat: no-repeat;
     background-size: cover; /* Cover the entire background */
     background-attachment: fixed;

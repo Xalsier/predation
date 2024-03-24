@@ -9,7 +9,18 @@
     <meta property="og:title" content="プリマル・サムサーラ： プレデーションの危険"> 
     <meta property="og:image" content="https://en.predation.jp/Assets/nosquidy.png" />
     <meta property="og:description" content="捕食の黄金時代、ナオリは最初の狩りに乗り出します。"> 
-    <link rel="stylesheet" href="https://en.predation.jp/CSS/style.css"> 
+    <link rel="stylesheet" href="../../CSS/navmodal.css">
+    <link rel="stylesheet" href="../../CSS/sitecredits.css">
+    <link rel="stylesheet" href="../../CSS/pawprints.css">
+    <link rel="stylesheet" href="../../CSS/searchbar.css">
+    <link rel="stylesheet" href="../../CSS/gallery.css">
+    <link rel="stylesheet" href="../../CSS/theme.css">
+    <link rel="stylesheet" href="../../CSS/disclaimer.css">
+    <link rel="stylesheet" href="../../CSS/comments.css" defer>
+    <link rel="stylesheet" href="../../CSS/creditsnotes.css" defer>
+    <link rel="stylesheet" href="../../CSS/summary.css" defer>
+    <link rel="stylesheet" href="../../CSS/webnovel.css" defer>
+    <link rel="stylesheet" href="../../CSS/calendar.css" defer>
     <script type="application/ld+json">
     {
     "@context": "http://schema.org",
@@ -27,32 +38,54 @@
 
 <body>
     <div id="modal-overlay">
-        <div id="modal" tabindex="-1">
-            <!-- Content sections for each language, initially hidden except for the selected language -->
-            <div id="content-ja" class="content">
-                <p id="preface1">序文</p>
-                <p id="preface2">ご注意ください、このサイトはバグがある可能性があります。モバイルフレンドリーにするために（再び）一からコードを書き直しましたが、もし物事が期待通りに動作しない場合は、<a href="https://twitter.com/zarushia" target="_blank">Twitter / X</a> で教えてください。</p>
-                <p id="preface3">現時点では、一部の機能は動作しません。ギャラリー、翻訳、さらには統計もです。これらは修正されることを約束します。</p>
-                <p id="preface4">第1章の初稿を読みたい場合は、読むことができます。また、コメントすることも可能にしました。^-^</p>
-                <p id="preface5">-- ザルシア</p> 
-                <a href="https://en.predation.jp">New english version of site (for indexing purposes)</a>
-            </div>                                
-            <div class="button-container">
-                <button id="continue-btn">続ける</button>
-                <button id="leave-btn">去る</button>
+        <header>
+            <img src="../../assets/log.webp" id="LogoBTN" class="headerlogo" alt="Primal Samsara プライマルサムサラ" width="400px" height="242">
+            <nav>
+                <div id="nav-buttons">
+                    <button id="WebnovelBTN" onclick="showWebnovel()">ウェブノベル</button>
+                    <button id="CalendarBTN" onclick="showCalendar()">カレンダー</button>
+                    <button id="EcosystemBTN" onclick="showEcosystem()">エコシステム</button>  
+                </div>
+                <div id="announcement">
+                    <strong id="preface1">第2章が出ました！ ^ ^</strong>
+                </div>
+            </nav>
+        </header>        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>
+                        <label id="select-lang" for="language-select">言語を選択:</label>
+                        <select name="languages" id="language-select">
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                        </select>
+                    </p>
+                    <p class="copyright">
+                        プライマルサムサラ © <a href="https://twitter.com/zarushia">Xalsier Kitsune</a>. すべての権利を保有。
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="contact-links">
+                        <a href="https://twitter.com/zarushia">Twitter</a> |
+                        メールでのお問い合わせ: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a>
+                    </p>
+                    <p class="official-links">
+                        <a href="https://github.com/Xalsier/predation">サイトGithub</a> |
+                        <a href="FAQ.html">FAQ</a> |
+                        プライバシーポリシー | <a onclick="showCredits();">クレジット</a> |
+                        <a href="https://github.com/Xalsier/predation/issues">既知のサイトの問題</a> |
+                        プレスキット
+                    </p>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
     <main id="main-content">
-        <header>
-            <img loading="lazy" id="LogoBTN" class="headerlogo" alt="Primal Samsara プライマルサムサラ" width="400px" height="242">
-            <nav>
-                <button id="WebnovelBTN">ウェブ小説</button>
-                <button id="CalendarBTN">カレンダー</button>
-                <button id="IssueRoadmapBTN">課題のロードマップ</button> 
-            </nav>
-            
-        </header>
+        <img onclick="showLogo()" src="../../assets/log.webp" id="LogoBTN2" class="headerlogo" alt="Primal Samsara プライマルサムサラ" width="400px" height="242">
+
         <div class="calendar-container">
             <div class="calendar-header">
                 <button id="prevMonth">◀ 前</button>
@@ -150,25 +183,19 @@
 
         </div>
     </main>
-    <footer>
-        <div class="footer-content" style="display: none;">
-            <p class="copyright">プリマル・サムサーラ © ザルシアキツネ。 全著作権所有。 背景画：ディミ。 ロゴ画：ユウキ。</p>        
-            <ul class="contact-links" style="text-align: left;">
-                <li style="color: white;">Twitter / X: <a href="https://twitter.com/zarushia">ザルシア</a></li>
-                <li style="color: white;">サイトのGithub: <a href="https://github.com/Xalsier/predation">predation</a></li>
-                <li style="color: white;">問い合わせ先 (Eメール): <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a></li>
-            </ul>
-        </div>
-    </footer>
-    
-    
-    <script src="../JS/lib/jquery.js"></script>
+    <script src="../JS/jquery.js"></script>
+    <script type="module" src="../JS/util/stat/cha.js"></script>
+    <script type="module" src="../JS/util/stat/upd.js"></script>
+    <script type="module" src="../JS/util/stat/src.js"></script>
+    <script type="module" src="../JS/util/stat/com.js"></script>
+    <script type="module" src="../JS/util/langts.js"></script>
+    <script type="module" src="../JS/mod/chapter.js"></script>
+    <script type="module" src="../JS/mod/index.js"></script>
+    <script src="../JS/util/ani.js"></script>
     <script src="../JS/util/script.js"></script>
     <script src="../JS/util/color.js"></script>
+    <script src="../JS/dat/cred.js"></script>
     <script src="../JS/dat/events.js"></script>
     <script src="../JS/util/spa.js"></script>
-    <script type="module" src="../JS/mod/uptrans.js" ></script>
-    <script type="module" src="../JS/mod/chapter.js" ></script>
-    <script type="module" src="../JS/mod/index.js"></script>
 </body>
 </html>
