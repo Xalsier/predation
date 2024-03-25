@@ -19,19 +19,19 @@ document.getElementById('language-select').addEventListener('change', function()
 });
 function renderChapter(chapterNumber) {
     window.currentChapter = chapterNumber;
-    const languageKey = currentLanguageIndex;
-    const chapter = chapters.find(chap => chap.chapter === chapterNumber);
+    const languageKey = currentLanguageIndex.toUpperCase(); // Use capitalized language
+    const chapter = webnovel.chapters.find(chap => chap.chapter === chapterNumber);
+
     if (chapter) {
-        const originalAuthorNotePath = chapter.authorNotePath[languageKey][0];
-        fetchAndRender(originalAuthorNotePath, authorNoteSelector);
-        const originalChapterContentPath = chapter.chapterContentPath[languageKey][0];
-        fetchAndRender(originalChapterContentPath, chapterContentSelector);
+        const chapterContentURL = `https://hunt.predation.jp/WC/${languageKey}/${chapterNumber}${languageKey}0.md`;
+        const authorNoteURL = `https://hunt.predation.jp/AN/${languageKey}/${chapterNumber}${languageKey}AN.md`;
+
+        fetchAndRender(chapterContentURL, chapterContentSelector);
+        fetchAndRender(authorNoteURL, authorNoteSelector);
         const chapterArt = chapter.chapter_art;
         if (chapterArt && chapterArt.length > 0) {
-            const artPath = chapterArt[0][0];
-            const alternatePath = `https://predation.jp/${artPath.replace('../', '')}`;
-            document.querySelector(chapterArtSelector).setAttribute('src', alternatePath);
-            document.querySelector(chapterArtSelector).setAttribute('alt', chapterArt[1]);
+            document.querySelector(chapterArtSelector).setAttribute('src', chapterArt[0][0]);
+            document.querySelector(chapterArtSelector).setAttribute('alt', chapterArt[0][1]);
             document.querySelector('.actual_credit').innerHTML = '<a class="actual_credit" href="' + chapterArt[0][3] + '">' + chapterArt[0][2] + '</a>';
         
             // Ensure there is a dedicated <img> element for profile image
@@ -41,38 +41,24 @@ function renderChapter(chapterNumber) {
                 profImgElement.setAttribute('alt', chapterArt[0][2]);
             }
         }
-        
     } else {
         console.error('Chapter not found:', chapterNumber);
     }
 }
-async function fetchAndRender(path, selector) {
-    try {
-        const targetElement = document.querySelector(selector);
-        const alternateResponse = await fetch(path);
-        if (!alternateResponse.ok) {
-            throw new Error(`Failed to load content from both locations: ${path} and ${alternatePath}`);
-        }  
-        const alternateText = await alternateResponse.text();
-        const { simpleMarkdownParse } = await import('../util/parse.js');
-        const renderedHtml = simpleMarkdownParse(alternateText);
-        targetElement.innerHTML = renderedHtml;
-    } catch {
-        const targetElement = document.querySelector(selector);
-        console.log(targetElement);
-        const alternatePath = `https://predation.jp/${path.replace('../', '')}`;
-        console.log(alternatePath);
-        console.log(path);
-        const alternateResponse = await fetch(alternatePath);
-        if (!alternateResponse.ok) {
-            throw new Error(`Failed to load content from both locations: ${path} and ${alternatePath}`);
-        }
-        const alternateText = await alternateResponse.text();
-        const { simpleMarkdownParse } = await import('../util/parse.js');
-        const renderedHtml = simpleMarkdownParse(alternateText);
-        targetElement.innerHTML = renderedHtml;
-    }
+
+async function fetchAndRender(url, selector) {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to load content from: ${url}`);
+    }  
+
+    const text = await response.text();
+    const { simpleMarkdownParse } = await import('../util/parse.js');
+    const renderedHtml = simpleMarkdownParse(text);
+    document.querySelector(selector).innerHTML = renderedHtml;
 }
+
+
 function refreshChapter() {
     const currentChapter = chapters.find(chap => chap.chapter === window.currentChapter);
     if(currentChapter) renderChapter(currentChapter.chapter);
