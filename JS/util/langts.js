@@ -98,7 +98,7 @@ function getTranslations(languageCode) {
                 'summary-title': 'プライマル・サムサーラ: プレデーションのリスク',  // Summary Title - 
             };
         case 'ko':
-            return { // Translations added by Gemini AI
+            return {
                 'select-lang': '언어 선택:', 
                 '2select-lang': '언어 선택:', 
                 'continue-btn': '계속하다', 
@@ -133,13 +133,28 @@ function getTranslations(languageCode) {
             return {}; 
     }
 }
+// Fetch and parse the JSON file
+function fetchPreface() {
+    return fetch('../../JSON/preface.json')
+        .then(response => response.json());
+}
+
 function updateTranslations(languageCode) {
     const translations = getTranslations(languageCode);
-    for (const [id, translationKey] of Object.entries(translations)) {
-        const element = document.getElementById(id);
-        if (element) { 
-            element.textContent = translationKey;
+
+    fetchPreface().then(preface => {
+        // Replace 'preface1' entry with the one from preface.json
+        if (preface[languageCode]) {
+            translations['preface1'] = preface[languageCode][0];
         }
-    }
+
+        for (const [id, translationKey] of Object.entries(translations)) {
+            const element = document.getElementById(id);
+            if (element) { 
+                element.textContent = translationKey;
+            }
+        }
+    });
 }
+
 window.updateTranslations = updateTranslations;

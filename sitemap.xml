@@ -8,7 +8,7 @@
       <xhtml:link 
                rel="alternate"
                hreflang="en"
-               href="https://en.predation.jp" />
+               href="https://en.predation.jp"/>
    </url>
    <url>
       <loc>https://en.predation.jp</loc>
@@ -17,23 +17,24 @@
       <xhtml:link 
                rel="alternate"
                hreflang="ja"
-               href="https://predation.jp" />
+               href="https://predation.jp"/>
    </url>
-      <url>
+   <url>
       <loc>https://en.predation.jp/FAQ</loc>
       <priority>0.5</priority>
+      <changefreq>weekly</changefreq>
       <xhtml:link 
                rel="alternate"
                hreflang="ja"
-               href="https://predation.jp/FAQ" />
+               href="https://predation.jp/FAQ"/>
    </url>
-   </url>
-      <url>
+   <url>
       <loc>https://predation.jp/FAQ</loc>
       <priority>0.5</priority>
+      <changefreq>weekly</changefreq>
       <xhtml:link 
                rel="alternate"
                hreflang="en"
-               href="https://en.predation.jp/FAQ" />
+               href="https://en.predation.jp/FAQ"/>
    </url>
 </urlset>
