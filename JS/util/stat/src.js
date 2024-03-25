@@ -12,4 +12,3 @@ function updateSrcFilesCount() {
     });
     document.getElementById('edit-count').textContent = srcFilesCount;
 }
-updateSrcFilesCount();

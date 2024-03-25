@@ -26,8 +26,18 @@ function renderChapter(chapterNumber) {
         const chapterContentURL = `https://hunt.predation.jp/WC/${languageKey}/${chapterNumber}${languageKey}0.md`;
         const authorNoteURL = `https://hunt.predation.jp/AN/${languageKey}/${chapterNumber}${languageKey}AN.md`;
 
-        fetchAndRender(chapterContentURL, chapterContentSelector);
-        fetchAndRender(authorNoteURL, authorNoteSelector);
+        fetchAndRender(chapterContentURL, chapterContentSelector)
+            .catch(() => {
+                // If fetch fails, fetch the default English version
+                const defaultChapterContentURL = `https://hunt.predation.jp/WC/EN/${chapterNumber}EN0.md`;
+                fetchAndRender(defaultChapterContentURL, chapterContentSelector);
+            });
+
+        fetchAndRender(authorNoteURL, authorNoteSelector)
+            .catch(() => {
+                const defaultAuthorNoteURL = `https://hunt.predation.jp/AN/EN/${chapterNumber}ENAN.md`;
+                fetchAndRender(defaultAuthorNoteURL, authorNoteSelector);
+            });
         const chapterArt = chapter.chapter_art;
         if (chapterArt && chapterArt.length > 0) {
             document.querySelector(chapterArtSelector).setAttribute('src', chapterArt[0][0]);

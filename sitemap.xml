@@ -22,5 +22,18 @@
       <url>
       <loc>https://en.predation.jp/FAQ</loc>
       <priority>0.5</priority>
+      <xhtml:link 
+               rel="alternate"
+               hreflang="ja"
+               href="https://predation.jp/FAQ" />
+   </url>
+   </url>
+      <url>
+      <loc>https://predation.jp/FAQ</loc>
+      <priority>0.5</priority>
+      <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://en.predation.jp/FAQ" />
    </url>
 </urlset>

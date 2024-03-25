@@ -1,19 +1,43 @@
-## Repo Brief
+# Repo Brief
 
-Repository for the English version of the Primal Samsara webnovel site.
+Development Repository for the English version of the Primal Samsara webnovel site.
 
-https://en.predation.jp
+![Primal Samsara](https://en.predation.jp/assets/log.webp) 
 
-### TODO
+## Localizations
 
-#### High Priority
+English: https://en.predation.jp<br>
+Japanese: https://predation.jp
+
+### Semi-Localized, but without a site.
+
+Korean, Spanish
+
+### Not Localized, but Planned
+
+* **French (Français)**
+* **German (Deutsch)**
+* **Italian (Italiano)**
+* **Portuguese (Português)**
+* **Russian (Русский)**
+* **Chinese (中文)**
+* **Arabic (العربية)** 
+* **Hindi (हिन्दी)**
+* **Dutch (Nederlands)**
+* **Turkish (Türkçe)**
+
+Community-driven translation efforts are welcome!
+
+## TODO
+
+### High Priority
 - Bring newer updates from the English site to the Japanese production environment.
 
-#### Medium Priority
+### Medium Priority
 - Bringing back the Wiki
 - Bringing back the Gallery
 
-#### Low Priority
+### Low Priority
 - Webnovel Edit History Complexity, deletions, additions, commit notes
 - Editor/Writer profile
 - Character profiles
@@ -22,7 +46,7 @@ https://en.predation.jp
 - Primal Market / Support Coffee
 - Privacy Policy
 
-#### Completed
+### Completed
 - 03/24 FAQ
 - 03/18 Credits
 - 03/14 Reduce dependency on Jquery to reduce script loading for users using low performance browsers.
