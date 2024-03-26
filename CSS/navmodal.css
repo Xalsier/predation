@@ -22,12 +22,20 @@ nav {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    width: auto;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
     margin-top: 20px;
 
+}
+
+@media (max-width: 500px) { 
+    #announcement {
+        width: 90vw;
+        text-align: center;
+    }
 }
 
 #nav-buttons {

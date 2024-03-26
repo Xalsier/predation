@@ -1,9 +1,16 @@
 .card {
-    background-color: #0f131b;
+    background-color: #0f131bd9;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 15px;
+}
+
+@media (min-width: 1000px) { 
+    .card {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 .ask, .response {

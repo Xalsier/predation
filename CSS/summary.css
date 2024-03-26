@@ -71,6 +71,11 @@ span:hover {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+@media (min-width: 1000px) { 
+    #summary-content-en {
+        width: 60%;
+    }
+}
 
 .summary_card strong {
     color: white;
