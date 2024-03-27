@@ -4,16 +4,16 @@ Development Repository for the English version of the Primal Samsara webnovel si
 
 ![Primal Samsara](https://en.predation.jp/assets/log.webp) 
 
-## Localizations
+## Website Localizations
+[English](https://en.predation.jp) || 
+[日本語](https://predation.jp)
 
-English: https://en.predation.jp<br>
-Japanese: https://predation.jp
+## Semi-localizated, but without a site
 
-### Semi-Localized, but without a site.
+* **Korean (한국어)**
+* **Spanish (Español)**
 
-Korean, Spanish
-
-### Not Localized, but Planned
+### Semi-Localized, but without a site, and without webnovel translations.
 
 * **French (Français)**
 * **German (Deutsch)**
@@ -25,6 +25,11 @@ Korean, Spanish
 * **Hindi (हिन्दी)**
 * **Dutch (Nederlands)**
 * **Turkish (Türkçe)**
+
+### Not Localized, but Planned
+
+* **Swedish (Svenska)**
+
 
 Community-driven translation efforts are welcome!
 
