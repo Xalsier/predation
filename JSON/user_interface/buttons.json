@@ -1,0 +1,156 @@
+{
+    "buttons": [
+        {
+            "id": "select-lang",
+            "translations": {
+                "en": "Select Language:",
+                "es": "Seleccionar idioma:",
+                "ja": "言語を選択:",
+                "ko": "언어 선택:",
+                "fr": "Choisir la langue:",
+                "de": "Sprache auswählen:",
+                "it": "Seleziona lingua:",
+                "pt": "Selecionar idioma:",
+                "ru": "Выбрать язык:",
+                "zh": "选择语言:",
+                "ar": "اختر اللغة:",
+                "hi": "भाषा चुनिए:",
+                "nl": "Selecteer taal:",
+                "tr": "Dil Seçin:"
+            }
+        },
+        {
+            "id": "WebnovelBTN",
+            "translations": {
+                "en": "Webnovel",
+                "es": "Webnovela",
+                "ja": "ウェブノベル",
+                "ko": "웹소설",
+                "fr": "Webnovel",
+                "de": "Webnovel",
+                "it": "Webnovel",
+                "pt": "Webnovel",
+                "ru": "Вебновелла",
+                "zh": "网络小说",
+                "ar": "ويب نوفل",
+                "hi": "वेबनॉवेल",
+                "nl": "Webnovel",
+                "tr": "Webnovel"
+            }
+        },
+        {
+            "id": "CalendarBTN",
+            "translations": {
+                "en": "Calendar",
+                "es": "Calendario",
+                "ja": "カレンダー",
+                "ko": "달력",
+                "fr": "Calendrier",
+                "de": "Kalender",
+                "it": "Calendario",
+                "pt": "Calendário",
+                "ru": "Календарь",
+                "zh": "日历",
+                "ar": "التقويم",
+                "hi": "कैलेंडर",
+                "nl": "Kalender",
+                "tr": "Takvim"
+            }
+        },
+        {
+            "id": "prev-chapter",
+            "translations": {
+                "en": "Previous",
+                "es": "Capítulo anterior",
+                "ja": "前",
+                "ko": "이전",
+                "fr": "Précédent",
+                "de": "Vorheriges Kapitel",
+                "it": "Precedente",
+                "pt": "Anterior",
+                "ru": "Предыдущая",
+                "zh": "前一章",
+                "ar": "السابق",
+                "hi": "पिछला",
+                "nl": "Vorige",
+                "tr": "Önceki"
+            }
+        },
+        {
+            "id": "next-chapter",
+            "translations": {
+                "en": "Next",
+                "es": "Capítulo siguiente",
+                "ja": "次",
+                "ko": "다음",
+                "fr": "Suivant",
+                "de": "Nächstes Kapitel",
+                "it": "Prossimo",
+                "pt": "Próximo",
+                "ru": "Следующая",
+                "zh": "下一章",
+                "ar": "التالي",
+                "hi": "अगला",
+                "nl": "Volgende",
+                "tr": "Sonraki"
+            }
+        },
+        {        
+            "id": "return-btn",
+            "translations": {
+                "en": "Return",
+                "es": "Regresar",
+                "ja": "戻る",
+                "ko": "돌아가기",
+                "fr": "Retour",
+                "de": "Zurückkehren",
+                "it": "Torna",
+                "pt": "Retorna",
+                "ru": "Вернуться",
+                "zh": "返回",
+                "ar": "عودة",
+                "hi": "वापसी",
+                "nl": "Terugkeren",
+                "tr": "Geri Dön"
+            }
+        },
+        {        
+            "id": "show-com",
+            "translations": {
+                "en": "Show comments",
+                "es": "Mostrar comentarios",
+                "ja": "コメントを表示",
+                "ko": "댓글 보기",
+                "fr": "Afficher les commentaires",
+                "de": "Kommentare anzeigen",
+                "it": "Mostra commenti",
+                "pt": "Mostrar comentários",
+                "ru": "Показать комментарии",
+                "zh": "显示评论",
+                "ar": "إظهار التعليقات",
+                "hi": "टिप्पणियाँ दिखाएं",
+                "nl": "Reacties weergeven",
+                "tr": "Yorumları Göster"
+            }
+        },
+        {       
+            "id": "post-comment",
+            "translations": {
+                "en": "Post",
+                "es": "Publicar",
+                "ja": "投稿",
+                "ko": "게시",
+                "fr": "Publier",
+                "de": "Veröffentlichen",
+                "it": "Pubblica",
+                "pt": "Publicar",
+                "ru": "Опубликовать",
+                "zh": "发表",
+                "ar": "نشر",
+                "hi": "पोस्ट करें",
+                "nl": "Plaatsen",
+                "tr": "Gönder"
+            }
+        }
+    ]
+}

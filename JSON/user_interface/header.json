@@ -1,0 +1,23 @@
+{
+    "headerContent": [
+        {
+            "id": "title",
+            "translations": {
+                "en": "Primal Samsara: Risk of Predation",
+                "es": "Samsara Primal: Riesgo de Depredación",
+                "ja": "プライマルサムサラ：捕食のリスク",
+                "ko": "프라이멀 삼사라: 포식의 위험",
+                "fr": "Samsara Primal : Risque de Prédation",
+                "de": "Primal Samsara: Risiko der Prädation",
+                "it": "Samsara Primordiale: Rischio di Predazione",
+                "pt": "Samsara Primordial: Risco de Predação",
+                "ru": "Первобытный Самсара: Риск Хищничества",
+                "zh": "原始轮回：捕食风险",
+                "ar": "سمسارا البدائية: خطر الافتراس",
+                "hi": "प्राइमल संसार: शिकार का जोखिम",
+                "nl": "Primal Samsara: Risico op Predatie",
+                "tr": "İlkel Samsara: Yırtıcılık Riski"
+            }
+        }
+    ]
+}

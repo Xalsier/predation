@@ -1,0 +1,175 @@
+{
+    "sumStat": [
+        {
+            "id": "summary-stat1",
+            "translations": {
+                "en": "Author:",
+                "es": "Autor:",
+                "ja": "著者:",
+                "ko": "저자:",
+                "fr": "Auteur:",
+                "de": "Autor:",
+                "it": "Autore:",
+                "pt": "Autor:",
+                "ru": "Автор:",
+                "zh": "作者:",
+                "ar": "المؤلف:",
+                "hi": "लेखक:",
+                "nl": "Auteur:",
+                "tr": "Yazar:"
+            }
+        },
+        {
+            "id": "summary-stat2",
+            "translations": {
+                "en": "Last Updated:",
+                "es": "Última actualización:",
+                "ja": "最終更新:",
+                "ko": "최근 업데이트:",
+                "fr": "Dernière mise à jour:",
+                "de": "Letzte Aktualisierung:",
+                "it": "Ultimo aggiornamento:",
+                "pt": "Última atualização:",
+                "ru": "Последнее обновление:",
+                "zh": "最后更新:",
+                "ar": "آخر تحديث:",
+                "hi": "अंतिम अपडेट:",
+                "nl": "Laatst bijgewerkt:",
+                "tr": "Son güncelleme:"
+            }
+        },
+        {
+            "id": "summary-stat3",
+            "translations": {
+                "en": "Comments:",
+                "es": "Comentarios:",
+                "ja": "コメント:",
+                "ko": "댓글:",
+                "fr": "Commentaires:",
+                "de": "Kommentare:",
+                "it": "Commenti:",
+                "pt": "Comentários:",
+                "ru": "Комментарии:",
+                "zh": "评论:",
+                "ar": "تعليقات:",
+                "hi": "टिप्पणियाँ:",
+                "nl": "Opmerkingen:",
+                "tr": "Yorumlar:"
+            }
+        },
+        {
+            "id": "summary-stat4",
+            "translations": {
+                "en": "Edits:",
+                "es": "Ediciones:",
+                "ja": "編集:",
+                "ko": "편집:",
+                "fr": "Modifications:",
+                "de": "Bearbeitungen:",
+                "it": "Modifiche:",
+                "pt": "Edições:",
+                "ru": "Редакции:",
+                "zh": "编辑:",
+                "ar": "التعديلات:",
+                "hi": "संपादन:",
+                "nl": "Bewerkingen:",
+                "tr": "Düzenlemeler:"
+            }
+        },
+        {
+            "id": "summary-stat5",
+            "translations": {
+                "en": "Words:",
+                "es": "Palabras:",
+                "ja": "単語:",
+                "ko": "단어:",
+                "fr": "Mots:",
+                "de": "Wörter:",
+                "it": "Parole:",
+                "pt": "Palavras:",
+                "ru": "Слова:",
+                "zh": "词汇:",
+                "ar": "كلمات:",
+                "hi": "शब्द:",
+                "nl": "Woorden:",
+                "tr": "Kelimeler:"
+            }
+        },
+        {
+            "id": "summary-stat6",
+            "translations": {
+                "en": "Chapters:",
+                "es": "Capítulos:",
+                "ja": "章:",
+                "ko": "장:",
+                "fr": "Chapitres:",
+                "de": "Kapitel:",
+                "it": "Capitoli:",
+                "pt": "Capítulos:",
+                "ru": "Главы:",
+                "zh": "章节:",
+                "ar": "الفصول:",
+                "hi": "अध्याय:",
+                "nl": "Hoofdstukken:",
+                "tr": "Bölümler:"
+            }
+        },
+        {
+            "id": "summary-stat7",
+            "translations": {
+                "en": "Uploaded:",
+                "es": "Subido:",
+                "ja": "アップロード済み:",
+                "ko": "업로드됨:",
+                "fr": "Téléchargé:",
+                "de": "Hochgeladen:",
+                "it": "Caricato:",
+                "pt": "Carregado:",
+                "ru": "Загружено:",
+                "zh": "上传:",
+                "ar": "تم الرفع:",
+                "hi": "अपलोड किया गया:",
+                "nl": "Geüpload:",
+                "tr": "Yüklendi:"
+            }
+        },
+        {
+            "id": "summary-blurb",
+            "translations": {
+                "en": ["During the Golden Age of Predation, Naori embarks on their first hunt- without the protection of Shiro and Sera."],
+                "es": ["Durante la Edad de Oro de la Predación, Naori se embarca en su primera caza sin la protección de Shiro y Sera."],
+                "ja": ["捕食の黄金時代に、ナオリはシロとセラの保護なしに初めての狩りに出かけます。"],
+                "ko": ["포식의 황금기에 나오리는 시로와 세라의 보호 없이 첫 사냥에 나선다."],
+                "fr": ["Pendant l'Âge d'Or de la Prédation, Naori se lance dans sa première chasse sans la protection de Shiro et Sera."],
+                "de": ["Während des Goldenen Zeitalters der Jagd begibt sich Naori auf ihre erste Jagd ohne den Schutz von Shiro und Sera."],
+                "it": ["Durante l'Età d'Oro della Predazione, Naori intraprende la sua prima caccia senza la protezione di Shiro e Sera."],
+                "pt": ["Durante a Era de Ouro da Predação, Naori embarca em sua primeira caça sem a proteção de Shiro e Sera."],
+                "ru": ["В золотую эпоху охоты Наори отправляется на свою первую охоту без защиты Широ и Серы."],
+                "zh": ["在捕食的黄金时代，Naori 在没有 Shiro 和 Sera 的保护下，开始了他们的第一次狩猎。"],
+                "ar": ["خلال العصر الذهبي للافتراس، ينطلق ناوري في أولى رحلات الصيد بدون حماية شيرو وسيرا."],
+                "hi": ["प्रेडेशन के गोल्डन एज के दौरान, नाओरी शिरो और सेरा के संरक्षण के बिना अपने पहले शिकार पर निकलती है।"],
+                "nl": ["Tijdens de Gouden Eeuw van de Predatie, begint Naori aan hun eerste jacht zonder de bescherming van Shiro en Sera."],
+                "tr": ["Yırtıcılığın Altın Çağında, Naori, Shiro ve Sera'nın koruması olmadan ilk avına çıkar."]
+            }
+        },
+        {
+            "id": "summary-title",
+            "translations": {
+                "en": "Primal Samsara: Risk of Predation",
+                "es": "Samsara Primordial: Riesgo de Depredación",
+                "ja": "原始サムサーラ：捕食のリスク",
+                "ko": "원시 삼사라: 포식의 위험",
+                "fr": "Samsara Primal: Risque de Prédation",
+                "de": "Primal Samsara: Risiko der Prädation",
+                "it": "Samsara Primordiale: Rischio di Predazione",
+                "pt": "Samsara Primordial: Risco de Predação",
+                "ru": "Первобытная Самсара: Риск Хищничества",
+                "zh": "原始轮回：捕食的风险",
+                "ar": "سمسارا الأولية: خطر الافتراس",
+                "hi": "प्राइमल संसार: शिकार का जोखिम",
+                "nl": "Primal Samsara: Risico van Predatie",
+                "tr": "İlkel Samsara: Yırtıcılık Riski"
+            }
+        }
+    ]
+}

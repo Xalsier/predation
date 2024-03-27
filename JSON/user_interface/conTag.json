@@ -1,0 +1,61 @@
+{
+    "conTags": [
+        {
+            "id": "content-tag1",
+            "translations": {
+                "en": "Not Rated",
+                "es": "Sin calificar",
+                "ja": "未評価",
+                "ko": "등급 없음",
+                "fr": "Non évalué",
+                "de": "Nicht bewertet",
+                "it": "Non valutato",
+                "pt": "Não classificado",
+                "ru": "Без рейтинга",
+                "zh": "未评级",
+                "ar": "غير مصنف",
+                "hi": "रेट नहीं किया गया",
+                "nl": "Niet beoordeeld",
+                "tr": "Değerlendirilmemiş"
+            }
+        },
+        {
+            "id": "content-tag2",
+            "translations": {
+                "en": "Furry Soulslike",
+                "es": "Soulslike Peludo",
+                "ja": "ファーリーソウルズライク",
+                "ko": "퍼리 소울즈라이크",
+                "fr": "Furry Soulslike",
+                "de": "Furry Soulslike",
+                "it": "Furry Soulslike",
+                "pt": "Furry Soulslike",
+                "ru": "Furry Soulslike",
+                "zh": "毛茸茸的灵魂式",
+                "ar": "فيري سولزلايك",
+                "hi": "फरी सोल्सलाइक",
+                "nl": "Furry Soulslike",
+                "tr": "Tüylü Soulslike"
+            }
+        },
+        {
+            "id": "content-tag3",
+            "translations": {
+                "en": "Graphic Violence",
+                "es": "Violencia gráfica",
+                "ja": "グラフィックバイオレンス",
+                "ko": "그래픽 폭력",
+                "fr": "Violence graphique",
+                "de": "Grafische Gewalt",
+                "it": "Violenza grafica",
+                "pt": "Violência gráfica",
+                "ru": "Графическое насилие",
+                "zh": "图形暴力",
+                "ar": "عنف جرافيكي",
+                "hi": "ग्राफिक हिंसा",
+                "nl": "Grafisch geweld",
+                "tr": "Grafik Şiddet"
+            }
+        }
+    ]
+}

@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primal Samsara: Risk of Predation</title>
-    <meta name="description" content="During the Golden Age of Predation, Naori embarks on their first hunt.">
-    <meta property="og:title" content="Primal Samsara: Risk of Predation">
+    <title id="title">Primal Samsara: Risk of Predation</title>
+    <meta id="meta-description" name="description" content="During the Golden Age of Predation, Naori embarks on their first hunt.">
+    <meta id="meta-og-title" property="og:title" content="Primal Samsara: Risk of Predation">
     <meta property="og:image" content="log.webp" />
-    <meta property="og:description" content="During the Golden Age of Predation, Naori embarks on their first hunt." />
+    <meta id="meta-og-description"property="og:description" content="During the Golden Age of Predation, Naori embarks on their first hunt." />
     <meta property="og:type" content="website" /> 
-    <meta property="og:url" content="https://en.predation.jp"/> 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Primal Samsara: Risk of Predation">
-    <meta name="twitter:description" content="During the Golden Age of Predation, Naori embarks on their first hunt.">
-    <meta name="twitter:image" content="https://en.predation.jp/log.webp">
+    <meta id="meta-twitter-title"name="twitter:title" content="Primal Samsara: Risk of Predation">
+    <meta id="meta-twitter-description" name="twitter:description" content="During the Golden Age of Predation, Naori embarks on their first hunt.">
     <link rel="stylesheet" href="../CSS/navmodal.css">
     <link rel="stylesheet" href="../CSS/sitecredits.css">
     <link rel="stylesheet" href="../CSS/pawprints.css">
@@ -52,7 +50,6 @@
                 <div id="nav-buttons">
                     <button id="WebnovelBTN" onclick="showWebnovel()">Webnovel</button>
                     <button id="CalendarBTN" onclick="showCalendar()">Calendar</button>
-                    <button id="EcosystemBTN" onclick="showEcosystem()">Ecosystem</button>  
                 </div>
                 <div id="announcement">
                     <strong id="preface1">Chapter 3 is out!! (And is almost double the size of Chapter 1!)</strong>
@@ -81,21 +78,22 @@
                             <option value="tr">Türkçe</option>  
                         </select> 
                     </p>
-                    <p class="copyright">
-                        Primal Samsara © <a href="https://twitter.com/zarushia">Xalsier Kitsune</a>. All rights reserved.
+                    <p id="copyright1" class="copyright">
+                        Primal Samsara © Xalsier Kitsune. All rights reserved.
                     </p>
                 </div>
                 <div class="footer-right">
                     <p class="contact-links">
-                        <a href="https://twitter.com/zarushia">Twitter</a> | 
-                        Email inquiries: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a>
+                        <a id="twitter" href="https://twitter.com/zarushia">Twitter</a> | <span id="email-inquiries">
+                            Email inquiries: </span> <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a>
                     </p>
                     <p class="official-links">
-                        <a href="https://github.com/Xalsier/predation">Site Github</a> |
-                        <a href="FAQ.html">FAQ</a> | 
-                        Privacy Policy | <a onclick="showCredits();">Credits</a> |
-                        <a href="https://github.com/Xalsier/predation/issues">Known Site Issues</a>
-                        | Press Kit
+                        <a id="site-github" href="https://github.com/Xalsier/predation">Site Github</a> |
+                        <a id="FAQ" href="FAQ.html">FAQ</a> | 
+                        <span id="privacy-policy">Privacy Policy</span> | 
+                        <a id="credit-link" onclick="showCredits();">Credits</a> |
+                        <a id="known-site-issues" href="https://github.com/Xalsier/predation/issues">Known Site Issues</a>
+                        | <span id="press-kit">Press Kit</span>
                     </p>
                 </div>
             </div>

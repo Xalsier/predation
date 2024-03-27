@@ -28,6 +28,16 @@ Korean, Spanish
 
 Community-driven translation efforts are welcome!
 
+#### Documentation for Community Review for Localization:
+
+- 'false' can be added to the second element of an array in ../JSON/user_interface, as a flag to let others know this item may potentially be poorly translated, or may not have the intending meaning. For example:
+
+```
+"es": ["¡Capítulo 3 ya está disponible! (¡Y es casi el doble del tamaño del Capítulo 1!)", false],
+```
+
+Some may be missing an object array, these can be added to suit this purpose. The code (Should) be able to handle the differences.
+
 ## New features currently on the English Repository
 
 *Reference to know what features are missing in other localizations*

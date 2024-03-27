@@ -1,0 +1,137 @@
+{
+    "footerContent" : [
+        {
+            "id": "copyright1",
+            "translations" : {
+              "en": "Primal Samsara © Xalsier Kitsune. All rights reserved.",
+              "es": "Primal Samsara © Xalsier Kitsune. Todos los derechos reservados.",
+              "ja": "Primal Samsara © Xalsier Kitsune. 無断転載禁止 (Mudan tensai kinshi)",
+              "ko": "Primal Samsara © Xalsier Kitsune. 무단 전재 및 재배포 금지 (Mudan jeonjae wa jaebaepou geumji)", 
+              "fr": "Primal Samsara © Xalsier Kitsune. Tous droits réservés.",
+              "de": "Primal Samsara © Xalsier Kitsune. Alle Rechte vorbehalten.",
+              "it": "Primal Samsara © Xalsier Kitsune. Tutti i diritti riservati.",
+              "pt": "Primal Samsara © Xalsier Kitsune. Todos os direitos reservados.",
+              "ru": "Primal Samsara © Xalsier Kitsune. Все права защищены (Vse prava zashchiteny)",
+              "zh": "Primal Samsara © Xalsier Kitsune. 版权所有 (Banquan suoyou)", 
+              "ar": "Primal Samsara © Xalsier Kitsune. كل الحقوق محفوظة (Kul al-huquq محفوظة)",
+              "hi": "Primal Samsara © Xalsier Kitsune. सभी अधिकार सुरक्षित (Sabhi adhikar surakshit)",
+              "nl": "Primal Samsara © Xalsier Kitsune. Alle rechten voorbehouden.",
+              "tr": "Primal Samsara © Xalsier Kitsune. Tüm hakları saklıdır."
+            }
+        },
+        {
+            "id": "press-kit",
+            "translations": {
+                "en": "Press Kit",
+                "es": "Kit de prensa", 
+                "ja": "プレスキット",
+                "ko": "프레스 키트",
+                "fr": "Dossier de presse",
+                "de": "Pressemappe",
+                "it": "Cartella stampa",
+                "pt": "Kit de imprensa",
+                "ru": "Пресс-кит",
+                "zh": "媒体资料包",
+                "ar": "حزمة صحفية",
+                "hi": "प्रेस किट",
+                "nl": "Persmap",
+                "tr": "Basın kiti" 
+            }
+        },
+        {
+            "id": "site-github",
+            "translations": {
+                "en": "Site Github",
+                "es": "GitHub del sitio",
+                "ja": "サイトGitHub",
+                "ko": "사이트 깃허브",
+                "fr": "Github du site",
+                "de": "Website Github",
+                "it": "Github del sito",
+                "pt": "GitHub do site",
+                "ru": "GitHub сайта",
+                "zh": "站点Github",
+                "ar": "الموقع جيثب",
+                "hi": "साइट गिटहब",
+                "nl": "Website Github",
+                "tr": "Site Github"
+            }
+        },
+        {
+            "id": "known-site-issues",
+            "translations": {
+                "en": "Known Site Issues",
+                "es": "Problemas conocidos del sitio",
+                "ja": "既知のサイトの問題",
+                "ko": "알려진 사이트 문제",
+                "fr": "Problèmes connus du site",
+                "de": "Bekannte Probleme der Website",
+                "it": "Problemi noti del sito",
+                "pt": "Problemas conhecidos do site",
+                "ru": "Известные проблемы сайта",
+                "zh": "已知网站问题",
+                "ar": "مشاكل الموقع المعروفة",
+                "hi": "ज्ञात साइट समस्याएँ",
+                "nl": "Bekende siteproblemen",
+                "tr": "Bilinen Site Sorunları"
+            }
+        },
+        {
+            "id": "email-inquiries",
+            "translations": {
+                "en": "Email inquiries:",
+                "es": "Consultas por correo electrónico:",
+                "ja": "Eメールでのお問い合わせ：",
+                "ko": "이메일 문의:",
+                "fr": "Demandes par e-mail :",
+                "de": "E-Mail-Anfragen:",
+                "it": "Richieste via email:",
+                "pt": "Consultas por e-mail:",
+                "ru": "Запросы по электронной почте:",
+                "zh": "电子邮件查询：",
+                "ar": "استفسارات البريد الإلكتروني:",
+                "hi": "ईमेल पूछताछ:",
+                "nl": "E-mail vragen:",
+                "tr": "E-posta ile sorular"
+            }
+        },
+        {
+            "id": "credit-link",
+            "translations": {
+                "en": "Credits",
+                "es": "Créditos",
+                "ja": "クレジット",
+                "ko": "크레딧",
+                "fr": "Crédits",
+                "de": "Impressum", 
+                "it": "Crediti",
+                "pt": "Créditos",
+                "ru": "Кредиты",
+                "zh": "版权信息",
+                "ar": "ائتمانات",
+                "hi": "क्रेडिट",
+                "nl": "Credits",
+                "tr": "Krediler"
+            }
+        },
+        {
+            "id": "privacy-policy",
+            "translations": {
+                "en": "Privacy Policy",
+                "es": "Política de privacidad",
+                "ja": "プライバシーポリシー",
+                "ko": "개인정보 보호정책",
+                "fr": "Politique de confidentialité",
+                "de": "Datenschutz-Bestimmungen",
+                "it": "Politica sulla riservatezza",
+                "pt": "Política de Privacidade",
+                "ru": "Политика конфиденциальности",
+                "zh": "隐私政策",
+                "ar": "سياسة الخصوصية",
+                "hi": "गोपनीयता नीति",
+                "nl": "Privacybeleid",
+                "tr": "Gizlilik Politikası"
+            }
+        }    
+    ]
+}
