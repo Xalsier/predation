@@ -34,17 +34,16 @@ function renderChapter(chapterNumber) {
                 const defaultAuthorNoteURL = `https://hunt.predation.jp/AN/EN/${chapterNumber}ENAN.md`;
                 fetchAndRender(defaultAuthorNoteURL, authorNoteSelector);
             });
-        const chapterArt = chapter.chapter_art;
-        if (chapterArt && chapterArt.length > 0) {
-            document.querySelector(chapterArtSelector).setAttribute('src', chapterArt[0][0]);
-            document.querySelector(chapterArtSelector).setAttribute('alt', chapterArt[0][1]);
-            document.querySelector('.actual_credit').innerHTML = '<a class="actual_credit" href="' + chapterArt[0][3] + '">' + chapterArt[0][2] + '</a>';
+            const artImage = document.querySelector(chapterArtSelector);
+            const creditLink = document.querySelector('.actual_credit');
             const profImgElement = document.querySelector('.profimg2');
-            if (profImgElement) {
-                profImgElement.setAttribute('src', chapterArt[0][4]);
-                profImgElement.setAttribute('alt', chapterArt[0][2]);
+            const chapterArt = chapter.chapter_art;
+            if (chapterArt && chapterArt.length > 0) {
+                const [imageUrl, imageAlt, creditName, creditUrl, profImageUrl] = chapterArt[0]; 
+                updateElementAttributes(artImage, imageUrl, imageAlt);
+                creditLink.innerHTML = `<a class="actual_credit" href="${creditUrl}">${creditName}</a>`;
+                updateElementAttributes(profImgElement, profImageUrl, creditName);
             }
-        }
     } else {
         console.error('Chapter not found:', chapterNumber);
     }

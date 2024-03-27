@@ -28,17 +28,30 @@ Korean, Spanish
 
 Community-driven translation efforts are welcome!
 
+## New features currently on the English Repository
+
+*Reference to know what features are missing in other localizations*
+
+* Larch branch placeholder for images when they don't load from hunt.
+
+
 ## TODO
 
-### High Priority
-- Bring newer updates from the English site to the Japanese production environment.
+### Spotted Issues:
+(#11) - Edit count returns ? due to using older system. In need of a new way to count edits.
 
-### Medium Priority
-- Bringing back the Wiki
-- Bringing back the Gallery
+### High Priority Tasks
+- Issue 11
 
-### Low Priority
-- Webnovel Edit History Complexity, deletions, additions, commit notes
+### Medium Priority Tasks
+- Bringing back the Wiki & Gallery
+
+#### Related (Ecosystem) Categories
+- Flora
+- Species
+- Articles (Blueprint to be queried for Character Profiles)
+
+### Low Priority Tasks
 - Editor/Writer profile
 - Character profiles
 - Comment filtering
@@ -46,8 +59,11 @@ Community-driven translation efforts are welcome!
 - Primal Market / Support Coffee
 - Privacy Policy
 
-### Completed
+### Completed Tasks
 - 03/24 FAQ
 - 03/18 Credits
 - 03/14 Reduce dependency on Jquery to reduce script loading for users using low performance browsers.
 - 03/14 Implement a 4th variable to chapter art credits for social media links, to properly credit artists.
+
+### Possible projects
+- Place to put buddhist and auxillary philosophy in context with the webnovel. Temple?

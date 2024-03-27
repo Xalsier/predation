@@ -21,3 +21,19 @@ function showCredits () {
     document.getElementById('main-content').style.display = 'block';
     document.getElementById('site_credits').style.display = 'flex';
 }
+
+// Misc Util Functions for Chapter
+function updateElementAttributes(element, src, alt, placeholderSrc = "../../assets/larch.png") {
+    if (element) {
+        element.setAttribute('src', placeholderSrc);
+        element.setAttribute('alt', alt); // Still set alt for accessibility
+        const img = new Image();
+        img.src = src;
+        img.onload = () => {
+          element.src = src; // Replace placeholder when real image loads
+        };
+        img.onerror = () => {
+            console.log('Image failed to load.');
+        };
+    }
+}
