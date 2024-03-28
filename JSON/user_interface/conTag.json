@@ -22,20 +22,20 @@
         {
             "id": "content-tag2",
             "translations": {
-                "en": "Furry Soulslike",
-                "es": "Soulslike Peludo",
-                "ja": "ファーリーソウルズライク",
-                "ko": "퍼리 소울즈라이크",
-                "fr": "Furry Soulslike",
-                "de": "Furry Soulslike",
-                "it": "Furry Soulslike",
-                "pt": "Furry Soulslike",
-                "ru": "Furry Soulslike",
-                "zh": "毛茸茸的灵魂式",
-                "ar": "فيري سولزلايك",
-                "hi": "फरी सोल्सलाइक",
-                "nl": "Furry Soulslike",
-                "tr": "Tüylü Soulslike"
+                "en": "Furry",
+                "es": "Peludo", 
+                "ja": "獣人 (Jūjin)",
+                "ko": "퍼리",
+                "fr": "Poilu", 
+                "de": "Pelzig", 
+                "it": "Peloso", 
+                "pt": "Peludo",
+                "ru": "Пушистый", 
+                "zh": "毛茸茸的", 
+                "ar": "فروي", 
+                "hi": "फरी",
+                "nl": "Harig",
+                "tr": "Tüylü" 
             }
         },
         {
