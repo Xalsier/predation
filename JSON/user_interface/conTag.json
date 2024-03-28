@@ -56,6 +56,45 @@
                 "nl": "Grafisch geweld",
                 "tr": "Grafik Şiddet"
             }
+        },
+        {
+            "id": "site-update",
+            "translations": {
+                "en": "Site Updates",
+                "es": "Actualizaciones del sitio",
+                "ja": "サイトの更新",
+                "ko": "사이트 업데이트",
+                "fr": "Mises à jour du site",
+                "de": "Website-Aktualisierungen",
+                "it": "Aggiornamenti del sito",
+                "pt": "Atualizações do site",
+                "ru": "Обновления сайта",
+                "zh": "网站更新",
+                "ar": "تحديثات الموقع",
+                "hi": "साइट अपडेट",
+                "nl": "Site-updates",
+                "tr": "Site Güncellemeleri"
+            }
+        },
+        {
+            "id": "chapter-updates",
+            "translations": {
+                "en": "Chapter Updates",
+                "es": "Actualizaciones de capítulos",
+                "ja": "チャプター更新",
+                "ko": "챕터 업데이트",
+                "fr": "Mises à jour des chapitres",
+                "de": "Kapitelaktualisierungen",
+                "it": "Aggiornamenti dei capitoli",
+                "pt": "Atualizações de capítulos",
+                "ru": "Обновления глав",
+                "zh": "章节更新",
+                "ar": "تحديثات الفصول",
+                "hi": "अध्याय अपडेट",
+                "nl": "Hoofdstukupdates",
+                "tr": "Bölüm Güncellemeleri"
+            }
         }
+                
     ]
 }

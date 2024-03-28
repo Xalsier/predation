@@ -1,84 +1,97 @@
+<p align="center">
+  <img src="https://en.predation.jp/assets/log.webp" alt="Primal Samsara">
+</p>
+
 # Repo Brief
 
-Development Repository for the English version of the Primal Samsara webnovel site.
+Development Repository for the English version of the Primal Samsara webnovel site. Community-driven translation efforts are welcome!
 
-![Primal Samsara](https://en.predation.jp/assets/log.webp) 
+## TODO List
 
-## Website Localizations
-[English](https://en.predation.jp) || 
-[日本語](https://predation.jp)
+### Spotted Issues
+- [ ] (#11) Edit count returns `?` due to using an older system. Needs a new counting method.
 
-## Semi-localizated, but without a site
+### Tasks Overview
+<details>
+<summary>High Priority Tasks</summary>
 
-* **Korean (한국어)**
-* **Spanish (Español)**
+- [ ] Issue 11 (Edit count)
+- [ ] Character images within webnovel next to NAME:
 
-### Semi-Localized, but without a site, and without webnovel translations.
+</details>
 
-* **French (Français)**
-* **German (Deutsch)**
-* **Italian (Italiano)**
-* **Portuguese (Português)**
-* **Russian (Русский)**
-* **Chinese (中文)**
-* **Arabic (العربية)** 
-* **Hindi (हिन्दी)**
-* **Dutch (Nederlands)**
-* **Turkish (Türkçe)**
+<details>
+<summary>Medium Priority Tasks</summary>
 
-### Not Localized, but Planned
+- [ ] Wiki & Gallery reintroduction
+  - **Ecosystem Categories:**
+    - Flora
+    - Species
+    - Articles (for Character Profiles)
 
-* **Swedish (Svenska)**
+</details>
 
+<details>
+<summary>Low Priority Tasks</summary>
 
-Community-driven translation efforts are welcome!
+- [ ] Editor/Writer profile enhancements
+- [ ] Character profiles development
+- [ ] Character reaction images in webnovel
+- [ ] Comment filtering system
+- [ ] Press Kit creation
+- [ ] Primal Market / Support Coffee integration
+- [ ] Place for reviews in the Primal Market
+- [ ] Privacy Policy update
 
-#### Documentation for Community Review for Localization:
+</details>
 
-- 'false' can be added to the second element of an array in ../JSON/user_interface, as a flag to let others know this item may potentially be poorly translated, or may not have the intending meaning. For example:
+<details>
+<summary>Completed Tasks</summary>
 
-```
-"es": ["¡Capítulo 3 ya está disponible! (¡Y es casi el doble del tamaño del Capítulo 1!)", false],
-```
+- [x] 03/24 FAQ section
+- [x] 03/18 Credits page refined
+- [x] 03/14 Added social media links to chapter art credits
 
-Some may be missing an object array, these can be added to suit this purpose. The code (Should) be able to handle the differences.
+</details>
 
-## New features currently on the English Repository
+### Possible Projects
+- Place to put Buddhist and auxiliary philosophy in context with the web novel. 
+
+## Features that need to move to other production builds.
 
 *Reference to know what features are missing in other localizations*
 
 * Larch branch placeholder for images when they don't load from hunt.
 
+## Website Localizations
 
-## TODO
+| Language | Unicode | UI | Webnovel | FAQ | Review Status | Website |
+|:--------:|:-------:|:--:|:--------:|:---:|:-------------:|:-------:|
+| English | en | ✅ | ✅ | ✅ | ✅ | [https://en.predation.jp](https://en.predation.jp) |
+| 日本語 | ja | ✅ | ✅ | ✅ | 🔍 | [https://predation.jp](https://predation.jp) |
+| 한국어  | ko | ✅ | ✅ | ❌ | 🔍 | — |
+| Español  | es | ✅ | ✅ | ❌ | 🔍 | — |
+| Français  | fr | ✅ | ❌ | ❌ | 🔍 | — |
+| Deutsch | de | ✅ | ❌ | ❌ | 🔍 | — |
+| Italiano  | it | ✅ | ❌ | ❌ | 🔍 | — |
+| Português  | pt | ✅ | ❌ | ❌ | 🔍 | — |
+| Русский  | ru | ✅ | ❌ | ❌ | 🔍 | — |
+| 中文  | zh | ✅ | ❌ | ❌ | 🔍 | — |
+| العربية  | ar | ✅ | ❌ | ❌ | 🔍 | — |
+| हिन्दी  | hi | ✅ | ❌ | ❌ | 🔍 | — |
+| Nederlands | nl | ✅ | ❌ | ❌ | 🔍 | — |
+| Türkçe | tr | ✅ | ❌ | ❌ | 🔍 | — |
 
-### Spotted Issues:
-(#11) - Edit count returns ? due to using older system. In need of a new way to count edits.
+✅ - Available / Passed Review <br>
+❌ - Not Available <br>
+🔍 - In Need Of Human Review
 
-### High Priority Tasks
-- Issue 11
+### Documentation for Community Review for Localization:
 
-### Medium Priority Tasks
-- Bringing back the Wiki & Gallery
+'false' can be added to the second element of an array in ../JSON/user_interface, as a flag to let others know this item may potentially be poorly translated, or may not have the intending meaning. For example:
 
-#### Related (Ecosystem) Categories
-- Flora
-- Species
-- Articles (Blueprint to be queried for Character Profiles)
+```
+"es": ["¡Capítulo 3 ya está disponible! (¡Y es casi el doble del tamaño del Capítulo 1!)", false],
+```
 
-### Low Priority Tasks
-- Editor/Writer profile
-- Character profiles
-- Comment filtering
-- Press Kit
-- Primal Market / Support Coffee
-- Privacy Policy
 
-### Completed Tasks
-- 03/24 FAQ
-- 03/18 Credits
-- 03/14 Reduce dependency on Jquery to reduce script loading for users using low performance browsers.
-- 03/14 Implement a 4th variable to chapter art credits for social media links, to properly credit artists.
-
-### Possible projects
-- Place to put buddhist and auxillary philosophy in context with the webnovel. Temple?
