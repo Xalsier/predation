@@ -68,23 +68,26 @@ Development Repository for the English version of the Primal Samsara webnovel si
 | Language | Unicode | UI | Webnovel | FAQ | Review Status | Website |
 |:--------:|:-------:|:--:|:--------:|:---:|:-------------:|:-------:|
 | English | en | ✅ | ✅ | ✅ | ✅ | [https://en.predation.jp](https://en.predation.jp) |
-| 日本語 | ja | ✅ | ✅ | ✅ | 🔍 | [https://predation.jp](https://predation.jp) |
-| 한국어  | ko | ✅ | ✅ | ❌ | 🔍 | — |
-| Español  | es | ✅ | ✅ | ❌ | 🔍 | — |
-| Français  | fr | ✅ | ❌ | ❌ | 🔍 | — |
-| Deutsch | de | ✅ | ❌ | ❌ | 🔍 | — |
-| Italiano  | it | ✅ | ❌ | ❌ | 🔍 | — |
-| Português  | pt | ✅ | ❌ | ❌ | 🔍 | — |
-| Русский  | ru | ✅ | ❌ | ❌ | 🔍 | — |
-| 中文  | zh | ✅ | ❌ | ❌ | 🔍 | — |
-| العربية  | ar | ✅ | ❌ | ❌ | 🔍 | — |
-| हिन्दी  | hi | ✅ | ❌ | ❌ | 🔍 | — |
-| Nederlands | nl | ✅ | ❌ | ❌ | 🔍 | — |
-| Türkçe | tr | ✅ | ❌ | ❌ | 🔍 | — |
+| 日本語 | ja | ✅ 🔍 | ✅ | ✅ | 🔍 | [https://predation.jp](https://predation.jp) |
+| 한국어  | ko | ✅ 🔍 | ✅ | ❌ | 🔍 | — |
+| Español  | es | ✅ 🔍 | ✅ | ❌ | 🔍 | — |
+| Français  | fr | ✅ 🔍| ❌ | ❌ | 🔍 | — |
+| Deutsch | de | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| Italiano  | it | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| Português  | pt | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| Русский  | ru | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| 中文  | zh | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| العربية  | ar | ✅ 🔍| ❌ | ❌ | 🔍 | — |
+| हिन्दी  | hi | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| Nederlands | nl | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| Türkçe | tr | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
 
 ✅ - Available / Passed Review <br>
+✅ 🔍 - Available but there are some localizations missing<br>
+??? (No emoji set) - Available but there are markdown issues<br>
 ❌ - Not Available <br>
 🔍 - In Need Of Human Review
+
 
 ### Documentation for Community Review for Localization:
 

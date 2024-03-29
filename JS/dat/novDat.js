@@ -10,7 +10,6 @@ const webnovel = {
                 "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/fb93b3e0f174081a85806cef70f81a3b-1691187786611/6d8be301-6cd4-4905-b123-f40161b7563e.png"
                 ] 
             ],
-            "lastEdited": "2024-03-25",
         },
         {
             "chapter": 2,
@@ -21,7 +20,6 @@ const webnovel = {
                 "https://twitter.com/Zarushia",
                 "../assets/fuwa.jpeg"]
             ], 
-            "lastEdited": "2024-03-25",
         },
         {
             "chapter": 3,
@@ -32,7 +30,6 @@ const webnovel = {
                 "https://twitter.com/Zarushia",
                 "../assets/fuwa.jpeg"]
             ], 
-            "lastEdited": "2024-03-25",
         }
     ]
 };

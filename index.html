@@ -28,18 +28,24 @@
     <link rel="canonical" href="https://en.predation.jp" /> 
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
-            "@type": "Person",
-            "name": "Xalsier",
-            "jobTitle": "Writer",
-            "url": "https://en.predation.jp/",
-            "sameAs": [
-                "https://twitter.com/Zarushia",
-                "https://www.instagram.com/xalsier",
-                "https://twitter.com/Xalsier"
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://en.predation.jp"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "FAQ",
+                    "item": "https://en.predation.jp/FAQ"
+                }
             ]
         }
-    </script>
+    </script>        
 
 </head>
 <body>
@@ -53,6 +59,7 @@
                 <div id="nav-buttons">
                     <button id="WebnovelBTN" onclick="showWebnovel()">Webnovel</button>
                     <button id="CalendarBTN" onclick="showCalendar()">Calendar</button>
+                    <button id="FAQBTN" onclick="showFAQ()">FAQ</button>
                 </div>
             </nav>
         </header>
@@ -87,8 +94,8 @@
                             Email inquiries: </span> <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a>
                     </p>
                     <p class="official-links">
-                        <a id="site-github" href="https://github.com/Xalsier/predation">Site Github</a> |
-                        <a id="FAQ" href="FAQ.html">FAQ</a> | 
+                        <a id="site-github" href="https://github.com/Xalsier/predation">Site Github</a>
+                        | 
                         <span id="privacy-policy">Privacy Policy</span> | 
                         <a id="credit-link" onclick="showCredits();">Credits</a> |
                         <a id="known-site-issues" href="https://github.com/Xalsier/predation/issues">Known Site Issues</a>
@@ -127,7 +134,7 @@
 
         
           <div class="summary_card" style="display: none;">
-                <div id="summary-content-en" class="summary-content" style="display: block;">
+                <div id="summary-content-en" class="summary-content" style="display: flex;">
                     <h2 id="summary-title">Primal Samsara: Risk of Predation</h2>
                     <p id="summary-blurb">During the Golden Age of Predation, Naori embarks on their first hunt- without the protection of Shiro and Sera. With the ambitions of Ryo and the Hyena's set high, an opportunity is left open at revisiting the old guarded monastery where Chief Avali found Sera's ancestor, encased in stone.</p>
                     <div class="stat-holder" style="display: flex;flex-direction: row;gap: 5px;flex-wrap: wrap;margin-bottom: 10px;">
@@ -144,11 +151,11 @@
                         <strong id="summary-stat6">Chapters:</strong> <span id="chapter-count">?</span><span>/ ?</span> | 
                         <strong id="summary-stat7">Uploaded:</strong> <span>02-27-2024</span>
                     </div>
-                    <div class="tag-container">
-                        <span id="content-tag1">Not Rated</span>
-                        <span id="content-tag2">Furry</span>
-                        <span id="content-tag3">Graphic Violence</span>
-                    </div>
+                </div>
+                <div class="tag-container">
+                    <span id="content-tag1">Not Rated</span>
+                    <span id="content-tag2">Furry</span>
+                    <span id="content-tag3">Graphic Violence</span>
                 </div>
             </div>
         </div>
@@ -205,6 +212,7 @@
     <script src="../JS/util/script.js"></script>
     <script src="../JS/util/color.js"></script>
     <script src="../JS/dat/cred.js"></script>
+    <script src="../JS/dat/edit.js"></script>
     <script src="../JS/dat/events.js"></script>
     <script src="../JS/util/spa.js"></script>
 </body>
