@@ -5,3 +5,7 @@ https://en.predation.jp/Temp/*
 # For the entire primal.pages.dev domain
 https://primal.pages.dev/*
   X-Robots-Tag: noindex
+
+# For the entire hunt domain. There is no index.html here.
+https://hunt.predation.jp/*
+  X-Robots-Tag: noindex
