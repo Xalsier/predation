@@ -24,6 +24,18 @@ h2 {
     line-height: 1.6;
 }
 
+.webnovel-profile-img img {
+    display: inline-block;  
+    vertical-align: middle; 
+    width: 16px;           
+    height: 16px;          
+    border-radius: 50%;   
+    margin-top: -2px; /* Adjust this value as needed */
+}
+
+
+
+
 .chapter_content h2 {
     text-align: center;
     margin-bottom: 10px;
