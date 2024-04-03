@@ -145,14 +145,26 @@
         </div>
         <div class="privacy" style="display: none;">
         <div class="policy-content">
+            <p style="color: black;">Written by Xalsier. yes, this is informal.</p>
             <h4 style="color: black;">Data Collection</h6>
             <h5 style="color: black;">Comment Section [Webnovel]</h5>
             <p style="color: black;">In order to maintain anonymity, unless deliberately modified- the user handles of each comment is a type of animal within Primal Samsara. If that handle is changed by the user, or if it isn't, that data is stored in a Cloudflare Worker's KV along with the written comment.</p>
-            <p style="color: black;">This is- generally necessary, in order to display the comments.</p>
+            <p style="color: black;">This is- generally necessary, in order to display the comments. Another analytic this collects internally is the amount of comments there are across the site.</p>
             <h5 style="color: black;">Cloudflare Web Analytics</h5>
-            <p style="color: black;">(Note) I don't know what data Cloudflare Web Analytics is collecting. Will return to this section soon. </p>
+            <h7 style="color: black;">Unique information (Important)</h7>
+            <p style="color: black;">In terms of geography (location), the analytics collects country and region. While they cloudflare states that this is not personally identifiable information (PII) such as IP Addresses, I think there's generally an important concern missing here.</p>
+            <p style="color: black;">While this isn't personally identifiable, if the site has very few visitors, it might be possible for me to guess the countries of specific people.</p>
+            <p style="color: black;">If you're concerned about that, which is valid, I'd recommend a VPN. This should become less of a potential privacy issue as the site gains more visitors.</p>
+            <p style="color: black;">As for other analytics, from what I've seen the cloudflare insights collects information about referrers (Like if a user came from Instagram, bing), device (Desktop, mobile), bandwidth (Amount of files being downloaded)</p>
+            <p style="color: black;">The url used is also stored for analytics. (e.g. https://en.predation.jp/FAQ). This has always remained a confusing point as some visitors will bounce to the site from the preview development url which I swear is not indexed. </p>
+            <p style="color: black;">The worst contender of these analytics is page views/sessions, unique visitors. Most of it is polluted by me just testing the site to see if certain features work, or some of it might be polluted by bots. This is why I've given up on using it as a useful analytic for webnovel views or reads.</p>
+            <h7 style="color: black;">Site performance information</h7>
+            <p style="color: black;">Cloudflare collects Core Web Vital's data, like Largest Contentful Paint (LCP), Interaction to Next Paint (INP), First Input Delay (FID), Cumulative Layout Shift (CLS). Related to these, the most important analytic I'm looking at is Page Load Time.</p>
+            <p style="color: black;">Some of the worst load times I've seen have been the site taking 10 whole seconds to load. I am genuinely really sorry to whoever had to deal with that. Part of this is related to the lack of a caching policy so that new updates to the webnovel aren't delayed by differences in caches.</p>
             <h4 style="color: black;">Credits</h4>
             <p style="color: black;">As part of the webnovel project, artists and those involved will be credited, with links and profile images where possible. If an artist or individual wishes to be left uncredited, or for their profile image to be added/removed, for the credit name to be changed, or for their link to be changed, added, or removed- please use the contact email: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a></p>
+            <h4 style="color: black;">Future Notes:</h4>
+            <p style="color: black;">If I update this site with a more complex system, like unique user profiles for commenting- likes for art posts, webnovel likes, etc- there may be a more formally written version of this privacy policy. I'll oversee it so that this is readable, or maybe someone else will. Who's to say the stuff I write is readable haha.</p>
         </div>
         
         </div>
