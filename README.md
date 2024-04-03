@@ -8,14 +8,10 @@ Development Repository for the English version of the Primal Samsara webnovel si
 
 ## TODO List
 
-### Spotted Issues
-- [ ] (#11) Edit count returns `?` due to using an older system. Needs a new counting method.
-
 ### Tasks Overview
 <details>
 <summary>High Priority Tasks</summary>
 
-- [ ] Issue 11 (Edit count)
 - [ ] Character images within webnovel next to NAME:
 
 </details>
@@ -23,11 +19,9 @@ Development Repository for the English version of the Primal Samsara webnovel si
 <details>
 <summary>Medium Priority Tasks</summary>
 
-- [ ] Wiki & Gallery reintroduction
-  - **Ecosystem Categories:**
-    - Flora
-    - Species
-    - Articles (for Character Profiles)
+- [ ] Character profiles development
+- [ ] Character reaction images in webnovel
+
 
 </details>
 
@@ -41,13 +35,14 @@ Development Repository for the English version of the Primal Samsara webnovel si
 - [ ] Press Kit creation
 - [ ] Primal Market / Support Coffee integration
 - [ ] Place for reviews in the Primal Market
-- [ ] Privacy Policy update
 
 </details>
 
 <details>
 <summary>Completed Tasks</summary>
 
+- [x] 04/03 Added Privacy Policy (Albeit incompelte)
+- [x] 04/02 Wiki/Gallery section: Hunt
 - [x] 03/24 FAQ section
 - [x] 03/18 Credits page refined
 - [x] 03/14 Added social media links to chapter art credits

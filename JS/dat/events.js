@@ -21,5 +21,9 @@ window.colorEvent("2024-03-25", "#c14dff");
 window.colorEvent("2024-03-26", "#71ff4d"); 
 // more site updates
 window.colorEvent("2024-03-27", "#c14dff"); 
-// Chapter 4 Release
 window.colorEvent("2024-04-02", "#c14dff"); 
+// Chapter 4 Release
+window.colorEvent("2024-04-09", "#71ff4d"); 
+window.colorEvent("2024-04-16", "#71ff4d"); 
+window.colorEvent("2024-04-23", "#71ff4d"); 
+window.colorEvent("2024-04-30", "#71ff4d"); 

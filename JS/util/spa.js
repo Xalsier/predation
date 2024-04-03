@@ -1,7 +1,7 @@
 function showLogo() {
     document.getElementById('modal-overlay').style.display = 'flex';
     document.getElementById('main-content').style.display = 'none';
-    document.querySelectorAll('#site_credits, .aperture, .calendar-container, .summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.awa, #site_credits, .aperture, .calendar-container, .summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
 }
 function showWebnovel() {
     refreshChapter();
@@ -16,6 +16,11 @@ function showCalendar() {
     document.getElementById('main-content').style.display = 'block';
     document.querySelector('.calendar-container').style.display = 'block';
 }
+function showHunt() {
+    document.getElementById('modal-overlay').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    document.querySelector('.awa').style.display = 'flex';
+}
 function showCredits () {
     document.getElementById('modal-overlay').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
@@ -23,6 +28,11 @@ function showCredits () {
 }
 function showFAQ() {
     window.location.href = "FAQ.html";
+}
+function showPrivacy() {
+    document.getElementById('modal-overlay').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    document.querySelector('.privacy').style.display = 'flex';
 }
 
 // Misc Util Functions for Chapter

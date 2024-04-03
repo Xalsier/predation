@@ -1,0 +1,170 @@
+body {
+    background-color: #cbbaa7;
+    color: #eee;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.awa {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Spacing between input and container */
+}
+
+#markdown-content {
+    overflow: scroll;
+    max-height: 350px;
+    padding: 10px;
+    color: black;
+    background-color: #7e6b56;
+}
+
+.trap {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-items: center;
+    flex-direction: column;
+    width: 350px;
+    background-color: #4e3e2b;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#prey-trap {
+    gap: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.trap img {
+    width: 100%;
+}
+
+#tracers {
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    width: 310px;
+    background-color: #4e3e2b;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#search-input {
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #4e3e2b;
+    border-radius: 5px;
+    background-color: #4e3e2b;
+    color: #eee;
+}
+
+#search-input::placeholder {
+    color: #999;
+}
+
+#ecosystem-size {
+    color: black;
+}
+
+#prey-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.suggestion-text { 
+    font-weight: bold; 
+    color: #444;   
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+button {
+    font-weight: bold; 
+    color: #ffc107;   
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 15px;
+ 
+}
+
+.scent {
+    background-color: #e08787;
+    color: #000000;
+}
+
+.tracks {
+    background-color: #d0e087;
+    color: #000000;
+}
+
+.marking-detail {
+    background-color: #87e0c7;
+    color: #000000;  
+}
+
+.suggestion-text:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.suggestion-type {
+    opacity: 0.6;
+    margin-left: 5px;
+}
+
+.suggestion-number {
+    opacity: 0.5;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.suggestion-count {
+    opacity: 0.5;
+}
+

@@ -1,0 +1,74 @@
+[
+    {
+        "src": ["https://hunt.predation.jp/Prey/001.png"],
+        "scent": ["Maxtorcito"],
+        "tracks": ["Fuwa","Rabbit", "Soup", "Quantum Lotus"],
+        "markings": ["Render", "Fauna", "Low-Detail Background Art"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/002.png"],
+        "scent": ["Maxtorcito"],
+        "tracks": ["Fuwa","Rabbit", "Soup", "Quantum Lotus"],
+        "markings": ["Line Art", "Clean Sketch", "Fauna", "Rough Background Art"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/003.png"],
+        "scent": ["Yuuki"],
+        "tracks": ["Larch"],
+        "markings": ["Flora", "Resource", "Transparent Background"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/004.png"],
+        "scent": ["Xalsier"],
+        "tracks": ["Fuwa","Rabbit", "Soup", "Quantum Lotus"],
+        "markings": ["Flat Color Art", "Rough Sketch", "Fauna", "Concept Art", "Rough Background Art"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/005.png"],
+        "scent": ["Xalsier"],
+        "tracks": ["???","Cat"],
+        "markings": ["Flat Color Art", "Rough Sketch", "Fauna", "Background Characters", "Flat Background"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/006.png"],
+        "scent": ["Yuuki"],
+        "tracks": ["Bahu","Squid"],
+        "markings": ["Logo Art", "Fauna", "Flora", "Inkazoa", "Flora", "Transparent Background"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/007.png"],
+        "scent": ["Xalsier"],
+        "tracks": ["Sera", "Deerfox", "Bahu","Squid"],
+        "markings": ["Greater Bahu", "Flat Color Art", "Semi-Lineless Art", "Emoji Text"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/008.png"],
+        "scent": ["Xalsier"],
+        "tracks": ["Sera", "Deerfox", "Corrupted Yiff"],
+        "markings": ["Flat Color Art", "Clean Sketch"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/0010.png"],
+        "scent": ["NicoStarlight"],
+        "tracks": ["Shiro", "Cat"],
+        "markings": ["Render", "Larch", "High-Detail Background Art"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/0011.png"],
+        "scent": ["Xalsier"],
+        "tracks": ["Shiro", "Cat", "Sera", "Deerfox"],
+        "markings": ["Rough Sketch", "English Text", "Rough Background Art"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/0012.png"],
+        "scent": ["Yuuki"],
+        "tracks": ["Flora", "Red Maple"],
+        "markings": ["Transparent Background", "Leaf"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/0013.jpg"],
+        "scent": ["Xalsier"],
+        "tracks": ["Naori", "Fox"],
+        "markings": ["Florazoa", "Fauna"]
+    }
+]

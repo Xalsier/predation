@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="../CSS/navmodal.css">
     <link rel="stylesheet" href="../CSS/sitecredits.css">
     <link rel="stylesheet" href="../CSS/pawprints.css">
-    <link rel="stylesheet" href="../CSS/searchbar.css">
-    <link rel="stylesheet" href="../CSS/gallery.css">
+    <link rel="stylesheet" href="../CSS/awa.css">
     <link rel="stylesheet" href="../CSS/theme.css">
     <link rel="stylesheet" href="../CSS/disclaimer.css">
     <link rel="stylesheet" href="../CSS/comments.css" defer>
@@ -25,6 +24,7 @@
     <link rel="stylesheet" href="../CSS/summary.css" defer>
     <link rel="stylesheet" href="../CSS/webnovel.css" defer>
     <link rel="stylesheet" href="../CSS/calendar.css" defer>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.3.2/dist/markdown-it.min.js"></script> 
     <link rel="canonical" href="https://en.predation.jp" /> 
     <script type="application/ld+json">
         {
@@ -60,6 +60,7 @@
                     <button id="WebnovelBTN" onclick="showWebnovel()">Webnovel</button>
                     <button id="CalendarBTN" onclick="showCalendar()">Calendar</button>
                     <button id="FAQBTN" onclick="showFAQ()">FAQ</button>
+                    <button id="AwaBTN" onclick="showHunt()">Hunt</button>
                 </div>
             </nav>
         </header>
@@ -96,7 +97,7 @@
                     <p class="official-links">
                         <a id="site-github" href="https://github.com/Xalsier/predation">Site Github</a>
                         | 
-                        <span id="privacy-policy">Privacy Policy</span> | 
+                        <a id="privacy-policy" onclick="showPrivacy();">Privacy Policy</a> | 
                         <a id="credit-link" onclick="showCredits();">Credits</a> |
                         <a id="known-site-issues" href="https://github.com/Xalsier/predation/issues">Known Site Issues</a>
                         | <span id="press-kit">Press Kit</span>
@@ -131,7 +132,30 @@
         
         </div>
         <div id="site_credits" style="display: none;"></div>
-
+        <div class="awa" tyle="display: none;">
+            <input type="text" id="search-input" placeholder="Type to hunt...">
+            <div style="display:flex;flex-direction:row;flex-wrap: wrap; gap: 10px;">
+                <div id="ecosystem-size">Ecosystem Heat: 4</div>
+            </div>
+            <div class="search-container" style="display: none;">
+                <div id="prey-container"></div>
+                <ul id="suggestions-list" ></ul>
+            </div>  
+            <div id="prey-trap"></div>  
+        </div>
+        <div class="privacy" style="display: none;">
+        <div class="policy-content">
+            <h4 style="color: black;">Data Collection</h6>
+            <h5 style="color: black;">Comment Section [Webnovel]</h5>
+            <p style="color: black;">In order to maintain anonymity, unless deliberately modified- the user handles of each comment is a type of animal within Primal Samsara. If that handle is changed by the user, or if it isn't, that data is stored in a Cloudflare Worker's KV along with the written comment.</p>
+            <p style="color: black;">This is- generally necessary, in order to display the comments.</p>
+            <h5 style="color: black;">Cloudflare Web Analytics</h5>
+            <p style="color: black;">(Note) I don't know what data Cloudflare Web Analytics is collecting. Will return to this section soon. </p>
+            <h4 style="color: black;">Credits</h4>
+            <p style="color: black;">As part of the webnovel project, artists and those involved will be credited, with links and profile images where possible. If an artist or individual wishes to be left uncredited, or for their profile image to be added/removed, for the credit name to be changed, or for their link to be changed, added, or removed- please use the contact email: <a href="mailto:xalsier@icloud.com">xalsier@icloud.com</a></p>
+        </div>
+        
+        </div>
         
           <div class="summary_card" style="display: none;">
                 <div id="summary-content-en" class="summary-content" style="display: flex;">
@@ -215,5 +239,6 @@
     <script src="../JS/dat/edit.js"></script>
     <script src="../JS/dat/events.js"></script>
     <script src="../JS/util/spa.js"></script>
+    <script src="../JS/util/awa.js"></script>
 </body>
 </html>
