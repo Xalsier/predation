@@ -1,7 +1,7 @@
 function showLogo() {
     document.getElementById('modal-overlay').style.display = 'flex';
     document.getElementById('main-content').style.display = 'none';
-    document.querySelectorAll('.awa, #site_credits, .aperture, .calendar-container, .summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.privacy, .awa, #site_credits, .aperture, .calendar-container, .summary_card, .novel_nav, .art-and-note-container, .chapter_content, .comment_section').forEach(el => el.style.display = 'none');
 }
 function showWebnovel() {
     refreshChapter();
