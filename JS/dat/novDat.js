@@ -3,7 +3,7 @@ const webnovel = {
         {
             "chapter": 1,
             "chapter_art": [
-                ["https://hunt.predation.jp/CA/1.jpg", 
+                ["https://hunt.predation.jp/CA/1.png", 
                 "Fuwa looking over his shoulder.", 
                 "Maxtorcito",
                 "https://www.fiverr.com/maxtorcito",
@@ -14,7 +14,7 @@ const webnovel = {
         {
             "chapter": 2,
             "chapter_art": [
-                ["https://hunt.predation.jp/CA/2.jpg", 
+                ["https://hunt.predation.jp/CA/2.png", 
                 "Naori resting while talking", 
                 "Xalsier",
                 "https://twitter.com/Zarushia",
@@ -24,7 +24,7 @@ const webnovel = {
         {
             "chapter": 3,
             "chapter_art": [
-                ["https://hunt.predation.jp/CA/3.jpg", 
+                ["https://hunt.predation.jp/CA/3.png", 
                 "Ryo holding a map", 
                 "Xalsier",
                 "https://twitter.com/Zarushia",

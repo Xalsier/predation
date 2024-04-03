@@ -96,3 +96,10 @@ a:visited {  /* Add this */
 #artwork-by {
     color: white;
 }
+
+/* Inside your CSS file or within <style> tags */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); } 
+  }
+  

@@ -35,19 +35,23 @@ function showPrivacy() {
     document.querySelector('.privacy').style.display = 'flex';
 }
 
-// Misc Util Functions for Chapter
 function updateElementAttributes(element, src, alt, placeholderSrc = "../../assets/larch.png") {
     if (element) {
         element.setAttribute('src', placeholderSrc);
-        element.setAttribute('alt', alt); // Still set alt for accessibility
+        element.setAttribute('alt', alt); 
+        element.classList.add('loading'); // Add the loading class
+
         const img = new Image();
         img.src = src;
         img.onload = () => {
-          element.src = src; // Replace placeholder when real image loads
+          element.src = src; 
+          element.classList.remove('loading'); // Remove the loading class
         };
         img.onerror = () => {
             console.log('Image failed to load.');
+            element.classList.remove('loading'); // Remove in case of error too
         };
     }
 }
+
 
