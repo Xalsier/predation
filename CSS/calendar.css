@@ -8,16 +8,22 @@
 }
 
 .chapter {
-    background-color: #71ff4d;
+    background-color: rgb(97, 182, 80);
 }
 
-.localization {
-    background-color: #e1ff4d;
+.chapter:hover, .awa-update:hover, .site-update:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.awa-update {
+    background-color: rgb(149, 155, 57);
 }
 
 .site-update {
-    background-color: #c14dff;
+    background-color: rgb(149, 58, 146);
 }
+
 
 .calendar-container {
     width: 400px;
@@ -46,7 +52,7 @@
 }
 
 .calendar-header button {
-    background-color: #FF4D4D;
+    background-color: #cbbaa7;
     color: white;
     border: none;
     font-weight: bold;
@@ -92,7 +98,7 @@
 .calendar-days div { 
     padding: 8px;
     border-radius: 5px;
-    background-color: #FF4D4D;
+    background-color: #cbbaa7;
     color: white;
     transition: background-color 0.3s ease;
     text-align: center;
@@ -116,7 +122,7 @@
 }
 
 .calendar-days div.past {
-    background-color: #782525; /* An example color for past days */
+    background-color: rgb(68, 54, 39);
   }
   
   .calendar-days div.empty {
@@ -128,13 +134,22 @@
   }
 
   .status-updates {
-    display: flex; /* Arrange items in a row */
     padding-bottom: 10px;
+    display: flex; /* Arrange items in a row */
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     gap: 10px; /* Space between items */
     justify-content: center; /* Center items horizontally */
     color: white;
     align-items: center; /* Align circle and text vertically */
+}
+
+.status-div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align circle and text vertically */
+    flex-direction: row;
 }
 
 .circle {

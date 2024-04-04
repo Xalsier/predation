@@ -84,11 +84,12 @@ body::-webkit-scrollbar-track {
     color: #fff; /* White text */
     padding: 40px;
     min-height: 100vh;
+    width: 100vw;
     display: none;
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
     #main-content {
         padding: 0;
     }
