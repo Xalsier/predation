@@ -33,7 +33,7 @@ Development Repository for the English version of the Primal Samsara webnovel si
 - [ ] Character reaction images in webnovel
 - [ ] Comment filtering system
 - [ ] Press Kit creation
-- [ ] Primal Market / Support Coffee integration
+- [ ] Primal Market
 - [ ] Place for reviews in the Primal Market
 
 </details>
@@ -41,7 +41,8 @@ Development Repository for the English version of the Primal Samsara webnovel si
 <details>
 <summary>Completed Tasks</summary>
 
-- [x] 04/03 Added Privacy Policy (Albeit incompelte)
+- [x] 04/03 Added Support Coffee to footer
+- [x] 04/03 Added Privacy Policy
 - [x] 04/02 Wiki/Gallery section: Hunt
 - [x] 03/24 FAQ section
 - [x] 03/18 Credits page refined
