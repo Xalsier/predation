@@ -18,8 +18,28 @@ document.getElementById('language-select').addEventListener('change', function()
     window.setRandomAnimal();
 });
 function renderChapter(chapterNumber) {
+    const specialCodeInput = document.getElementById('kofi-code').value;
+    const artImage = document.querySelector(chapterArtSelector);
+    const creditLink = document.querySelector('.actual_credit');
+    const profImgElement = document.querySelector('.profimg2');
+
+    if (chapterNumber === 3 && specialCodeInput !== 'bahu') {
+        const errorContentURL = '../../error.md';
+        fetchAndRender(errorContentURL, authorNoteSelector);
+        document.querySelector(chapterContentSelector).innerHTML = '';
+        artImage.style.display = 'none';
+        creditLink.style.display = 'none';
+        profImgElement.style.display = 'none';
+        return;
+    }
+
+    // Reset display styles in case they were previously hidden
+    artImage.style.display = '';
+    creditLink.style.display = '';
+    profImgElement.style.display = '';
+
     window.currentChapter = chapterNumber;
-    const languageKey = currentLanguageIndex.toUpperCase(); // Use capitalized language
+    const languageKey = currentLanguageIndex.toUpperCase();
     const chapter = webnovel.chapters.find(chap => chap.chapter === chapterNumber);
     if (chapter) {
         const chapterContentURL = `https://hunt.predation.jp/WC/${languageKey}/${chapterNumber}${languageKey}0.md`;
@@ -34,20 +54,21 @@ function renderChapter(chapterNumber) {
                 const defaultAuthorNoteURL = `https://hunt.predation.jp/AN/EN/${chapterNumber}ENAN.md`;
                 fetchAndRender(defaultAuthorNoteURL, authorNoteSelector);
             });
-            const artImage = document.querySelector(chapterArtSelector);
-            const creditLink = document.querySelector('.actual_credit');
-            const profImgElement = document.querySelector('.profimg2');
-            const chapterArt = chapter.chapter_art;
-            if (chapterArt && chapterArt.length > 0) {
-                const [imageUrl, imageAlt, creditName, creditUrl, profImageUrl] = chapterArt[0]; 
-                updateElementAttributes(artImage, imageUrl, imageAlt);
-                creditLink.innerHTML = `<a class="actual_credit" href="${creditUrl}">${creditName}</a>`;
-                updateElementAttributes(profImgElement, profImageUrl, creditName);
-            }
+
+        const chapterArt = chapter.chapter_art;
+        if (chapterArt && chapterArt.length > 0) {
+            const [imageUrl, imageAlt, creditName, creditUrl, profImageUrl] = chapterArt[0];
+            updateElementAttributes(artImage, imageUrl, imageAlt);
+            creditLink.innerHTML = `<a class="actual_credit" href="${creditUrl}">${creditName}</a>`;
+            updateElementAttributes(profImgElement, profImageUrl, creditName);
+        }
     } else {
         console.error('Chapter not found:', chapterNumber);
     }
 }
+
+
+
 async function fetchAndRender(url, selector) {
     const response = await fetch(url);
     if (!response.ok) {

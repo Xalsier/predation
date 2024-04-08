@@ -4,6 +4,9 @@
     gap: 5px; 
 }
 
+span {
+    align-self: flex-start;
+}
 
 
 p span {
@@ -50,6 +53,7 @@ span:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 #summary-content-en {
     display: flex;
     flex-direction: column;
@@ -68,11 +72,11 @@ span:hover {
 
     .tag-container {
         width: 40%;
-        align-items: flex-start; /* Align tags to the start, preventing horizontal stretching */
-        display: flex;
-        flex-direction: row; /* Stack tags vertically */
-        justify-content: center; /* Center tags vertically */
-        gap: 5px; /* Adds gap between tags */
+        justify-content: center; /* Center tags in the available space */
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5px;
     }
 }
 
@@ -87,7 +91,23 @@ span:hover {
     cursor: pointer;
 }
 
-.tag-container .general-tag {
+.tag-container #adv {
+    background-color: #6b6b6b;
+}
+
+.tag-container #cca  {
+    background-color: #9df8ff;
+}
+
+.tag-container #fca  {
+    background-color: #f5a9ff;
+}
+
+.tag-container #mct  {
+    background-color: #c9ffaa;
+}
+
+.tag-container #isp {
     background-color: #ffa4a4;
 }
 
@@ -105,6 +125,7 @@ span:hover {
 
     .tag-container {
         display: flex;
+        padding: 20px;
         flex-wrap: wrap;
         justify-content: center; /* Center tags in the available space */
         gap: 5px; /* Adds gap between tags */

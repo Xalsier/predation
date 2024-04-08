@@ -12,16 +12,14 @@ Development Repository for the English version of the Primal Samsara webnovel si
 <details>
 <summary>High Priority Tasks</summary>
 
-- [ ] Character images within webnovel next to NAME:
+- [ ] Adding codes for locking specific content. (Chapters/Art/Wiki's)
 
 </details>
 
 <details>
 <summary>Medium Priority Tasks</summary>
 
-- [ ] Character profiles development
-- [ ] Character reaction images in webnovel
-
+- [ ] Chapter select
 
 </details>
 
@@ -47,6 +45,14 @@ Development Repository for the English version of the Primal Samsara webnovel si
 - [x] 03/24 FAQ section
 - [x] 03/18 Credits page refined
 - [x] 03/14 Added social media links to chapter art credits
+
+</details>
+<details>
+<summary>Won't Add / Might Add</summary>
+
+- [ ] Character profiles development
+- [ ] Character reaction images in webnovel
+- [ ] Character images within webnovel next to NAME:
 
 </details>
 
