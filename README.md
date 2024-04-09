@@ -67,22 +67,22 @@ Development Repository for the English version of the Primal Samsara webnovel si
 
 ## Website Localizations
 
-| Language | Unicode | UI | Webnovel | FAQ | Review Status | Website |
-|:--------:|:-------:|:--:|:--------:|:---:|:-------------:|:-------:|
-| English | en | ✅ | ✅ | ✅ | ✅ | [https://en.predation.jp](https://en.predation.jp) |
-| 日本語 | ja | ✅ 🔍 | ✅ | ✅ | 🔍 | [https://predation.jp](https://predation.jp) |
-| 한국어  | ko | ✅ 🔍 | ✅ | ❌ | 🔍 | — |
-| Español  | es | ✅ 🔍 | ✅ | ❌ | 🔍 | — |
-| Français  | fr | ✅ 🔍| ❌ | ❌ | 🔍 | — |
-| Deutsch | de | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
-| Italiano  | it | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
-| Português  | pt | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
-| Русский  | ru | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
-| 中文  | zh | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
-| العربية  | ar | ✅ 🔍| ❌ | ❌ | 🔍 | — |
-| हिन्दी  | hi | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
-| Nederlands | nl | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
-| Türkçe | tr | ✅ 🔍 | ❌ | ❌ | 🔍 | — |
+| Language | Unicode | UI | Webnovel | FAQ | Review Status |
+|:--------:|:-------:|:--:|:--------:|:---:|:-------------:|
+| English | en | ✅ | ✅ | ✅ | ✅ |
+| 日本語 | ja | ✅ 🔍 | ✅ | ✅ | 🔍 |
+| 한국어  | ko | ✅ 🔍 | ✅ | ❌ | 🔍 |
+| Español  | es | ✅ 🔍 | ✅ | ❌ | 🔍 |
+| Français  | fr | ✅ 🔍| ❌ | ❌ | 🔍 |
+| Deutsch | de | ✅ 🔍 | ❌ | ❌ | 🔍 |
+| Italiano  | it | ✅ 🔍 | ❌ | ❌ | 🔍 |
+| Português  | pt | ✅ 🔍 | ❌ | ❌ | 🔍 |
+| Русский  | ru | ✅ 🔍 | ❌ | ❌ | 🔍 |
+| 中文  | zh | ✅ 🔍 | ❌ | ❌ | 🔍 |
+| العربية  | ar | ✅ 🔍| ❌ | ❌ | 🔍 |
+| हिन्दी  | hi | ✅ 🔍 | ❌ | ❌ | 🔍 |
+| Nederlands | nl | ✅ 🔍 | ❌ | ❌ | 🔍 |
+| Türkçe | tr | ✅ 🔍 | ❌ | ❌ | 🔍 |
 
 ✅ - Available / Passed Review <br>
 ✅ 🔍 - Available but there are some localizations missing<br>

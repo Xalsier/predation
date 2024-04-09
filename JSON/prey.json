@@ -69,6 +69,12 @@
         "src": ["https://hunt.predation.jp/Prey/0013.png"],
         "scent": ["Xalsier"],
         "tracks": ["Naori", "Fox"],
-        "markings": ["Florazoa", "Fauna"]
+        "markings": ["Florazoa", "Fauna", "Yellow Eyes"]
+    },
+    {
+        "src": ["https://hunt.predation.jp/Prey/0015.png"],
+        "scent": ["Xalsier"],
+        "tracks": ["Naori", "Fox"],
+        "markings": ["Florazoa", "Fauna", "Yellow Eyes"]
     }
 ]

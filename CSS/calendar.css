@@ -24,6 +24,9 @@
     background-color: rgb(149, 58, 146);
 }
 
+.off-update {
+    background-color: rgb(149, 59, 58);
+}
 
 .calendar-container {
     width: 400px;

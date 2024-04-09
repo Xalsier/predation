@@ -18,12 +18,12 @@ document.getElementById('language-select').addEventListener('change', function()
     window.setRandomAnimal();
 });
 function renderChapter(chapterNumber) {
-    const specialCodeInput = document.getElementById('kofi-code').value;
+    const specialCodeInput = document.getElementById('code').value;
     const artImage = document.querySelector(chapterArtSelector);
     const creditLink = document.querySelector('.actual_credit');
     const profImgElement = document.querySelector('.profimg2');
 
-    if (chapterNumber === 3 && specialCodeInput !== 'bahu') {
+    if (chapterNumber === 3 && specialCodeInput !== 'kurinji') {
         const errorContentURL = '../../error.md';
         fetchAndRender(errorContentURL, authorNoteSelector);
         document.querySelector(chapterContentSelector).innerHTML = '';
@@ -42,16 +42,16 @@ function renderChapter(chapterNumber) {
     const languageKey = currentLanguageIndex.toUpperCase();
     const chapter = webnovel.chapters.find(chap => chap.chapter === chapterNumber);
     if (chapter) {
-        const chapterContentURL = `https://hunt.predation.jp/WC/${languageKey}/${chapterNumber}${languageKey}0.md`;
-        const authorNoteURL = `https://hunt.predation.jp/AN/${languageKey}/${chapterNumber}${languageKey}AN.md`;
+        const chapterContentURL = `https://hunt.predation.xyz/WC/${languageKey}/${chapterNumber}${languageKey}0.md`;
+        const authorNoteURL = `https://hunt.predation.xyz/AN/${languageKey}/${chapterNumber}${languageKey}AN.md`;
         fetchAndRender(chapterContentURL, chapterContentSelector)
             .catch(() => {
-                const defaultChapterContentURL = `https://hunt.predation.jp/WC/EN/${chapterNumber}EN0.md`;
+                const defaultChapterContentURL = `https://hunt.predation.xyz/WC/EN/${chapterNumber}EN0.md`;
                 fetchAndRender(defaultChapterContentURL, chapterContentSelector);
             });
         fetchAndRender(authorNoteURL, authorNoteSelector)
             .catch(() => {
-                const defaultAuthorNoteURL = `https://hunt.predation.jp/AN/EN/${chapterNumber}ENAN.md`;
+                const defaultAuthorNoteURL = `https://hunt.predation.xyz/AN/EN/${chapterNumber}ENAN.md`;
                 fetchAndRender(defaultAuthorNoteURL, authorNoteSelector);
             });
 
