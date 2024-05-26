@@ -22,14 +22,15 @@ function renderChapter(chapterNumber) {
     const artImage = document.querySelector(chapterArtSelector);
     const creditLink = document.querySelector('.actual_credit');
     const profImgElement = document.querySelector('.profimg2');
-
-    if (chapterNumber === 3 && specialCodeInput !== 'kurinji') {
+    const contentWrapper1 = document.querySelector('.content-wrapper');
+    if (chapterNumber === 1 && specialCodeInput !== 'kurinji') {
         const errorContentURL = '../../error.md';
         fetchAndRender(errorContentURL, authorNoteSelector);
         document.querySelector(chapterContentSelector).innerHTML = '';
         artImage.style.display = 'none';
         creditLink.style.display = 'none';
         profImgElement.style.display = 'none';
+        contentWrapper1.style.display = 'none';
         return;
     }
 

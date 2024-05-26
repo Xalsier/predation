@@ -1,5 +1,5 @@
-**Thank's for reading Episode 1!**
+**Thank you early Alpha Readers!**
 
-If you liked the story so far, you can continue reading volume 1 if you support my Ko-Fi!
+As I have finished the draft for Volume 1, the story is currently going through polishing so I have closed public access to Episode 1, temporarily. 
 
-In order to access the next episode, go back to main menu and type the code!
+Don't despair! I'll be opening up the Volume to beta-readers eventually!
